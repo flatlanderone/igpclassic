@@ -409,35 +409,35 @@
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="2" buff="IZYRangeWPmeleeDAMAGE">
 					<requirement name="!EntityTagCompare" target="other" tags="player,npc,drone"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.52,.2" localRot="0,0,0">
+				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.52,.2" localRot="0,0,0">
 					<requirement name="IsFPV"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.52,.2" localRot="0,0,0">
+				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.52,.2" localRot="0,0,0">
 					<requirement name="IsFPV"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.52,.2" localRot="0,0,0">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.52,.2" localRot="0,0,0">
 					<requirement name="IsFPV"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.52,.2" localRot="0,0,0">
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.52,.2" localRot="0,0,0">
 					<requirement name="IsFPV"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffFinish" action="RemovePart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.52,.2" localRot="0,0,0">
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.52,.2" localRot="0,0,0">
 					<requirement name="IsFPV"/>
 				</triggered_effect>
 				
-				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
+				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
 					<requirement name="!IsFPV"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
+				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
 					<requirement name="!IsFPV"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
 					<requirement name="!IsFPV"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
 					<requirement name="!IsFPV"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffFinish" action="RemovePart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
 					<requirement name="!IsFPV"/>
 				</triggered_effect>
 				
@@ -490,35 +490,35 @@
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="2" buff="IZYRangeWPmeleeDAMAGE">
 					<requirement name="!EntityTagCompare" target="other" tags="player,npc,drone"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.7,.2" localRot="20,0,0">
+				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.7,.2" localRot="20,0,0">
 					<requirement name="IsFPV"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.7,.2" localRot="20,0,0">
+				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.7,.2" localRot="20,0,0">
 					<requirement name="IsFPV"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.7,.2" localRot="20,0,0">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.7,.2" localRot="20,0,0">
 					<requirement name="IsFPV"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.7,.2" localRot="20,0,0">
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.7,.2" localRot="20,0,0">
 					<requirement name="IsFPV"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffFinish" action="RemovePart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.7,.2" localRot="20,0,0">
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_Delay.Prefab" parentTransform="Spine" localPos="0,-.7,.2" localRot="20,0,0">
 					<requirement name="IsFPV"/>
 				</triggered_effect>
 				
-				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
+				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
 					<requirement name="!IsFPV"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
+				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
 					<requirement name="!IsFPV"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
 					<requirement name="!IsFPV"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
 					<requirement name="!IsFPV"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffFinish" action="RemovePart" part="HeadLightCam" prefab="#@modfolder:Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePart" part="HeadLightCam" prefab="#@modfolder(IGP_Resources):Resources/IZY_Melee_Kick.unity3d?IZY_Melee_Kick_3rdPV.Prefab" parentTransform="Spine" localPos="0,-.52,0" localRot="0,0,0">
 					<requirement name="!IsFPV"/>
 				</triggered_effect>
 				

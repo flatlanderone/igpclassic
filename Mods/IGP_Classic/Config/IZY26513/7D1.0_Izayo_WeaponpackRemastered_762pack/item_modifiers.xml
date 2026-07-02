@@ -7,11 +7,11 @@
 	<append xpath="/item_modifiers/item_modifier[@name='modGunMagazineExtender']">
 		
 		<item_property_overrides name="IZYgunT4LMGlightmachinegunMG34R">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?IZY_LMG_MG34R_mag.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?IZY_LMG_MG34R_mag.Prefab"/>
 		</item_property_overrides>
 		
 		<item_property_overrides name="IZYgunT2MarksManRifle762M1garandNavyconverted">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_762_Pack_MainResource_SNP_MMR.unity3d?IZY_MMR_M1garandN_magmod.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_SNP_MMR.unity3d?IZY_MMR_M1garandN_magmod.Prefab"/>
 		</item_property_overrides>
 		
 	</append>
@@ -19,19 +19,19 @@
 	<append xpath="/item_modifiers/item_modifier[@name='modGunDrumMagazineExtender']">
 	
 		<item_property_overrides name="IZYgunT1BattleRifleBARbrowningautomaticrifle">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?IZY_BR_BAR_drummag.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?IZY_BR_BAR_drummag.Prefab"/>
 		</item_property_overrides>
 		
 		<item_property_overrides name="IZYgunT3BattleRifleHKG3">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?IZY_AR_G3Rifle_drummag.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?IZY_AR_G3Rifle_drummag.Prefab"/>
 		</item_property_overrides>
 		
 		<item_property_overrides name="IZYgunT4LMGlightmachinegunMG34R">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?IZY_LMG_MG34R_drummag.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?IZY_LMG_MG34R_drummag.Prefab"/>
 		</item_property_overrides>
 		
 		<item_property_overrides name="IZYgunT4BattleRifleSCARH">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?IZY_BR_ScarH_drummag.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?IZY_BR_ScarH_drummag.Prefab"/>
 		</item_property_overrides>
 		
 	</append>
@@ -39,11 +39,11 @@
 		<!--	GRIP	-->
 	<append xpath="/item_modifiers/item_modifier[@name='modGunForegrip']">
 		<item_property_overrides name="IZYgunT2ARSTG44N">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?IZY_AR_Sturmrifle_grip.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?IZY_AR_Sturmrifle_grip.Prefab"/>
 		</item_property_overrides>
 		
 		<item_property_overrides name="IZYgunT3ARAKM">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?IZY_AR_AKM_grip.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?IZY_AR_AKM_grip.Prefab"/>
 		</item_property_overrides>
 	</append>
 
@@ -379,8 +379,8 @@
 			<property name="Zoom_max_out" value="28"/>
 			<property name="Zoom_max_in" value="28"/>
 			<property name="ScopeCameraOffset" value=".0078,.0191,.12"/>
-			<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_762_Pack_MainResource_SNP_MMR.unity3d?IZY_SNIPER_Mosin_scope.Prefab"/>
+			<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/blankXD4.tga"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_SNP_MMR.unity3d?IZY_SNIPER_Mosin_scope.Prefab"/>
 			<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 			<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 		</item_property_overrides>
@@ -389,7 +389,7 @@
 			<property name="Zoom_max_out" value="28"/>
 			<property name="Zoom_max_in" value="28"/>
 			<property name="ScopeCameraOffset" value="-.0028,.0226,.16"/>
-			<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+			<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/blankXD4.tga"/>
 			<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 			<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 		</item_property_overrides>
@@ -400,7 +400,7 @@
 			<property name="Zoom_max_out" value="25"/>
 			<property name="Zoom_max_in" value="25"/>
 			<property name="ScopeCameraOffset" value="0,.0284,.012"/>
-			<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+			<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/blankXD4.tga"/>
 			<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 			<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 		</item_property_overrides>
@@ -409,7 +409,7 @@
 			<property name="Zoom_max_out" value="25"/>
 			<property name="Zoom_max_in" value="25"/>
 			<property name="ScopeCameraOffset" value="-.0002,-.028,-.05"/>
-			<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+			<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/blankXD4.tga"/>
 			<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 			<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 		</item_property_overrides>
@@ -418,7 +418,7 @@
 			<property name="Zoom_max_out" value="25"/>
 			<property name="Zoom_max_in" value="25"/>
 			<property name="ScopeCameraOffset" value="-.0024,-.0345,.06"/>
-			<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+			<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/blankXD4.tga"/>
 			<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 			<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 		</item_property_overrides>
@@ -428,7 +428,7 @@
 			<property name="ScopeCameraOffset" value="-.0007,-.01,-.01"/>
 			<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 			<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
-			<property name="Zoom_overlay" value="#@modfolder:Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?Reticle_x4x8_PUZF4.png"/>
+			<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?Reticle_x4x8_PUZF4.png"/>
 		</item_property_overrides>
 		
 		<item_property_overrides name="IZYgunT3ARAKM">
@@ -471,8 +471,8 @@
 	
 		<item_property_overrides name="IZYgunT1SNIPERRIFLE762Mosinnagant">
 			<property name="ScopeCameraOffset" value=".0078,.02,.1"/>
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_762_Pack_MainResource_SNP_MMR.unity3d?IZY_SNIPER_Mosin_scopeX4X8.Prefab"/>
-			<property name="Zoom_overlay" value="#@modfolder:Resources/IZY_762_Pack_MainResource_SNP_MMR.unity3d?Reticle_x4x8_SVDscope.png"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_SNP_MMR.unity3d?IZY_SNIPER_Mosin_scopeX4X8.Prefab"/>
+			<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_SNP_MMR.unity3d?Reticle_x4x8_SVDscope.png"/>
 			<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 			<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 		</item_property_overrides>
@@ -485,7 +485,7 @@
 		
 		<item_property_overrides name="IZYgunT4SNIPERRIFLE762L96AWMRifle">
 			<property name="ScopeCameraOffset" value="-.0045,.015,.3"/>
-			<property name="Zoom_overlay" value="#@modfolder:Resources/IZY_762_Pack_MainResource_SNP_MMR.unity3d?Reticle_x4x8_L96ite.png"/>
+			<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_SNP_MMR.unity3d?Reticle_x4x8_L96ite.png"/>
 			<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 			<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 		</item_property_overrides>
@@ -504,7 +504,7 @@
 		
 		<item_property_overrides name="IZYgunT4MarksManRifle762SVUprototypeRifle">
 			<property name="ScopeCameraOffset" value="-.0024,-.025,.09"/>
-			<property name="Zoom_overlay" value="#@modfolder:Resources/IZY_762_Pack_MainResource_SNP_MMR.unity3d?Reticle_x4x8_SVDscope.png"/>
+			<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_SNP_MMR.unity3d?Reticle_x4x8_SVDscope.png"/>
 			<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 			<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 		</item_property_overrides>
@@ -515,7 +515,7 @@
 			<property name="ScopeCameraOffset" value="-.0008,-.02,-.01"/>
 			<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 			<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
-			<property name="Zoom_overlay" value="#@modfolder:Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?Reticle_x4x8_1229NVscope.png"/>
+			<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?Reticle_x4x8_1229NVscope.png"/>
 		</item_property_overrides>
 		
 			<!--	REF BR 	-->
@@ -546,7 +546,7 @@
 	
 		<item_property_overrides name="IZYgunT1SNIPERRIFLE762Mosinnagant">
 			<property name="ScopeCameraOffset" value=".0078,.015,.15"/>
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_762_Pack_MainResource_SNP_MMR.unity3d?IZY_SNIPER_Mosin_scopeX4X8.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_SNP_MMR.unity3d?IZY_SNIPER_Mosin_scopeX4X8.Prefab"/>
 			<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 			<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 		</item_property_overrides>
@@ -559,7 +559,7 @@
 		
 		<item_property_overrides name="IZYgunT4SNIPERRIFLE762L96AWMRifle">
 			<property name="ScopeCameraOffset" value="-.0045,.015,.3"/>
-			<property name="Zoom_overlay" value="#@modfolder:Resources/IZY_762_Pack_MainResource_SNP_MMR.unity3d?Reticle_x4x8_L96ite.png"/>
+			<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_SNP_MMR.unity3d?Reticle_x4x8_L96ite.png"/>
 			<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 			<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 		</item_property_overrides>
@@ -589,7 +589,7 @@
 			<property name="ScopeCameraOffset" value="-.0008,-.02,-.01"/>
 			<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 			<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
-			<property name="Zoom_overlay" value="#@modfolder:Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?Reticle_x4x8_1229NVscope.png"/>
+			<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/IZY_762_Pack_MainResource_AR_BR.unity3d?Reticle_x4x8_1229NVscope.png"/>
 		</item_property_overrides>
 		
 			<!--	x8 BR 	-->

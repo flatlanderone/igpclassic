@@ -1,5 +1,8 @@
 <IGPClassicFLTR>
 
+<conditional>
+<if cond="game_version() >= version(1,3,0) and mod_loaded('Combat_Sandbox_FLTR')">
+
 <include filename="IZY26513/7D1.0_Izayo_Visible_FPV_Gloves_mod/ui_display.xml"/>
 <include filename="IZY26513/7D1.0_Izayo_Visible_Mods_mod/ui_display.xml"/>
 <include filename="IZY26513/7D1.0_Izayo_WeaponpackMisc_pack/ui_display.xml"/>
@@ -14,5 +17,8 @@
 <include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_Technicalpack/ui_display.xml"/>
 <include filename="IZY26513/7D1.0_Izayo_WeaponpackSpecial_Melee/ui_display.xml"/>
 <include filename="IZY26513/7D1.0_Izayo_WeaponpackVanillaReplacer/ui_display.xml"/>
+
+</if>
+</conditional>
 
 </IGPClassicFLTR>

@@ -196,7 +196,7 @@
 	
 			<item_property_overrides name="IZYgunT0SMGPIPEsubmachinegun">
 				<property name="ScopeCameraOffset" value=".0007,.0075,.17"/>
-				<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+				<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/blankXD4.tga"/>
 				<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 				<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 			</item_property_overrides>
@@ -204,13 +204,13 @@
 			<item_property_overrides name="IZYgunT1SMGTec9submachinegun">
 				<property name="ScopeCameraOffset" value="0,-.051,.2"/>
 				<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
-				<property name="Zoom_overlay" value="#@modfolder:Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?Reticle_x4x8_ACOGscope2.png"/>
+				<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?Reticle_x4x8_ACOGscope2.png"/>
 				<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 			</item_property_overrides>
 
 			<item_property_overrides name="IZYgunT2SMGUZIsubmachinegun">
 				<property name="ScopeCameraOffset" value="0,-.0325,.2"/>
-				<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+				<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/blankXD4.tga"/>
 				<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 				<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 			</item_property_overrides>
@@ -218,27 +218,27 @@
 			<item_property_overrides name="IZYgunT3SMGMP9submachinegun">
 				<property name="ScopeCameraOffset" value="0,-.02,.12"/>
 				<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
-				<property name="Zoom_overlay" value="#@modfolder:Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?Reticle_x4x8_ACOGscope2.png"/>
+				<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?Reticle_x4x8_ACOGscope2.png"/>
 				<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 			</item_property_overrides>
 			
 			<item_property_overrides name="IZYgunT4SMGCZScorpionEVO3">
 				<property name="ScopeCameraOffset" value=".0050,-.045,.001"/>
-				<property name="Zoom_overlay" value="#@modfolder:Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?Reticle_x4x8_ACOGscope2.png"/>
+				<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?Reticle_x4x8_ACOGscope2.png"/>
 				<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 				<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 			</item_property_overrides>
 			
 			<item_property_overrides name="IZYgunT3SMGMP5Ksubmachinegun">
 				<property name="ScopeCameraOffset" value="0,-.0093,-.01"/>
-				<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+				<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/blankXD4.tga"/>
 				<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 				<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 			</item_property_overrides>
 
 			<item_property_overrides name="IZYgunT4SMGColt9mmsubmachinegun">
 				<property name="ScopeCameraOffset" value="-.0008,-.022,.01"/>
-				<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+				<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/blankXD4.tga"/>
 				<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 				<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 			</item_property_overrides>

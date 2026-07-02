@@ -25,7 +25,7 @@
 	<append xpath="/item_modifiers/item_modifier[@name='modGunForegrip']">
 		
 		<item_property_overrides name="IZYgunT3MarksmanRifleMMRM1Carbine45">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_MMR_Carbine45_grip.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_MMR_Carbine45_grip.Prefab"/>
 		</item_property_overrides>
 		
 	</append>
@@ -356,14 +356,14 @@
 			<property name="ScopeCameraOffset" value="-.00055,.01,.06"/>
 			<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 			<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
-			<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+			<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/blankXD4.tga"/>
 		</item_property_overrides>
 			
 		<item_property_overrides name="IZYgunT445SMGM1928thompson">
 			<property name="ScopeCameraOffset" value=".0002,-.0228,.22"/>
 			<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 			<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
-			<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+			<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/blankXD4.tga"/>
 		</item_property_overrides>
 		
 		<!--	45 MMR / Sniper	-->
@@ -457,23 +457,23 @@
 	<append xpath="/item_modifiers/item_modifier[@name='IZYmodPistolHoldstyle01']">
 	
 		<item_property_overrides name="IZYgunT1Pistol45M1917">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_RM1917_Holdstyle_01.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_RM1917_Holdstyle_01.Prefab"/>
 		</item_property_overrides>
 	
 		<item_property_overrides name="IZYgunT2Pistol45M1911A1">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_M1911A1_Holdstyle_01.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_M1911A1_Holdstyle_01.Prefab"/>
 		</item_property_overrides>
 		
 		<item_property_overrides name="IZYgunT3Pistol45USP45">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_USP45_Holdstyle_01.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_USP45_Holdstyle_01.Prefab"/>
 		</item_property_overrides>
 		
 		<item_property_overrides name="IZYgunT4Pistol45STIEAGLE6">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_STIE6_Holdstyle_01.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_STIE6_Holdstyle_01.Prefab"/>
 		</item_property_overrides>
 		
 		<item_property_overrides name="IZYgunT1Pistol45Type17C96">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_Type17C96_Holdstyle_01.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_Type17C96_Holdstyle_01.Prefab"/>
 		</item_property_overrides>
 		
 	</append>
@@ -482,23 +482,23 @@
 	<append xpath="/item_modifiers/item_modifier[@name='IZYmodPistolHoldstyle02']">
 	
 		<item_property_overrides name="IZYgunT1Pistol45M1917">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_RM1917_Holdstyle_02.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_RM1917_Holdstyle_02.Prefab"/>
 		</item_property_overrides>
 	
 		<item_property_overrides name="IZYgunT2Pistol45M1911A1">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_M1911A1_Holdstyle_02.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_M1911A1_Holdstyle_02.Prefab"/>
 		</item_property_overrides>
 		
 		<item_property_overrides name="IZYgunT3Pistol45USP45">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_USP45_Holdstyle_02.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_USP45_Holdstyle_02.Prefab"/>
 		</item_property_overrides>
 		
 		<item_property_overrides name="IZYgunT4Pistol45STIEAGLE6">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_STIE6_Holdstyle_02.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_STIE6_Holdstyle_02.Prefab"/>
 		</item_property_overrides>
 		
 		<item_property_overrides name="IZYgunT1Pistol45Type17C96">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_Type17C96_Holdstyle_02.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_Type17C96_Holdstyle_02.Prefab"/>
 		</item_property_overrides>
 		
 	</append>

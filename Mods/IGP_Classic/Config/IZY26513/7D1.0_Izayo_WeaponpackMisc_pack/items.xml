@@ -83,7 +83,7 @@
 	<property name="Tags" value="IZY,IZYSGDB,overrideSounds,weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,shotgun,barrelAttachments,sideAttachments,smallTopAttachments,stock,bottomAttachments,attStrength,perkBoomstick,modGunShotgunTubeExtenderMagazine,attachmentsIncluded,canHaveCosmetic,shotgunSkill"/>
 	<property name="DisplayType" value="rangedShotgun"/>
 	<property name="HoldType" value="85"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_Misc_Weapon_Mainresource.unity3d?IZY_Misc_MusketShotgun.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Misc_Weapon_Mainresource.unity3d?IZY_Misc_MusketShotgun.Prefab"/>
 	<property name="DropMeshfile" value=""/>
 	<property name="Material" value="Mmetal"/>
 	<property name="Weight" value="1"/>
@@ -317,7 +317,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,smallTopAttachments,holdBreathAiming,sideAttachments,gun,shortRange,pistol,barrelAttachments,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="75"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_Misc_Weapon_Mainresource.unity3d?IZY_Misc_FlintlockPistol.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Misc_Weapon_Mainresource.unity3d?IZY_Misc_FlintlockPistol.Prefab"/>
 	<property name="DropMeshfile" value=""/>
 	<property name="Material" value="MHandGunParts"/>
 	<property name="Weight" value="1"/>
@@ -552,7 +552,7 @@
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="85"/>
 	<property name="CustomIcon" value="IZYgunTminus1MusketM1777Rifle"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_Misc_Weapon_Mainresource.unity3d?IZY_Misc_MusketRifle.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Misc_Weapon_Mainresource.unity3d?IZY_Misc_MusketRifle.Prefab"/>
 	<property name="DropMeshfile" value=""/>
 	<property name="Material" value="Mmetal"/>
 	<property name="Weight" value="1"/>
@@ -999,8 +999,8 @@
 	<property name="DisplayType" value="rangedBow"/>
 	<property name="DescriptionKey" value="gunBowT1IronCrossbowDesc"/>
 	<property name="HoldType" value="60"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_Other_VanHCrossbow.unity3d?IZY_Other_VanHCrossbow.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_Other_VanHCrossbow.unity3d?IZY_DROP_VHCrossbow.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Other_VanHCrossbow.unity3d?IZY_Other_VanHCrossbow.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Other_VanHCrossbow.unity3d?IZY_DROP_VHCrossbow.Prefab"/>
 	<property name="Material" value="MBowCrossbowParts"/>
 	<property name="Weight" value="10"/>
 	<property name="CustomIcon" value="IZYgunT4BowVanhelsingAutomaticCrossbowVH"/>

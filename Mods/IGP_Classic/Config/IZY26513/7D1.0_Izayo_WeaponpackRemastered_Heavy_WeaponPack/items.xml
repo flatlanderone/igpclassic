@@ -10,7 +10,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,magazine,drumMagazine,firingMode,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,canHaveCosmetic,shotgunSkill"/>
 	<property name="DisplayType" value="rangedShotgun"/>
 	<property name="HoldType" value="60"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_HVW_AA12.unity3d?IZY_HVW_AA12.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_HVW_AA12.unity3d?IZY_HVW_AA12.Prefab"/>
 	<property name="DropMeshfile" value=".Prefab"/>
 	<property name="Material" value="MShotgunParts"/>
 	<property name="Weight" value="16"/>
@@ -287,8 +287,8 @@
 	<property name="DisplayType" value="rangedShotgun"/>                                                                                                                                                                                                 
 	<property name="HoldType" value="60"/>
 	<property name="DescriptionKey" value="IZYgunT5HeavyWeaponM134MinigunGatlingDesc"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_Technical_Flamethrower.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_DROP_M2flamethrower.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_FlameThrower_asset.unity3d?IZY_Technical_Flamethrower.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_FlameThrower_asset.unity3d?IZY_DROP_M2flamethrower.Prefab"/>
 	<property name="Material" value="MJunkTurretParts"/>
 	<property name="CustomIcon" value="IZYgunT5HeavyWeaponM2flameThrower"/>
 	<property name="DescriptionKey" value="IZYgunT5HeavyWeaponM2flameThrowerDesc"/>
@@ -326,7 +326,7 @@
 		<property name="Sound_loop" value="M2FT_loop"/>
 		<property name="Sound_repeat" value="M2FT_loop"/>
 		<property name="Sound_end" value="M2FT_end"/>
-		<property name="Bullet_material" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_BlankBulletMaterial.Prefab"/>
+		<property name="Bullet_material" value="#@modfolder(IGP_Resources):Resources/IZY_FlameThrower_asset.unity3d?IZY_BlankBulletMaterial.Prefab"/>
 		<property name="Sound_empty" value="dryfire"/>
 		<property name="AutoReload" value="false"/>
 		<property name="Particles_muzzle_fire" value="nailgunfire"/>
@@ -523,8 +523,8 @@
 		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
 		<property name="SoundPickup" value="shotgunshells_grab"/>
 		<property name="SoundPlace" value="shotgunshells_place"/>
-		<property name="Bullet_material" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_BlankBulletMaterial.Prefab"/>
-		<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab"/>
+		<property name="Bullet_material" value="#@modfolder(IGP_Resources):Resources/IZY_FlameThrower_asset.unity3d?IZY_BlankBulletMaterial.Prefab"/>
+		<property name="Explosion.ParticleIndex" value="#@modfolder(IGP_Resources):Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab"/>
 		<property name="Explosion.Duration" value="2"/>
 		<property name="Explosion.CustomScriptTypes" value="ExplosionAreaBuffTick,CustomParticleLoaderBuffArea"/>
 		<property name="Explosion.TickInterval" value="0.5"/>
@@ -533,7 +533,7 @@
 		<property name="ExplodeOnHit" value="true"/>
 		<property class="Action1">
 			<property name="Class" value="Projectile"/>
-			<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab"/>
+			<property name="Explosion.ParticleIndex" value="#@modfolder(IGP_Resources):Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab"/>
 			<property name="Explosion.Duration" value="8"/>
 			<property name="Explosion.RadiusBlocks" value="1"/>
 			<property name="Explosion.RadiusEntities" value="1"/>
@@ -547,7 +547,7 @@
 			<property name="StickPercent" value=".5"/>	
 		</property>
 		<effect_group name="ammoShotgunShell" tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="RangedExplosion, CustomParticleLoader" particle_index="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab" explode_delay="0"/>	
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="RangedExplosion, CustomParticleLoader" particle_index="#@modfolder(IGP_Resources):Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab" explode_delay="0"/>	
 			
 			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningMolotov">
 			</triggered_effect>
@@ -590,8 +590,8 @@
 		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
 		<property name="SoundPickup" value="shotgunshells_grab"/>
 		<property name="SoundPlace" value="shotgunshells_place"/>
-		<property name="Bullet_material" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_BlankBulletMaterial.Prefab"/>
-		<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab"/>
+		<property name="Bullet_material" value="#@modfolder(IGP_Resources):Resources/IZY_FlameThrower_asset.unity3d?IZY_BlankBulletMaterial.Prefab"/>
+		<property name="Explosion.ParticleIndex" value="#@modfolder(IGP_Resources):Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab"/>
 		<property name="Explosion.Duration" value="2"/>
 		<property name="Explosion.CustomScriptTypes" value="ExplosionAreaBuffTick,CustomParticleLoaderBuffArea"/>
 		<property name="Explosion.TickInterval" value="0.5"/>
@@ -600,7 +600,7 @@
 		<property name="ExplodeOnHit" value="true"/>
 		<property class="Action1">
 			<property name="Class" value="Projectile"/>
-			<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab"/>
+			<property name="Explosion.ParticleIndex" value="#@modfolder(IGP_Resources):Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab"/>
 			<property name="Explosion.Duration" value="8"/>
 			<property name="Explosion.RadiusBlocks" value="1"/>
 			<property name="Explosion.RadiusEntities" value="1"/>
@@ -614,7 +614,7 @@
 			<property name="StickPercent" value=".5"/>	
 		</property>
 		<effect_group name="ammoShotgunShell" tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="RangedExplosion, CustomParticleLoader" particle_index="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab" explode_delay="0"/>	
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="RangedExplosion, CustomParticleLoader" particle_index="#@modfolder(IGP_Resources):Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab" explode_delay="0"/>	
 			
 			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningMolotov">
 			</triggered_effect>
@@ -648,8 +648,8 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,revolver,44enforcer,stock,holdBreathAiming,bottomAttachments,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill,enforcerReload"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="60"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_HVW_SuperEagle.unity3d?IZY_HVW_SuperEagle.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_HVW_SuperEagle.unity3d?DROP_HVW_SuperEagleSMG.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_HVW_SuperEagle.unity3d?IZY_HVW_SuperEagle.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_HVW_SuperEagle.unity3d?DROP_HVW_SuperEagleSMG.Prefab"/>
 	<property name="CustomIcon" value="Notready_ICON"/>
 	<property name="Material" value="MHandGunParts"/>
 	<property name="Weight" value="7"/>
@@ -883,8 +883,8 @@
 	<property name="Tags" value="IZY,IZYHVW,IZYMINIGUN,overrideSounds,weapon,ranged,drumMagazine,holdBreathAiming,shortRange,gun,barrelAttachments,sideAttachments,smallTopAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="19"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?IZY_HVW_M134.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?DROP_HVW_M134.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_HVW_Pack_MainResource.unity3d?IZY_HVW_M134.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_HVW_Pack_MainResource.unity3d?DROP_HVW_M134.Prefab"/>
 	<property name="CustomIcon" value="IZYgunT5HeavyWeaponM134MinigunGatling"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="DescriptionKey" value="IZYgunT5HeavyWeaponM134MinigunGatlingDesc"/>

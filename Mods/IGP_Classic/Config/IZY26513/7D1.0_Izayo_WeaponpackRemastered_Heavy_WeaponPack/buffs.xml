@@ -43,7 +43,7 @@
 			<stack_type value="ignore"/>
 			<duration value="0"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="LeftKnuckles" prefab="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_FlamethrowerBackpack.Prefab" parentTransform="Spine3" localPos="0,0,-.18" localRot="0,0,0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="LeftKnuckles" prefab="#@modfolder(IGP_Resources):Resources/IZY_FlameThrower_asset.unity3d?IZY_FlamethrowerBackpack.Prefab" parentTransform="Spine3" localPos="0,0,-.18" localRot="0,0,0"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="LeftKnuckles"/>
 			</effect_group>
 		</buff>

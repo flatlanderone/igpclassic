@@ -10,8 +10,8 @@
 <property name="Tags" value="IZY,overrideSounds,weapon,ranged,turretRanged,stock,holdBreathAiming,gun,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attIntellect,perkTurrets,attachmentsIncluded,canHaveCosmetic,roboticsSkill,meleeIntellect"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="6"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_Technical_Pack_MainResource.unity3d?IZY_Technical_Nailmachinegun.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_Technical_Pack_MainResource.unity3d?DROP_Technical_Nailmachinegun.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Technical_Pack_MainResource.unity3d?IZY_Technical_Nailmachinegun.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Technical_Pack_MainResource.unity3d?DROP_Technical_Nailmachinegun.Prefab"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="Weight" value="4"/>
 	<property name="CustomIcon" value="IZYgunT3TechnicalNailmachinegun"/>

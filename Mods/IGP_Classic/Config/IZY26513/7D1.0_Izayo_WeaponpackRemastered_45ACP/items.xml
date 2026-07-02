@@ -197,8 +197,8 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,holdBreathAiming,sideAttachments,gun,shortRange,pistol,noScopes,barrelAttachments,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="75"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_LiberatorPistol.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DROP_FP45Liberator.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_LiberatorPistol.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DROP_FP45Liberator.Prefab"/>
 	<property name="Material" value="MHandGunParts"/>
 	<property name="Weight" value="1"/> <!-- Tier 4 -->
 	<property name="ScrapTimeOverride" value="10.0"/>
@@ -443,8 +443,8 @@
 	<property name="Tags" value="IZY,overrideSounds,Holdstyle,reloadPenalty,weapon,ranged,holdBreathAiming,bottomAttachments,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="67"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DUALPISTOLS_M1911s.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DROP_DUAL1911s.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DUALPISTOLS_M1911s.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DROP_DUAL1911s.Prefab"/>
 	<property name="Material" value="MHandGunParts"/>
 	<property name="Weight" value="4"/> <!-- Tier 2 -->
 	<property name="ScrapTimeOverride" value="10.0"/>
@@ -684,8 +684,8 @@
 	<property name="Tags" value="IZY,overrideSounds,Holdstyle,weapon,ranged,holdBreathAiming,bottomAttachments,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="67"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DUALPISTOLS_USPs.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?DROP_PISTOL_M1911A1.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DUALPISTOLS_USPs.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?DROP_PISTOL_M1911A1.Prefab"/>
 	<property name="Material" value="MHandGunParts"/>
 	<property name="Weight" value="7"/>
 	<property name="ScrapTimeOverride" value="10.0"/>
@@ -931,8 +931,8 @@
 	<property name="Tags" value="IZY,overrideSounds,Holdstyle,weapon,ranged,holdBreathAiming,sideAttachments,bottomAttachments,gun,shortRange,pistol,barrelAttachments,smallTopAttachments,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="75"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_RM1917.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?DROP_PISTOL_M1917.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_RM1917.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?DROP_PISTOL_M1917.Prefab"/>
 	<property name="Material" value="MHandGunParts"/>
 	<property name="Weight" value="1"/> <!-- Tier 1 -->
 	<property name="ScrapTimeOverride" value="10.0"/>
@@ -1194,8 +1194,8 @@
 	<property name="Tags" value="IZY,overrideSounds,Holdstyle,weapon,ranged,holdBreathAiming,bottomAttachments,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="1"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_M1911A1.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?DROP_PISTOL_M1911A1.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_M1911A1.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?DROP_PISTOL_M1911A1.Prefab"/>
 	<property name="Material" value="MHandGunParts"/>
 	<property name="Weight" value="4"/> <!-- Tier 2 -->
 	<property name="ScrapTimeOverride" value="10.0"/>
@@ -1460,8 +1460,8 @@
 	<property name="Tags" value="IZY,overrideSounds,Holdstyle,weapon,ranged,holdBreathAiming,bottomAttachments,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="1"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_USP45.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?DROP_PISTOL_USP45.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_USP45.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?DROP_PISTOL_USP45.Prefab"/>
 	<property name="Material" value="MHandGunParts"/>
 	<property name="Weight" value="7"/> <!-- Tier 3 -->
 	<property name="ScrapTimeOverride" value="10.0"/>
@@ -1740,8 +1740,8 @@
 	<property name="Tags" value="IZY,overrideSounds,Holdstyle,weapon,ranged,holdBreathAiming,bottomAttachments,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="1"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_STIE6.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?DROP_PISTOL_STIE6.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_STIE6.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?DROP_PISTOL_STIE6.Prefab"/>
 	<property name="Material" value="MHandGunParts"/>
 	<property name="Weight" value="10"/> <!-- Tier 4 -->
 	<property name="ScrapTimeOverride" value="10.0"/>
@@ -2024,8 +2024,8 @@
 	<property name="Tags" value="IZY,overrideSounds,Holdstyle,weapon,ranged,holdBreathAiming,stock,sideAttachments,bottomAttachments,gun,shortRange,pistol,barrelAttachments,smallTopAttachments,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="75"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_Type17C96.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DROP_Type17C96.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_PISTOL_Type17C96.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DROP_Type17C96.Prefab"/>
 	<property name="Material" value="MHandGunParts"/>
 	<property name="Weight" value="1"/> <!-- Tier 1 -->
 	<property name="ScrapTimeOverride" value="10.0"/>
@@ -2300,8 +2300,8 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ShortBarrelmod,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="60"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_SMG_M3Grease.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DROP_M3Grease.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_SMG_M3Grease.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DROP_M3Grease.Prefab"/>
 	<property name="CustomIcon" value="IZYgunT245SMGM3Greasegun"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="DescriptionKey" value="IZYgunT245SMGM3GreasegunDesc"/>
@@ -2537,8 +2537,8 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ShortBarrelmod,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="71"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_SMG_ThompsonM1.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?DROP_SMG_M1THOMPSON.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_SMG_ThompsonM1.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?DROP_SMG_M1THOMPSON.Prefab"/>
 	<property name="CustomIcon" value="IZYgunT345SMGM1thompson"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="DescriptionKey" value="IZYgunT345SMGM1thompsonDesc"/>
@@ -2774,8 +2774,8 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ShortBarrelmod,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="60"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_SMG_M1928Thompson.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?DROP_SMG_M1928T.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_SMG_M1928Thompson.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?DROP_SMG_M1928T.Prefab"/>
 	<property name="CustomIcon" value="IZYgunT445SMGM1928thompson"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="DescriptionKey" value="IZYgunT445SMGM1928thompsonDesc"/>
@@ -3011,8 +3011,8 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,stock,noScopes,ShortBarrelmod,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="60"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_SMG_MAC10.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DROP_MAC10.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_SMG_MAC10.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DROP_MAC10.Prefab"/>
 	<property name="CustomIcon" value="IZYgunT145TACSMGMAC10"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="DescriptionKey" value="IZYgunT145TACSMGMAC10Desc"/>
@@ -3248,8 +3248,8 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ShortBarrelmod,stock,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="60"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_SMG_KrissSuperV.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DROP_KrissSuperV.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_SMG_KrissSuperV.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DROP_KrissSuperV.Prefab"/>
 	<property name="CustomIcon" value="IZYgunT445TACSMGKrissSuperV"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="DescriptionKey" value="IZYgunT445TACSMGKrissSuperVDesc"/>
@@ -3489,8 +3489,8 @@
 	<property name="Tags" value="IZY,overrideSounds,Holdstyle,weapon,ranged,holdBreathAiming,bottomAttachments,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="67"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DUALSMG_Vectors.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?DROP_PISTOL_M1911A1.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DUALSMG_Vectors.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?DROP_PISTOL_M1911A1.Prefab"/>
 	<property name="Material" value="MHandGunParts"/>
 	<property name="Weight" value="12"/>
 	<property name="ScrapTimeOverride" value="10.0"/>
@@ -3739,8 +3739,8 @@
 	<property name="Tags" value="IZY,IZYMMR,overrideSounds,weapon,ranged,holdBreathAiming,magazine,firingMode,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill"/>
 	<property name="DisplayType" value="rangedGunNoMag"/>
 	<property name="HoldType" value="60"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_MMR_Carbine45.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DROP_Carbine45.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_MMR_Carbine45.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DROP_Carbine45.Prefab"/>
 	<property name="CustomIcon" value="IZYgunT3MarksmanRifleMMRM1Carbine45"/>
 	<property name="DescriptionKey" value="IZYgunT3MarksmanRifleMMRM1Carbine45Desc"/>
 	
@@ -3990,8 +3990,8 @@
 	<property name="Tags" value="IZY,IZYMMR,overrideSounds,weapon,ranged,holdBreathAiming,magazine,firingMode,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill"/>
 	<property name="DisplayType" value="rangedGunNoMag"/>
 	<property name="HoldType" value="60"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_MMR_VectorCarbine.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DROP_VectorCarbine.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_MMR_VectorCarbine.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_45ACP_Pack_MainResource.unity3d?IZY_DROP_VectorCarbine.Prefab"/>
 	<property name="CustomIcon" value="IZYgunT4MarksmanRifle45MMRKrissVectorCarbine"/>
 	<property name="DescriptionKey" value="IZYgunT4MarksmanRifle45MMRKrissVectorCarbineDesc"/>
 	

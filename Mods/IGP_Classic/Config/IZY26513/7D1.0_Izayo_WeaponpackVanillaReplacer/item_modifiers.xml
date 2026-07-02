@@ -7,7 +7,7 @@
 	<append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']">
 	
 		<item_property_overrides name="gunHandgunT2Magnum44">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_PISTOL_MAGNUM44val_flashlight.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_PISTOL_MAGNUM44val_flashlight.Prefab"/>
 		</item_property_overrides>
 
 	</append>
@@ -397,7 +397,7 @@
 	<append xpath="/item_modifiers/item_modifier[@name='IZYmodPistolHoldstyle01']">
 
 		<item_property_overrides name="gunHandgunT1Pistol">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_PISTOL_M9_Holdstyle_01.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_PISTOL_M9_Holdstyle_01.Prefab"/>
 		</item_property_overrides>
 
 	</append>
@@ -406,7 +406,7 @@
 	<append xpath="/item_modifiers/item_modifier[@name='IZYmodPistolHoldstyle02']">
 
 		<item_property_overrides name="gunHandgunT1Pistol">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_PISTOL_M9_Holdstyle_02.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_PISTOL_M9_Holdstyle_02.Prefab"/>
 		</item_property_overrides>
 		
 	</append>

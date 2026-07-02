@@ -7,42 +7,42 @@
 
 <SoundDataNode name="MusketRifle_fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
 	<Noise ID="0" noise="110" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
-	<AudioClip ClipName="#@modfolder:Resources/IZY_Misc_Weapon_Mainresource.unity3d?IZY_musket_fire1"/>
+	<AudioClip ClipName="#@modfolder(IGP_Resources):Resources/IZY_Misc_Weapon_Mainresource.unity3d?IZY_musket_fire1"/>
 	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="300"/> <MaxVoicesPerEntity value="300"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
 
 <SoundDataNode name="low_ammo_fire_01"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
 	<Noise ID="0" noise="1" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
-	<AudioClip ClipName="#@modfolder:Resources/IZY_Other_VanHCrossbow.unity3d?low_ammo_5"/>
+	<AudioClip ClipName="#@modfolder(IGP_Resources):Resources/IZY_Other_VanHCrossbow.unity3d?low_ammo_5"/>
 	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="300"/> <MaxVoicesPerEntity value="300"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
 
 <SoundDataNode name="low_ammo_fire_02"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
 	<Noise ID="0" noise="1" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
-	<AudioClip ClipName="#@modfolder:Resources/IZY_Other_VanHCrossbow.unity3d?low_ammo_4"/>
+	<AudioClip ClipName="#@modfolder(IGP_Resources):Resources/IZY_Other_VanHCrossbow.unity3d?low_ammo_4"/>
 	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="300"/> <MaxVoicesPerEntity value="300"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
 	
 <SoundDataNode name="low_ammo_fire_03"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
 	<Noise ID="0" noise="1" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
-	<AudioClip ClipName="#@modfolder:Resources/IZY_Other_VanHCrossbow.unity3d?low_ammo_3"/>
+	<AudioClip ClipName="#@modfolder(IGP_Resources):Resources/IZY_Other_VanHCrossbow.unity3d?low_ammo_3"/>
 	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="300"/> <MaxVoicesPerEntity value="300"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
 	
 <SoundDataNode name="low_ammo_fire_04"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
 	<Noise ID="0" noise="1" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
-	<AudioClip ClipName="#@modfolder:Resources/IZY_Other_VanHCrossbow.unity3d?low_ammo_2"/>
+	<AudioClip ClipName="#@modfolder(IGP_Resources):Resources/IZY_Other_VanHCrossbow.unity3d?low_ammo_2"/>
 	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="300"/> <MaxVoicesPerEntity value="300"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
 	
 <SoundDataNode name="low_ammo_fire_05"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
 	<Noise ID="0" noise="1" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
-	<AudioClip ClipName="#@modfolder:Resources/IZY_Other_VanHCrossbow.unity3d?low_ammo_1"/>
+	<AudioClip ClipName="#@modfolder(IGP_Resources):Resources/IZY_Other_VanHCrossbow.unity3d?low_ammo_1"/>
 	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="300"/> <MaxVoicesPerEntity value="300"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
 
 <SoundDataNode name="IZY_gasleak"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
 	<Noise ID="0" noise="1" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
-	<AudioClip ClipName="#@modfolder:Resources/IZY_Other_VanHCrossbow.unity3d?IZY_Gasleak"/>
+	<AudioClip ClipName="#@modfolder(IGP_Resources):Resources/IZY_Other_VanHCrossbow.unity3d?IZY_Gasleak"/>
 	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="300"/> <MaxVoicesPerEntity value="300"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
 	
 <SoundDataNode name="IZY_Magpod_roll"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
 	<Noise ID="0" noise="1" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
-	<AudioClip ClipName="#@modfolder:Resources/IZY_Other_VanHCrossbow.unity3d?magpod_roll_01"/>
+	<AudioClip ClipName="#@modfolder(IGP_Resources):Resources/IZY_Other_VanHCrossbow.unity3d?magpod_roll_01"/>
 	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="300"/> <MaxVoicesPerEntity value="300"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
 </append>
 
