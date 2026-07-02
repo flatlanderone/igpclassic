@@ -6,9 +6,9 @@
 
 <SoundDataNode name="NailSMG_fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
 	<Noise ID="0" noise="2" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
-	<AudioClip ClipName="#@modfolder:Resources/IZY_Technical_Pack_MainResource.unity3d?NailSMG_fire01"/>
-	<AudioClip ClipName="#@modfolder:Resources/IZY_Technical_Pack_MainResource.unity3d?NailSMG_fire02"/>
-	<AudioClip ClipName="#@modfolder:Resources/IZY_Technical_Pack_MainResource.unity3d?NailSMG_fire03"/>
+	<AudioClip ClipName="#@modfolder(IGP_Resources):Resources/IZY_Technical_Pack_MainResource.unity3d?NailSMG_fire01"/>
+	<AudioClip ClipName="#@modfolder(IGP_Resources):Resources/IZY_Technical_Pack_MainResource.unity3d?NailSMG_fire02"/>
+	<AudioClip ClipName="#@modfolder(IGP_Resources):Resources/IZY_Technical_Pack_MainResource.unity3d?NailSMG_fire03"/>
 	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="40"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
 
 	

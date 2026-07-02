@@ -9,7 +9,7 @@
 	<property name="Tags" value="ammo,perkDemolitionsExpert"/>
 	<property name="CustomIcon" value="ammoRocketRPGTraning"/>
 	<property name="DisplayType" value="ammoLauncher"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZY_RPG_ROCKET.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZY_RPG_ROCKET.Prefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -45,7 +45,7 @@
 	<property name="Tags" value="ammo,perkDemolitionsExpert"/>
 	<property name="CustomIcon" value="ammoRocketRPGHE"/>
 	<property name="DisplayType" value="ammoLauncher"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZY_RPG_ROCKET.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZY_RPG_ROCKET.Prefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -60,7 +60,7 @@
 		<property name="Class" value="Projectile"/>
 		<property name="Explosion.BlockDamage" value="2500"/>
 		<property name="Explosion.EntityDamage" value="800"/>
-		<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZY_DemolisEffect_RPG_HE.Prefab"/>
+		<property name="Explosion.ParticleIndex" value="#@modfolder(IGP_Resources):Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZY_DemolisEffect_RPG_HE.Prefab"/>
 		<property name="Explosion.RadiusBlocks" value="6"/> <!-- damage radius for blocks -->
 		<property name="Explosion.RadiusEntities" value="6"/> <!-- damage radius for entities -->
 		<property name="Explosion.DamageBonus.water" value="0"/>
@@ -83,7 +83,7 @@
 	<property name="Tags" value="ammo,perkDemolitionsExpert"/>
 	<property name="CustomIcon" value="ammoRocketRPGIncendiary"/>
 	<property name="DisplayType" value="ammoLauncher"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZY_RPG_ROCKET.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZY_RPG_ROCKET.Prefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -98,7 +98,7 @@
 		<property name="Class" value="Projectile"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="0"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="900"/>
-		<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZY_DemolisEffect_RPG_Incendiary.Prefab"/>
+		<property name="Explosion.ParticleIndex" value="#@modfolder(IGP_Resources):Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZY_DemolisEffect_RPG_Incendiary.Prefab"/>
 		<property name="Explosion.RadiusBlocks" value="0"/> <!-- damage radius for blocks -->
 		<property name="Explosion.RadiusEntities" value="7"/> <!-- damage radius for entities -->
 		<property name="Explosion.DamageBonus.water" value="0"/>
@@ -141,7 +141,7 @@
 	<property name="Tags" value="ammo,perkDemolitionsExpert"/>
 	<property name="DisplayType" value="ammoLauncher"/>
 	<property name="CustomIcon" value="ammo25mmTRAINING"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZYGrenade25mm.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZYGrenade25mm.Prefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -177,7 +177,7 @@
 	<property name="Tags" value="ammo,perkDemolitionsExpert"/>
 	<property name="DisplayType" value="ammoLauncher"/>
 	<property name="CustomIcon" value="ammo25mmFRAGS"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZYGrenade25mm.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZYGrenade25mm.Prefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -192,7 +192,7 @@
 		<property name="Class" value="Projectile"/>
 		<property name="Explosion.BlockDamage" value="0"/>
 		<property name="Explosion.EntityDamage" value="200"/>
-		<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZY_LGL_Effect_25mmFRAGS.Prefab"/>
+		<property name="Explosion.ParticleIndex" value="#@modfolder(IGP_Resources):Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZY_LGL_Effect_25mmFRAGS.Prefab"/>
 		<property name="Explosion.RadiusBlocks" value="4"/> <!-- damage radius for blocks -->
 		<property name="Explosion.RadiusEntities" value="4"/> <!-- damage radius for entities -->
 		<property name="Explosion.DamageBonus.water" value="0"/>
@@ -214,7 +214,7 @@
 	<property name="Tags" value="ammo,perkDemolitionsExpert"/>
 	<property name="DisplayType" value="ammoLauncher"/>
 	<property name="CustomIcon" value="ammo25mmHE"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZYGrenade25mm.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZYGrenade25mm.Prefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -229,7 +229,7 @@
 		<property name="Class" value="Projectile"/>
 		<property name="Explosion.BlockDamage" value="200"/>
 		<property name="Explosion.EntityDamage" value="350"/>
-		<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZY_LGL_Effect_25mmHE.Prefab"/>
+		<property name="Explosion.ParticleIndex" value="#@modfolder(IGP_Resources):Resources/IZY_Demolis_Effects_and_Projectiles.unity3d?IZY_LGL_Effect_25mmHE.Prefab"/>
 		<property name="Explosion.RadiusBlocks" value="2"/> <!-- damage radius for blocks -->
 		<property name="Explosion.RadiusEntities" value="2"/> <!-- damage radius for entities -->
 		<property name="Explosion.DamageBonus.water" value="0"/>
@@ -255,8 +255,8 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,modGunShotgunTubeExtenderMagazine,attachmentsIncluded,stock,holdBreathAiming,reloadPenalty,bottomAttachments,launcher,attPerception,perkDemolitionsExpert,canHaveCosmetic,barrelAttachments,noSilencer,sideAttachments,explosivesSkill"/>
 	<property name="DisplayType" value="rangedLauncher"/>
 	<property name="HoldType" value="5"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?IZY_LGL_Chinalake.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?DROP_LGL_Chinalake.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Demolis_Pack_MainResource.unity3d?IZY_LGL_Chinalake.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Demolis_Pack_MainResource.unity3d?DROP_LGL_Chinalake.Prefab"/>
 	<property name="Material" value="MRocketLauncherParts"/>
 	<property name="Weight" value="1"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
@@ -466,8 +466,8 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,attachmentsIncluded,stock,holdBreathAiming,reloadPenalty,bottomAttachments,launcher,attPerception,perkDemolitionsExpert,canHaveCosmetic,barrelAttachments,noSilencer,sideAttachments,smallTopAttachments,explosivesSkill"/>
 	<property name="DisplayType" value="rangedLauncher"/>
 	<property name="HoldType" value="60"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?IZY_LGL_XM25.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?DROP_LGL_XM25.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Demolis_Pack_MainResource.unity3d?IZY_LGL_XM25.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Demolis_Pack_MainResource.unity3d?DROP_LGL_XM25.Prefab"/>
 	<property name="Material" value="MRocketLauncherParts"/>
 	<property name="Weight" value="1"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
@@ -680,8 +680,8 @@
 	<property name="DisplayType" value="rangedLauncher"/>
 	<property name="HoldType" value="10"/>
 	<property name="CustomIcon" value="IZYgunT3RocketLauncherRPG7"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?IZY_RL_RPG7.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?DROP_RL_RPG7.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Demolis_Pack_MainResource.unity3d?IZY_RL_RPG7.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Demolis_Pack_MainResource.unity3d?DROP_RL_RPG7.Prefab"/>
 	<property name="Material" value="MRocketLauncherParts"/>
 	<property name="Weight" value="1"/>
 	<property name="ScrapTimeOverride" value="10.0"/>

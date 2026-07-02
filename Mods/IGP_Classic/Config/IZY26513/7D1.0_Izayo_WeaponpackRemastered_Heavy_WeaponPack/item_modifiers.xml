@@ -7,7 +7,7 @@
 		<!--	GRIP	-->
 	<append xpath="/item_modifiers/item_modifier[@name='modGunForegrip']">
 		<item_property_overrides name="IZYgunT5HeavyWeaponSuperEagle44SMG">
-		<property name="Meshfile" value="#@modfolder:Resources/IZY_HVW_SuperEagle.unity3d?IZY_HVW_SuperEagle_CK_grip.Prefab"/>
+		<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_HVW_SuperEagle.unity3d?IZY_HVW_SuperEagle_CK_grip.Prefab"/>
 		</item_property_overrides>
 	</append>
 	

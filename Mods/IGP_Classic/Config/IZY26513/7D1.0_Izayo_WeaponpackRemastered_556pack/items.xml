@@ -116,7 +116,7 @@
 	<property name="Tags" value="IZY,overrideSounds,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill"/>
 	<property name="DisplayType" value="rangedGunNoMag"/>
 	<property name="HoldType" value="30"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_SNIPER_Broken15.unity3d?IZY_SNIPER_Broken15.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_SNIPER_Broken15.unity3d?IZY_SNIPER_Broken15.Prefab"/>
 	<property name="DropMeshfile" value=""/>
 	<property name="Material" value="MRifleParts"/>
 	<property name="Weight" value="1"/>
@@ -408,8 +408,8 @@
 	<property name="Tags" value="IZY,IZYFH,overrideSounds,weapon,ranged,holdBreathAiming,shortRange,gun,barrelAttachments,sideAttachments,smallTopAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="71"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_AR_MASFA.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?DROP_AR_CAR15.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_AR_MASFA.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?DROP_AR_CAR15.Prefab"/>
 	<property name="CustomIcon" value="Notready_ICON"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="DescriptionKey" value="IZYgunT2ARCabineCAR15Desc"/>
@@ -635,8 +635,8 @@
 	<property name="Tags" value="IZY,IZYFH,overrideSounds,noScopes,weapon,ranged,holdBreathAiming,shortRange,gun,barrelAttachments,sideAttachments,smallTopAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="71"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_AR_M608SurvivalRifle.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_DROP_M608SR.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_AR_M608SurvivalRifle.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_DROP_M608SR.Prefab"/>
 	<property name="CustomIcon" value="IZYgunT1ARCabineM608SurvivalRifle"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="DescriptionKey" value="IZYgunT1ARCabineM608SurvivalRifleDesc"/>
@@ -932,8 +932,8 @@
 	<property name="Tags" value="IZY,IZYFH,overrideSounds,weapon,ranged,holdBreathAiming,shortRange,gun,barrelAttachments,sideAttachments,smallTopAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="71"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_AR_CAR15.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?DROP_AR_CAR15.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_AR_CAR15.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?DROP_AR_CAR15.Prefab"/>
 	<property name="CustomIcon" value="IZYgunT2ARCabineCAR15"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="DescriptionKey" value="IZYgunT2ARCabineCAR15Desc"/>
@@ -1233,8 +1233,8 @@
 	<property name="Tags" value="IZY,IZYFH,overrideSounds,weapon,ranged,holdBreathAiming,shortRange,gun,barrelAttachments,sideAttachments,smallTopAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="71"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_AR_M4CARBINE_grip.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?DROP_AR_M4CARBINE.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_AR_M4CARBINE_grip.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?DROP_AR_M4CARBINE.Prefab"/>
 	<property name="CustomIcon" value="IZYgunT3ARCabineM4Carbine"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="DescriptionKey" value="IZYgunT3ARCabineM4CarbineDesc"/>
@@ -1531,8 +1531,8 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,holdBreathAiming,shortRange,gun,barrelAttachments,sideAttachments,smallTopAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="60"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_AR_HK416.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_AR_HK416.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_AR_HK416.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_AR_HK416.Prefab"/>
 	<property name="CustomIcon" value="IZYgunT4ARCabineHK416"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="DescriptionKey" value="IZYgunT4ARCabineHK416Desc"/>
@@ -1834,8 +1834,8 @@
 	<property name="Tags" value="IZY,overrideSounds,noScopes,weapon,ranged,holdBreathAiming,shortRange,gun,barrelAttachments,sideAttachments,smallTopAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="71"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_LR_M16A1.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_DROP_M608SR.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_LR_M16A1.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_DROP_M608SR.Prefab"/>
 	<property name="CustomIcon" value="Notready_ICON"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="DescriptionKey" value="IZYgunT1LRLongRifleM16a1Desc"/>
@@ -2135,8 +2135,8 @@
 	<property name="Tags" value="IZY,IZYFH,overrideSounds,weapon,ranged,holdBreathAiming,shortRange,gun,barrelAttachments,sideAttachments,smallTopAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="71"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_AREU_SG552.unity3d?IZY_AREU_SG552.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?DROP_AR_M4CARBINE.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_AREU_SG552.unity3d?IZY_AREU_SG552.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?DROP_AR_M4CARBINE.Prefab"/>
 	<property name="CustomIcon" value="Notready_ICON"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="DescriptionKey" value="IZYgunT3ARCabineM4CarbineDesc"/>
@@ -2349,8 +2349,8 @@
 	<property name="Tags" value="IZY,IZYFH,overrideSounds,weapon,ranged,holdBreathAiming,shortRange,gun,barrelAttachments,drumMagazine,sideAttachments,smallTopAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="60"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?IZY_BULLPUP_VHS2.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?DROP_BP_VHS2.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?IZY_BULLPUP_VHS2.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?DROP_BP_VHS2.Prefab"/>
 	<property name="CustomIcon" value="IZYgunT3BULLPUPHellionVHS2"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="DescriptionKey" value="IZYgunT3BULLPUPHellionVHS2Desc"/>
@@ -2650,8 +2650,8 @@
 	<property name="Tags" value="IZY,IZYFH,overrideSounds,weapon,ranged,holdBreathAiming,shortRange,gun,barrelAttachments,drumMagazine,sideAttachments,smallTopAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="60"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?IZY_BULLPUP_F2000.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?IZY_DROP_F2000.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?IZY_BULLPUP_F2000.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?IZY_DROP_F2000.Prefab"/>
 	<property name="CustomIcon" value="IZYgunT4BULLPUPFNF2000"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="DescriptionKey" value="IZYgunT4BULLPUPFNF2000Desc"/>
@@ -2956,8 +2956,8 @@
 	<property name="Tags" value="IZY,IZYMMR,IZYFH,overrideSounds,weapon,ranged,reloadPenalty,holdBreathAiming,magazine,firingMode,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill"/>
 	<property name="DisplayType" value="rangedGunNoMag"/>
 	<property name="HoldType" value="71"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_MMR_M16A2DMR.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?DROP_MMR_M16A2.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_MMR_M16A2DMR.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?DROP_MMR_M16A2.Prefab"/>
 	<property name="CustomIcon" value="IZYgunT3MarksManRifle556M16A2DMR"/>
 	<property name="DescriptionKey" value="IZYgunT3MarksManRifle556M16A2DMRDesc"/>
 	
@@ -3202,8 +3202,8 @@
 	<property name="Tags" value="IZY,IZYMMR,IZYFH,overrideSounds,weapon,ranged,reloadPenalty,holdBreathAiming,magazine,firingMode,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill"/>
 	<property name="DisplayType" value="rangedGunNoMag"/>
 	<property name="HoldType" value="60"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_MMR_SMAR15.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?DROP_MMR_M16A2.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?IZY_MMR_SMAR15.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_AR_CB.unity3d?DROP_MMR_M16A2.Prefab"/>
 	<property name="CustomIcon" value="Notready_ICON"/>
 <!--<property name="CustomIcon" value="IZYgunT4MarksManRifle556SSMAR15"/>  -->
 	<property name="DescriptionKey" value="IZYgunT4MarksManRifle556SSMAR15Desc"/>
@@ -3454,8 +3454,8 @@
 	<property name="Tags" value="IZY,IZYFH,overrideSounds,weapon,ranged,holdBreathAiming,shortRange,gun,barrelAttachments,drumMagazine,sideAttachments,smallTopAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="60"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?IZY_LMG_G36.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?IZY_DROP_G36.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?IZY_LMG_G36.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?IZY_DROP_G36.Prefab"/>
 	<property name="CustomIcon" value="IZYgunT2LMGLMG36"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="DescriptionKey" value="IZYgunT2LMGLMG36Desc"/>
@@ -3754,8 +3754,8 @@
 	<property name="Tags" value="IZY,IZYLMG,IZYGRIPSP,overrideSounds,weapon,ranged,holdBreathAiming,reloadPenalty,gun,drumMagazine,barrelAttachments,sideAttachments,smallTopAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="60"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?IZY_LMG_M249.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?DROP_LMG_M249.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?IZY_LMG_M249.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_556_Pack_MainResource_BP_LMG.unity3d?DROP_LMG_M249.Prefab"/>
 	<property name="CustomIcon" value="IZYgunT3LMGM249FNminimi"/>
 	<property name="Material" value="MMachineGunParts"/>
 	<property name="DescriptionKey" value="IZYgunT3LMGM249FNminimiDesc"/>

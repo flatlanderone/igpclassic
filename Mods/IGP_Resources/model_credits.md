@@ -1,5 +1,4 @@
-## 7D1.0_Izayo_Visible_FPV_Gloves_mod\
-IZY_FPV_GLOVES
+## 7D1.0_Izayo_Visible_FPV_Gloves_mod IZY_FPV_GLOVES
 
 Military gloves : 
 https://sketchfab.com/3d-models/gloves-for-fps-game-3b321da343714e9597e3e86af8a0a7a6
@@ -10,11 +9,10 @@ https://sketchfab.com/3d-models/leather-arm-guard-with-support-2ceaf152c27243c99
 Gauntlets Metal scraps :
 https://sketchfab.com/3d-models/post-apocalyptic-arm-guard-low-poly-a777cbbc8aff4c3cb5ed4dec2265fa12 
 
-## 7D1.0_Izayo_WeaponpackMisc_pack\
+## 7D1.0_Izayo_WeaponpackMisc_pack IZY_RMP_Miscpack
 None
 
-## 7D1.0_Izayo_WeaponpackRemastered_9mmVAL\
-IZY_RMP_9mmVAL
+## 7D1.0_Izayo_WeaponpackRemastered_9mmVAL IZY_RMP_9mmVAL
 PIPE-SMG :
 made by community member = Swope25
 UZI smg :
@@ -33,16 +31,16 @@ https://sketchfab.com/3d-models/g18-fdd5cdd7b31c49f2b16a868ebdf4a75f
 DUAL C96A :
 https://sketchfab.com/3d-models/mauser-gun-c96-be1e0793a5be47b199e3c97172e371df
 
-## 7D1.0_Izayo_WeaponpackRemastered_44mag\
-IZY_RMP_44magnum
+## 7D1.0_Izayo_WeaponpackRemastered_44mag IZY_RMP_44magnum
+
 44Automag :  (Community Funded)
 https://www.cgtrader.com/3d-models/military/gun/amt-automag
 Dual Desert Eagle :
 https://sketchfab.com/3d-models/desert-eagle-cabde59f5cf24effaf80536e35d04e95
 and many others for additional parts
 
-## 7D1.0_Izayo_WeaponpackRemastered_45ACP\
-IZY_RMP_45ACP
+## 7D1.0_Izayo_WeaponpackRemastered_45ACP IZY_RMP_45ACP
+
 Liberator Pistol :
 https://sketchfab.com/3d-models/fp-45-liberator-for-sale-79c18df9ff5644acb9598f349faeb5d5
 .45 Revolver :
@@ -70,11 +68,10 @@ M1 Carbine 45  :
 COD : WW2 / Vanguard
 Vector Carbine  :
 
-## 7D1.0_Izayo_WeaponpackRemastered_556pack\
-IZY_RMP_556pack
+## 7D1.0_Izayo_WeaponpackRemastered_556pack IZY_RMP_556pack
 
-## 7D1.0_Izayo_WeaponpackRemastered_762pack\
-IZY_RMP_762pack
+## 7D1.0_Izayo_WeaponpackRemastered_762pack IZY_RMP_762pack
+
 MosinNagant : 
 https://sketchfab.com/3d-models/mosin-nagant-m91-55c00242c4024307a761a89167e39a7c
 M1 Garand / EBR M1 :
@@ -94,8 +91,7 @@ RPD MG :
 COD BLACK OPS COLD WAR
 MG34 :
 
-## 7D1.0_Izayo_WeaponpackRemastered_DemolitionPack\
-IZY_RMP_Demopack
+## 7D1.0_Izayo_WeaponpackRemastered_DemolitionPack IZY_RMP_Demopack
 Chinalake GL :
 COD BLACK OPS
 XM-25 :
@@ -103,13 +99,11 @@ Battlefield 4
 RPG-7 and it's rocket:
 https://sketchfab.com/3d-models/rpg7-e83a4ec772cf4a1a93b5b1f36bb0caaa
 
-## 7D1.0_Izayo_WeaponpackRemastered_Heavy_WeaponPack\
-CHECK copy of 762 credits
+## 7D1.0_Izayo_WeaponpackRemastered_Heavy_WeaponPack CHECK copy of 762 credits
 TODO 
 
+## 7D1.0_Izayo_WeaponpackRemastered_SHOTGUNpackVAL IZY_RMP_SG
 
-## 7D1.0_Izayo_WeaponpackRemastered_SHOTGUNpackVAL\
-IZY_RMP_SG
 DoubleBarrel OverUnder :
 https://sketchfab.com/3d-models/stoeger-condor-outback-ou-shotgun-6f083a5d1c7d4fdebefb5daa8ac5af15
 Lever Action 1887 SG
@@ -128,14 +122,11 @@ https://sketchfab.com/3d-models/spas-12-1a83677b59a047878eebd29199926707
 M1014
 https://steamcommunity.com/sharedfiles/filedetails/?id=2993838423
 
-## 7D1.0_Izayo_WeaponpackRemastered_Technicalpack\
-IZY_RMP_Tech
+## 7D1.0_Izayo_WeaponpackRemastered_Technicalpack IZY_RMP_Tech
 
-## 7D1.0_Izayo_WeaponpackSpecial_Melee\
-IZY_melee
+## 7D1.0_Izayo_WeaponpackSpecial_Melee IZY_melee
 
-## 7D1.0_Izayo_WeaponpackVanillaReplacer\
-IZY_VRP
+## 7D1.0_Izayo_WeaponpackVanillaReplacer IZY_VRP
 _____________________
 OOOOO Pistol type OOOOO
 PISTOL M9 : 

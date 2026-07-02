@@ -17,7 +17,7 @@
 	
 			<item_property_overrides name="IZYgunT3LGLXM25">
 				<property name="ScopeCameraOffset" value="-.0012,-.0155,-.02"/>
-				<property name="Zoom_overlay" value="#@modfolder:Resources/blankXD4.tga"/>
+				<property name="Zoom_overlay" value="#@modfolder(IGP_Resources):Resources/blankXD4.tga"/>
 				<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 				<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
 			</item_property_overrides>

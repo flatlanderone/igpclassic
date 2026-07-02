@@ -570,11 +570,12 @@
 		</effect_group>
 	</item_modifier>
 
-	<item_modifier name="modGunBarrelExtender" installable_tags="barrelAttachments,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods" type="attachment">
+<!-- REMOVED 2026-07-05	 -->
+	<!-- <item_modifier name="modGunBarrelExtender" installable_tags="barrelAttachments,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 		<property name="UnlockedBy" value="modGunBarrelExtenderSchematic"/>
 		<property name="TraderStageTemplate" value="modsTier2"/>
-		<!--DamageFalloffRange increased by x meters-->
+		
 		<effect_group tiered="false">
 			<passive_effect name="DamageFalloffRange" operation="perc_add" value=".2"/>
 			<passive_effect name="MaxRange" operation="perc_add" value=".2"/>
@@ -590,16 +591,13 @@
 				<requirement name="NotHasBuff" buff="buffHoldBreathAiming01"/>
 			</passive_effect>
 		</effect_group>
-	</item_modifier>
+	</item_modifier> -->
 
-	<item_modifier name="modShotgunSawedOffBarrel" installable_tags="shotgun,ShortBarrelmod" modifier_tags="barrelAttachment" blocked_tags="noMods,dBarrel" type="attachment" icon="resourceScrapIron">
+<!-- REMOVED 2026-07-05 -->
+	<!-- <item_modifier name="modShotgunSawedOffBarrel" installable_tags="shotgun,ShortBarrelmod" modifier_tags="barrelAttachment" blocked_tags="noMods,dBarrel" type="attachment" icon="resourceScrapIron">
 		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 		<property name="UnlockedBy" value="modShotgunSawedOffBarrelSchematic"/>
 		<property name="TraderStageTemplate" value="modsTier1"/>
-
-		<!--<item_property_overrides name="gunShotgunT2PumpShotgun">
-			<property name="HandMeshfile" value="@:Other/Items/Weapons/Ranged/SawedOffPumpShotgun/SawedOffPumpShotgunPrefab.prefab"/>
-		</item_property_overrides>-->
 
 		<effect_group tiered="false" name="Base Effects">
 			<passive_effect name="MaxRange" operation="perc_add" value="-.15"/>
@@ -608,7 +606,7 @@
 			<passive_effect name="SpreadDegreesVertical" operation="perc_set" value="1.2"/>
 			<passive_effect name="SpreadDegreesHorizontal" operation="perc_set" value="1.2"/>
 		</effect_group>
-	</item_modifier>
+	</item_modifier> -->
 		
 	</append>
 

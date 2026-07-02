@@ -5,8 +5,8 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,bottomAttachments,ranged,revolver,44enforcer,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill,enforcerReload"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="1"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_44mag_Pack_MainResource.unity3d?IZY_PISTOLMAG_44automag.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_44mag_Pack_MainResource.unity3d?IZY_DROP_Automag44.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_44mag_Pack_MainResource.unity3d?IZY_PISTOLMAG_44automag.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_44mag_Pack_MainResource.unity3d?IZY_DROP_Automag44.Prefab"/>
 	<property name="Material" value="MHandGunParts"/>
 	<property name="CustomIcon" value="IZYgunT3PistolMagnumAutomag44"/>
 	<property name="Weight" value="7"/>
@@ -271,8 +271,8 @@
 	<property name="Tags" value="IZY,overrideSounds,Holdstyle,weapon,ranged,holdBreathAiming,bottomAttachments,gun,shortRange,pistol,barrelAttachments,sideAttachments,magazine,firingMode,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="67"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_44mag_Pack_MainResource.unity3d?IZY_DUALPISTOLS_DEagle44.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_44mag_Pack_MainResource.unity3d?IZY_DROP_Dual_DEAGLE44.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_44mag_Pack_MainResource.unity3d?IZY_DUALPISTOLS_DEagle44.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_44mag_Pack_MainResource.unity3d?IZY_DROP_Dual_DEAGLE44.Prefab"/>
 	<property name="Material" value="MHandGunParts"/>
 	<property name="Weight" value="10"/>
 	<property name="ScrapTimeOverride" value="10.0"/>
@@ -560,7 +560,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,bottomAttachments,ranged,revolver,44enforcer,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill,enforcerReload"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="85"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_44mag_Pack_MainResource.unity3d?IZY_MagnumRifle_MagnumCarbine.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_44mag_Pack_MainResource.unity3d?IZY_MagnumRifle_MagnumCarbine.Prefab"/>
 	<property name="DropMeshfile" value=""/>
 	<property name="Material" value="MHandGunParts"/>
 	<property name="CustomIcon" value="Notready_ICON"/>

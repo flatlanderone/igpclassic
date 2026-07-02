@@ -112,7 +112,7 @@
 	<append xpath="/item_modifiers/item_modifier[@name='IZYmodPistolHoldstyle01']">
 	
 		<item_property_overrides name="IZYgunT4DualMagnumDesertEagles">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_44mag_Pack_MainResource.unity3d?IZY_DUALPISTOLS_DEagle44_holdstyle01.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_44mag_Pack_MainResource.unity3d?IZY_DUALPISTOLS_DEagle44_holdstyle01.Prefab"/>
 		</item_property_overrides>
 
 		
@@ -122,7 +122,7 @@
 	<append xpath="/item_modifiers/item_modifier[@name='IZYmodPistolHoldstyle02']">
 	
 		<item_property_overrides name="IZYgunT4DualMagnumDesertEagles">
-			<property name="Meshfile" value="#@modfolder:Resources/IZY_44mag_Pack_MainResource.unity3d?IZY_DUALPISTOLS_DEagle44_holdstyle02.Prefab"/>
+			<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_44mag_Pack_MainResource.unity3d?IZY_DUALPISTOLS_DEagle44_holdstyle02.Prefab"/>
 		</item_property_overrides>
 		
 	</append>

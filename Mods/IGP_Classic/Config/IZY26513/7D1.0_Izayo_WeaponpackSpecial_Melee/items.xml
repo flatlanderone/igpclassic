@@ -16,7 +16,7 @@
 	<property name="Tags" value="IZY,IZYMELEE,light,weapon,meleeWeapon,attIntellect,perkElectrocutioner,canHaveCosmetic,roboticsSkill,stunBaton,meleeIntellect,batonJunkie"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="65"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_MeleeResources.unity3d?IZY_Melee_Punisher9000.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_MeleeResources.unity3d?IZY_Melee_Punisher9000.Prefab"/>
 	<property name="Material" value="MmeleeWpnBatonParts"/>
 	<property name="Weight" value="1"/>
 	<property name="ScrapTimeOverride" value="10.0"/>
@@ -457,8 +457,8 @@
 	<property name="Tags" value="IZY,IZYMELEE,IZYBLADE,,machete,melee,grunting,light,longShaft,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval"/>
 	<property name="DisplayType" value="meleeKnife"/>
 	<property name="HoldType" value="65"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_MeleeResources.unity3d?IZY_Melee_Katana.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_MeleeResources.unity3d?IZY_DROP_KATANA.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_MeleeResources.unity3d?IZY_Melee_Katana.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_MeleeResources.unity3d?IZY_DROP_KATANA.Prefab"/>
 	<property name="Material" value="MmeleeWpnBladeParts"/>
 	<property name="Weight" value="10"/>
 	<property name="ScrapTimeOverride" value="10.0"/>
@@ -662,7 +662,7 @@
 	<property name="DisplayType" value="meleeTurret"/>
 	<property name="Group" value="Ammo/Weapons,Robotics"/>
 	<property name="HoldType" value="67"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_Melee_Throwning_Knifes.unity3d?IZY_Melee_Throwning_Knifes.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_Melee_Throwning_Knifes.unity3d?IZY_Melee_Throwning_Knifes.Prefab"/>
 	<property name="Material" value="MJunkTurretParts"/>
 	<property name="Weight" value="1"/>
 	<property name="ScrapTimeOverride" value="10.0"/>
@@ -879,8 +879,8 @@
 	<property name="Tags" value="IZY,IZYMELEE,melee,grunting,medium,weapon,meleeWeapon,longShaft,attPerception,perkJavelinMaster,canHaveCosmetic,spearSkill"/><!-- ,thrownWeapon -->
 	<property name="DisplayType" value="meleeSpear"/>
 	<property name="HoldType" value="59"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_MeleeResources.unity3d?IZY_Melee_Spear4.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_MeleeResources.unity3d?DROP_MELEE_T4SPEAR.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_MeleeResources.unity3d?IZY_Melee_Spear4.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_MeleeResources.unity3d?DROP_MELEE_T4SPEAR.Prefab"/>
 	<property name="Material" value="MmeleeWpnSpearParts"/>
 	<property name="Weight" value="10"/>
 	<!-- <property name="StickyMaterial" value="@:Other/Items/Weapons/Melee/Spear/Materials/spear_sticky.mat"/> -->
@@ -1088,8 +1088,8 @@
 	<property name="Tags" value="IZY,IZYMELEE,blunt,longShaft,melee,grunting,club,heavy,sledge,weapon,meleeWeapon,attStrength,perkSkullCrusher,canHaveCosmetic,sledgeSkill"/>
 	<property name="DisplayType" value="meleeHeavy"/>
 	<property name="HoldType" value="33"/>
-	<property name="Meshfile" value="#@modfolder:Resources/IZY_MeleeResources.unity3d?IZY_Melee_Mace4.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_MeleeResources.unity3d?IZY_DROP_MACE.Prefab"/>
+	<property name="Meshfile" value="#@modfolder(IGP_Resources):Resources/IZY_MeleeResources.unity3d?IZY_Melee_Mace4.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder(IGP_Resources):Resources/IZY_MeleeResources.unity3d?IZY_DROP_MACE.Prefab"/>
 	<property name="Material" value="MmeleeWpnSledgeParts"/>
 	<property name="Weight" value="10"/>
 	<property name="ScrapTimeOverride" value="10.0"/>

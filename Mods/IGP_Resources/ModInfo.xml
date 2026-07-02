@@ -1,11 +1,12 @@
 <xml>
     <Name value="IGP_Resources" />
-    <DisplayName value="IGP_Resources" />
-    <Description value="IGP_Resources is an in-depth reorg." />
+    <DisplayName value="IZY Classic Resources" />
+    <Description value="The [FFB400]IZY Classic Resources[-] mod contains all the .unity3d and other files required by the IZY Classic Core mod.&#13;&#10;&#13;&#10;IMPORTANT:&#13;&#10;IZY Classic Resources requires [FFB400]IZY Classic Core[-] and [FFB400]Flatlander's Combat Sandbox[-] to function." />
     <Author value="Flatlander" />
-    <Version value="3.0.0.1.0" />
-	<Website value="https://github.com/flatlanderone" />
-	<Icon value="Textures/RMM_ICON.png" />
-	<Banner value="Textures/RMM_BANNER.png" />
+    <Version value="3.0.6.0.0" />
+	<SkipWithAntiCheat value="true" />
+	<Website value="https://github.com/flatlanderone/igpclassic" />
+	<Icon value="Textures/IGP_ICON.png" />
+	<Banner value="Textures/IGP_BANNER.png" />
 </xml>
 
