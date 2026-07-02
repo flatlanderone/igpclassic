@@ -1,0 +1,206 @@
+<configs>
+
+				<!--	BUFF THAT MAKE GLOVES VISIBLE	    -->
+
+
+
+	<append xpath="/buffs">
+		
+		<buff name="IZYBuff2Handsblocking" hidden="false" icon="ui_game_symbol_twitch_shield_enemies" icon_color="0,255,0" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+				<passive_effect name="GeneralDamageResist" operation="base_add" duration="0,1" value="1,.9"/>
+				<passive_effect name="GeneralDamageResist" operation="base_add" duration="1,9999" value=".9,.8"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInfectionCatch,buffInfection01Main,buffInjuryBleeding,buffArmorShredding,buffInjuryAbrasion,buffInjuryAbrasionTreated,buffLegSprained,buffLegBroken,buffLegSplinted,buffLegCast,buffArmSprained"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryConcussion,buffArmBroken,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffInjuryCrippled01,buffInjuryKnockdown01,buffInjuryKnockdown01,buffInjuryUnconscious,buffLaceration,buffFatigued"/>
+			</effect_group>
+			
+				<!--	COUNTER ATTACK    -->
+			<effect_group>
+				<requirement name="HasBuff" buff="IZYBuff2Handsblocking"/>
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+					<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" buff="IZYCounterAttack">
+					</triggered_effect>
+					<triggered_effect trigger="onOtherAttackedSelf" action="PlaySound" sound="Block_success">
+					</triggered_effect>
+			</effect_group>
+			
+	<!--	
+			<effect_group>
+				<requirement name="HoldingItemHas Tags" tags="IZYMELEE"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" duration="0,1" value="-0.5,-0.8"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" duration="1,9999" value="-1,-1"/>
+			</effect_group>
+	-->
+		</buff>		
+		
+		<buff name="IZYCounterAttack" hidden="false" icon="IZY_CounterATK" icon_blink="true">
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value="1" /> 
+			</effect_group>
+		</buff>		
+		
+		<buff name="IZYBuffBlockedDamage" hidden="false" icon="ui_game_symbol_twitch_shield_enemies" icon_color="255,50,50" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="1"/>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Dark" intensity="10" fade="10"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Dark" intensity="0" fade="0"/>
+			</effect_group>
+		</buff>		
+		
+		<buff name="IZYBuffhitting01" hidden="true" icon="ui_game_symbol_sledge" icon_color="0,0,0" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="0.8"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Dark" intensity=".5" fade=".1"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Dark" intensity="0" fade=".2"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="Buffcomeandtakeit" hidden="true" icon="ui_game_symbol_twitch_shield_enemies" icon_color="0,255,0" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="5"/>
+			
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+				<passive_effect name="GeneralDamageResist" operation="base_add" duration="0,1" value="0,.5"/>
+				<passive_effect name="GeneralDamageResist" operation="base_add" duration="1,9999" value=".5,.5"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".8" tags="buffInfectionCatch,buffInfection01Main,buffInjuryBleeding,buffArmorShredding,buffInjuryAbrasion,buffInjuryAbrasionTreated,buffLegSprained,buffLegBroken,buffLegSplinted,buffLegCast,buffArmSprained"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".8" tags="buffInjuryConcussion,buffArmBroken,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffInjuryCrippled01,buffInjuryKnockdown01,buffInjuryKnockdown01,buffInjuryUnconscious,buffLaceration,buffFatigued"/>
+			</effect_group>
+		</buff>		
+		
+		<buff name="Buffcomeandtakeit" hidden="true" icon="ui_game_symbol_twitch_shield_enemies" icon_color="0,255,0" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+				<passive_effect name="GeneralDamageResist" operation="base_add" duration="0,1" value="0,.5"/>
+				<passive_effect name="GeneralDamageResist" operation="base_add" duration="1,9999" value=".5,.5"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".8" tags="buffInfectionCatch,buffInfection01Main,buffInjuryBleeding,buffArmorShredding,buffInjuryAbrasion,buffInjuryAbrasionTreated,buffLegSprained,buffLegBroken,buffLegSplinted,buffLegCast,buffArmSprained"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".8" tags="buffInjuryConcussion,buffArmBroken,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffInjuryCrippled01,buffInjuryKnockdown01,buffInjuryKnockdown01,buffInjuryUnconscious,buffLaceration,buffFatigued"/>
+			</effect_group>
+		</buff>	
+		
+		<buff name="IZY_Thrown_Mode" hidden="false" icon="ui_game_symbol_twitch_shield_enemies" icon_color="0,255,0" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+				<passive_effect name="EntityDamage" operation="base_add" value="80"/>
+				<passive_effect name="MaxRange" operation="base_add" value="15"/>
+				<passive_effect name="RoundsPerMinute" operation="base_add" value="-30"/>
+				<passive_effect name="DegradationPerUse" operation="base_add" value="10"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="0"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration=".1" force="50"> 
+					<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+				</triggered_effect>
+			</effect_group>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP_2">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP_2">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP"/>
+				<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP_2"/>
+				
+				<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP"/>
+			</effect_group>
+		</buff>		
+		
+														<!-- 			xxxxxxxxxxxxxxxxxxxxxx		 -->
+														<!-- 			Baton and Shield Attack			 -->
+														<!-- 			xxxxxxxxxxxxxxxxxxxxxxxxx	 -->
+		
+							<!-- xxxxxxxxxxxxxxxxx -->
+		<buff name="IZYBuffBaton1stAttack" hidden="false" icon="ui_game_symbol_twitch_shield_enemies" icon_color="0,100,0" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<update_rate value=".5"/>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+						<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="IZYBuffBaton1stAttack_Ready"/>
+			</effect_group>
+		</buff>		
+		<buff name="IZYBuffBaton1stAttack_Ready" hidden="false" icon="ui_game_symbol_twitch_shield_enemies" icon_color="150,100,0" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<update_rate value=".5"/>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+						<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="IZYBuffBaton1stAttack"/>
+			</effect_group>
+		</buff>		
+							<!-- xxxxxxxxxxxxxxxxx -->
+		<buff name="IZYBuffBaton2ndAttack" hidden="false" icon="ui_game_symbol_twitch_shield_enemies" icon_color="0,200,200" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<update_rate value=".8"/>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+						<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="IZYBuffBaton2ndAttack_Ready"/>
+						<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="IZYBuffBaton1stAttack_Ready"/>
+			</effect_group>
+		</buff>	
+		<buff name="IZYBuffBaton2ndAttack_Ready" hidden="false" icon="ui_game_symbol_twitch_shield_enemies" icon_color="150,0,100" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<update_rate value=".8"/>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+						<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="IZYBuffBaton2ndAttack"/>
+			</effect_group>
+		</buff>
+							<!-- xxxxxxxxxxxxxxxxx -->
+		<buff name="IZYBuffBaton3ndAttack_Execution" hidden="false" icon="ui_game_symbol_twitch_shield_enemies" icon_color="255,10,10" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value=".5"/>
+			<update_rate value=".8"/>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+					<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="IZYBuffBaton2ndAttack_Ready"/>
+					<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration=".1" force="400"> 
+						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="100"/>
+					</triggered_effect>
+					<passive_effect name="EntityDamage" operation="perc_add" value="1"/>
+					<passive_effect name="MaxRange" operation="perc_add" value=".3"/>
+			</effect_group>
+		</buff>
+							<!--XXXXXXXXXXXXXXXXXXX xxxxxxxxxxxxxxxxx XXXXXXXXXXXXXXXXXX-->
+							<!--XXXXXXXXXXXXXXXXXXX xxxxxxxxxxxxxxxxx XXXXXXXXXXXXXXXXXX-->
+							<!--XXXXXXXXXXXXXXXXXXX xxxxxxxxxxxxxxxxx XXXXXXXXXXXXXXXXXX-->
+	</append>
+
+</configs>

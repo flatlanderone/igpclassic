@@ -1,0 +1,41 @@
+<configs>
+
+<append xpath="/blocks">
+	
+<block name="Sniper_Position01">
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="PressurePlate"/>
+	<property name="RequiredPower" value="1"/>
+	<property name="UnlockedBy" value="craftingElectrician"/>
+	<property name="DisplayType" value="blockElectricalHardened"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="BuffsWhenWalkedOn" value="IZYSniperstandON"/>
+	<property name="Model" value="@:Entities/Electrical/pressure_platePrefab.prefab"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="ImposterExchange" value="imposterPlate" param1="143"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="HandleFace" value="Bottom"/>
+	<property name="AllowedRotations" value="Basic90"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="SoundPickup" value="triggerplate_grab"/>
+	<property name="SoundPlace" value="triggerplate_place"/>
+	<property name="TraderStageTemplate" value="electricTier1"/><!-- pressureplate -->
+	<property name="CanPickup" value="true"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="8"/>
+	</property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,20"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="SortOrder1" value="B155"/>
+	<property name="SortOrder2" value="0008"/>
+	<property name="Group" value="Science,TCScience"/>
+	<property name="Tags" value="electricianSkill"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_electrical,SC_traps"/>
+</block>
+
+</append>
+</configs>

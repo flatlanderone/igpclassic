@@ -1,0 +1,55 @@
+<configs>
+		<!-- oooooooooooo  -->
+		<!-- CREATE GROUP  -->
+		<!-- oooooooooooo  -->
+	<insertAfter xpath="//lootgroup[@name='groupWeaponsT0_Gunslinger']">
+					<!-- tier 0  -->
+		<lootgroup name="groupWeaponsT0_MISC_MusketRifle" count="all" loot_quality_template="QLTemplateT0">
+			<item name="IZYgunTminus1MusketM1777Rifle"/>
+		</lootgroup>
+	</insertAfter>
+	
+	<insertAfter xpath="//lootgroup[@name='groupWeaponsT3_Archery02']">
+					<!-- tier 04  -->
+		<lootgroup name="groupWeaponsT4_MISC_AutocrossbowVH" count="all" loot_quality_template="QLTemplateT3">
+			<item name="IZYgunT4BowVanhelsingAutomaticCrossbowVH"/>
+		</lootgroup>
+					
+	</insertAfter>
+	
+	
+		<!-- oooooooooooo oooooooooooo oooooooooooo  -->
+		<!-- Adding new weapon groups to loot groups  -->
+		<!-- oooooooooooo oooooooooooo oooooooooooo -->
+	
+	<append xpath="//lootgroup[@name='groupWeaponsT0_Ranged']">	
+		<item group="groupWeaponsT0_MISC_MusketRifle"/>
+	</append>
+
+	
+	<append xpath="//lootgroup[@name='groupWeaponsT3_Ranged']">	
+		<item group="groupWeaponsT4_MISC_AutocrossbowVH"/>
+	</append>
+	
+		<!-- oooooooooooo oooooooooooo oooooooooooo  -->
+					<!-- create AMMO GROUP  -->
+		<!-- oooooooooooo oooooooooooo oooooooooooo -->
+
+	<insertAfter xpath="//lootgroup[@name='group762mmLarge']">
+		<lootgroup name="groupMusketammoSmall">
+			<item name="ammoMuzzleloadershot" count="2,3" loot_stage_count_mod="0.01"/>
+		</lootgroup>
+
+	</insertAfter>
+	
+				<!-- Add Ammogroup TO loot  -->
+
+	<append xpath="//lootgroup[@name='groupAmmoSmall']">	
+		<item group="groupMusketammoSmall"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='groupAmmoSmallNoArrow']">	
+		<item group="groupMusketammoSmall"/>
+	</append>
+
+</configs>

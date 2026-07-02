@@ -1,0 +1,18 @@
+<IGPClassicFLTR>
+
+<include filename="IZY26513/7D1.0_Izayo_Visible_FPV_Gloves_mod/buffs.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_Visible_Mods_mod/buffs.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackMisc_pack/buffs.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_9mmVAL/buffs.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_44mag/buffs.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_45ACP/buffs.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_556pack/buffs.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_762pack/buffs.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_DemolitionPack/buffs.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_Heavy_WeaponPack/buffs.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_SHOTGUNpackVAL/buffs.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_Technicalpack/buffs.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackSpecial_Melee/buffs.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackVanillaReplacer/buffs.xml"/>
+
+</IGPClassicFLTR>

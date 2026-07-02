@@ -1,0 +1,1304 @@
+<configs>
+<append xpath="/items">
+
+															<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+															<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+															<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+															<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+																	<!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx	-->
+																	<!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx	-->
+																	<!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx	-->
+
+
+
+<item name="IZYMeleeT4BatonPunisher9000">
+	<property name="Tags" value="IZY,IZYMELEE,light,weapon,meleeWeapon,attIntellect,perkElectrocutioner,canHaveCosmetic,roboticsSkill,stunBaton,meleeIntellect,batonJunkie"/>
+	<property name="DisplayType" value="melee"/>
+	<property name="HoldType" value="65"/>
+	<property name="Meshfile" value="#@modfolder:Resources/IZY_MeleeResources.unity3d?IZY_Melee_Punisher9000.Prefab"/>
+	<property name="Material" value="MmeleeWpnBatonParts"/>
+	<property name="Weight" value="1"/>
+	<property name="ScrapTimeOverride" value="10.0"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="EconomicValue" value="1100"/>
+	<property name="TraderStageTemplate" value="baseTier2"/><!-- meleeWpnBatonT2StunBaton -->
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="UnlockedBy" value="craftingRobotics"/><!-- meleeWpnBatonT2StunBaton, -->
+	<property name="ShowQuality" value="true"/>
+	<property name="SoundUnholster" value="weapon_unholster"/>
+	<property name="SoundHolster" value="weapon_holster"/>
+	<property name="SoundPickup" value="baton_stun_grab"/>
+	<property name="SoundPlace" value="baton_stun_place"/>
+	<property name="CustomIcon" value="Notready_ICON"/>
+
+	<property class="Action0">
+		<requirement name="NotHasBuff" buff="IZYBuff2Handsblocking" />
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sound_start" value="stunbaton_swingheavy"/>
+		<property name="Sphere" value=".15"/>
+		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+		<property name="UseGrazingHits" value="true"/>
+		<property name="GrazeStart" value=".15"/>
+		<property name="GrazeEnd" value=".3"/>
+		<property name="SwingDegrees" value="120"/>
+		<property name="SwingAngle" value="100"/>
+		<property class="HitSounds">
+			<property name="Override0" value="organic" param1="metalhollowhitorganic"/>
+		</property>
+		<property class="GrazeSounds">
+			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+		</property>
+	</property>
+
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Damage_type" value="Slashing"/>
+		<property name="Range" value="5"/>
+		<property name="Sphere" value=".15"/>
+		<property name="Sound_start" value="stunbaton_swingheavy"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+		<property name="UseGrazingHits" value="true"/>
+		<property class="HitSounds">
+			<property name="Override0" value="organic" param1="metalhollowhitorganic"/>
+		</property>
+		<property class="GrazeSounds">
+			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+		</property>
+	</property>
+
+	<effect_group name="meleeWpnBatonT2StunBaton">
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="105"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,700" tier="1,6" tags="perkElectrocutioner"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkElectrocutioner"/>
+		<passive_effect name="MaxRange" operation="base_set" value="3.2" tags="perkElectrocutioner"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3.2" tags="perkElectrocutioner"/>
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="350" tags="EconomicValue"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="30" tags="perkElectrocutioner"/> <!-- meleeWpnBatonT2StunBaton -->
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.04,.04" tags="perkElectrocutioner"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkElectrocutioner"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkElectrocutioner"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkElectrocutioner"/> <!-- tier bonus -->
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
+		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allToolsHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
+
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1.5" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="0.5" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="22" tags="secondary"/>
+	</effect_group>
+	<effect_group name="apply damage buff, meleeWpnBatonT2StunBaton">
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Sparks" prefab="@:ParticleEffects/p_electric_shock_small.prefab" parentTransform="Handle" localPos="0,0,0" localRot="0,0,0">
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Sparks"/>
+
+		<!-- perkIntellectMastery level 4 allows only 2 hits to charge -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="SetItemMetaFloat" change="3" relative="false" key="charge">
+			<requirement name="CompareItemMetaFloat" operation="LTE" value="3" key="charge"/>
+			<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="4"/>
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="SetItemMetaFloat" change="3" relative="false" key="charge">
+			<requirement name="CompareItemMetaFloat" operation="LTE" value="3" key="charge"/>
+			<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="4"/>
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+		</triggered_effect>
+
+		<!-- perkIntellectMastery level 5 keeps baton charged and ready at all times -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="SetItemMetaFloat" change="4" relative="false" key="charge">
+			<requirement name="CompareItemMetaFloat" operation="LTE" value="4" key="charge"/>
+			<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="Equals" value="5"/>
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="SetItemMetaFloat" change="4" relative="false" key="charge">
+			<requirement name="CompareItemMetaFloat" operation="LTE" value="4" key="charge"/>
+			<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="Equals" value="5"/>
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+		</triggered_effect>
+
+		<!-- Set shock duration Primary -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="4">
+			<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="0"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="4.8">
+			<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="1"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="5.6">
+			<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="2"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="6.4">
+			<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="3"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="7.2">
+			<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="4"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="8">
+			<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="5"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+
+		<!-- Set shock duration Secondary -->
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="4">
+			<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="0"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="4.8">
+			<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="1"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="5.6">
+			<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="2"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="6.4">
+			<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="3"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="7.2">
+			<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="4"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="8">
+			<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="5"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+
+	</effect_group>
+	<effect_group name="increase charges">
+		<!-- initialize metadata for "charge" on stun batons, don't change value if already exists -->
+		<triggered_effect trigger="onSelfEquipStart" action="SetItemMetaFloat" change="0" relative="true" key="charge"/>
+		
+		<!-- play stun baton sounds -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit1">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="0" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit1">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="0" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit2">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="1" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit2">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="1" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit3">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="2" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit3">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="2" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit4">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="3" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit4">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="3" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit5">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit5">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="4" key="charge"/></triggered_effect>
+
+		<!-- potentially apply bonus charges from TechJunkie perk, by setting it to 3 the other actions below increase it to max charge -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="SetItemMetaFloat" change="3" relative="false" key="charge">
+			<requirement name="CompareItemMetaFloat" operation="LTE" value="3" key="charge"/>
+			<requirement name="ProgressionLevel" progression_name="perkTechJunkie6BatonCharge" operation="Equals" value="1"/>
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="25"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="SetItemMetaFloat" change="3" relative="false" key="charge">
+			<requirement name="CompareItemMetaFloat" operation="LTE" value="3" key="charge"/>
+			<requirement name="ProgressionLevel" progression_name="perkTechJunkie6BatonCharge" operation="Equals" value="1"/>
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+		</triggered_effect>
+		
+		<!-- increase charges -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="SetItemMetaFloat" change="1" relative="true" key="charge">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="SetItemMetaFloat" change="1" relative="true" key="charge">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="3" key="charge"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="SetItemMetaFloat" change="2" relative="true" key="charge">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="CompareItemMetaFloat" operation="LTE" value="2" key="charge"/>
+		</triggered_effect>
+
+		<!-- add electric effect to baton -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddPart" part="Sparks" prefab="@:ParticleEffects/p_electric_shock_small.prefab" parentTransform="Handle" localPos="0,0,0" localRot="0,0,0">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddPart" part="Sparks" prefab="@:ParticleEffects/p_electric_shock_small.prefab" parentTransform="Handle" localPos="0,0,0" localRot="0,0,0">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="4" key="charge"/></triggered_effect>
+
+		<!-- add electric effect to baton with perkIntellectMastery level 5 -->
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Sparks" prefab="@:ParticleEffects/p_electric_shock_small.prefab" parentTransform="Handle" localPos="0,0,0" localRot="0,0,0">
+			<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="Equals" value="5"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipUpdate" action="AddPart" part="Sparks" prefab="@:ParticleEffects/p_electric_shock_small.prefab" parentTransform="Handle" localPos="0,0,0" localRot="0,0,0">
+			<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="Equals" value="5"/>
+		</triggered_effect>
+		<triggered_effect trigger="onPerkLevelChanged" action="AddPart" part="Sparks" prefab="@:ParticleEffects/p_electric_shock_small.prefab" parentTransform="Handle" localPos="0,0,0" localRot="0,0,0">
+			<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="Equals" value="5"/>
+		</triggered_effect>
+
+		<!-- trigger ragdoll events for fully charged baton -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="other" duration="@stunBatonDuration" force="350">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="other" duration="@stunBatonDuration" force="350">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+		</triggered_effect>
+		
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.1" duration="2.5" force="350" target_tags="zombie,animal">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+			<requirement name="!HasBuff" buff="buffDrugNerdTats"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.3" duration="2.5" force="350" target_tags="zombie,animal">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+			<requirement name="!HasBuff" buff="buffDrugNerdTats"/>
+		</triggered_effect>
+		
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.1" duration="@stunBatonDuration" force="350" target_tags="zombie,animal">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+			<requirement name="HasBuff" buff="buffDrugNerdTats"/> <!-- if you have buffDrugNerdTats, use stun duration so zombies get up after stun is finished -->
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.3" duration="@stunBatonDuration" force="350" target_tags="zombie,animal">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+			<requirement name="HasBuff" buff="buffDrugNerdTats"/> <!-- if you have buffDrugNerdTats, use stun duration so zombies get up after stun is finished -->
+		</triggered_effect>
+
+		<!-- Trigger shock events for fully charged baton -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffShocked" duration="@stunBatonDuration">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffShocked" duration="@stunBatonDuration">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/></triggered_effect>
+
+		<!-- Trigger shock for AOE when using Nerd Tats -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="otherAOE" range="1.1" target_tags="zombie,animal" buff="buffShocked" duration="@stunBatonDuration">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="HasBuff" buff="buffDrugNerdTats"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="otherAOE" range="1.3" target_tags="zombie,animal" buff="buffShocked" duration="@stunBatonDuration">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="HasBuff" buff="buffDrugNerdTats"/></triggered_effect>
+
+		<!-- Remove sparks from baton, keep them on if perkIntellectMastery level 5 -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="RemovePart" part="Sparks">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="LT" value="5"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="RemovePart" part="Sparks">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="LT" value="5"/>
+		</triggered_effect>
+
+		<!-- reset charges -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="SetItemMetaFloat" change="0" relative="false" key="charge">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="SetItemMetaFloat" change="0" relative="false" key="charge">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/></triggered_effect>
+	</effect_group>
+	
+	<effect_group>
+						<!--	Melee Bashing / KICK -->
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP_MELEE"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="RemoveBuff" buff="IZYRangeWPmeleeKick"/>
+		
+		<triggered_effect trigger="onSelfItemActivate" action="AddBuff" buff="IZYRangeWPmeleeKick">
+			<requirement name="!HasBuff" buff="IZYweaponHosting"/>
+			<requirement name="!HasBuff" buff="IZYBashingCooldown"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfItemDeactivate" action="AddBuff" buff="IZYRangeWPmeleeKick">
+			<requirement name="!HasBuff" buff="IZYweaponHosting"/>
+			<requirement name="!HasBuff" buff="IZYBashingCooldown"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="IZYRangeWPmeleeKick"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP_MELEE"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="AddBuff" buff="IZYweaponHosting">
+		</triggered_effect>
+		<triggered_effect trigger="onSelfKilledOther" action="RemoveBuff" buff="IZYBashingCooldown">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+		</triggered_effect>
+		<triggered_effect trigger="onOtherAttackedSelf" action="RemoveBuff" buff="IZYBashingCooldown">
+		</triggered_effect>
+		
+						<!--	Shield Bonus -->		
+		<triggered_effect trigger="onSelfAimingGunStart" action="AddBuff" buff="IZYBuff2Handsblocking">
+				<requirement name="!HasBuff" buff="IZYBuffhitting01"/>
+				<requirement name="!HasBuff" buff="IZYBuff2Handsblocking"/>
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfAimingGunStop" action="RemoveBuff" buff="IZYBuff2Handsblocking">
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="IZYBuff2Handsblocking">
+		</triggered_effect>
+		<!-- Attack recieve sound when blocking -->
+		<triggered_effect trigger="onOtherAttackedSelf" action="PlaySound" sound="organichitmetal">
+			<requirement name="IsFPV"/>
+			<requirement name="HasBuff" buff="IZYBuff2Handsblocking"/>
+		</triggered_effect>
+		
+			<!-- FANCY EFFECT _ REMOVE BELOW IF DO NOT WANT -->
+			<!-- FANCY EFFECT _ REMOVE BELOW IF DO NOT WANT -->
+			<!-- FANCY EFFECT _ REMOVE BELOW IF DO NOT WANT -->
+						<!--	boarder dark -->	
+		<triggered_effect trigger="onSelfAimingGunStart" action="ModifyScreenEffect" effect_name="Dark" intensity="1" fade=".3"/>
+		<triggered_effect trigger="onSelfAimingGunStop" action="ModifyScreenEffect" effect_name="Dark" intensity="0" fade=".3"/>
+		
+		<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="IZYBuffhitting01">
+		</triggered_effect>
+	</effect_group>
+	<effect_group name="HANDS">
+						<!--	Fancy effect like smoke barrel Eject -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Fancy_shits">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2"/>
+	
+						<!--	SHOW HIDE FPV TPV -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP"/>
+	</effect_group>
+						<!--	Hide Holdtype Hands -->	
+	<effect_group>
+		<requirement name="IsFPV"/>
+						<!--	Raw hands -->	
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="hands_A"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="hands"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="body"/>
+						<!--	Armor part -->
+	</effect_group>
+	
+	<effect_group>
+		<requirement name="IsMale"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands_A"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="body"/>
+	</effect_group>
+	<effect_group>
+		<requirement name="!IsMale"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands_A"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="body"/>
+	</effect_group>
+	
+						<!--	Refresh hands when no glove is on -->	
+	<effect_group>
+		<requirement name="ItemHasTags" tags="IZY"/>
+				<requirement name="!HasBuff" buff="WearingArmorBrownLeather"/>
+				<requirement name="!HasBuff" buff="WearingArmorBlackLeather"/>
+				<requirement name="!HasBuff" buff="WearingArmorDarkLeather"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="AddBuff" buff="RefreshHand"/>
+	</effect_group>
+</item>
+
+<item name="IZYMeleeT4BladeKatana">
+	<property name="Tags" value="IZY,IZYMELEE,IZYBLADE,,machete,melee,grunting,light,longShaft,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval"/>
+	<property name="DisplayType" value="meleeKnife"/>
+	<property name="HoldType" value="65"/>
+	<property name="Meshfile" value="#@modfolder:Resources/IZY_MeleeResources.unity3d?IZY_Melee_Katana.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_MeleeResources.unity3d?IZY_DROP_KATANA.Prefab"/>
+	<property name="Material" value="MmeleeWpnBladeParts"/>
+	<property name="Weight" value="10"/>
+	<property name="ScrapTimeOverride" value="10.0"/>
+	<property name="RepairTools" value="IZYadvancegunrepairkit"/>
+	<property name="CustomIcon" value="IZYMeleeT4BladeKatana"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="EconomicValue" value="10000"/>
+	<property name="TraderStageTemplate" value="baseTier2"/><!-- meleeWpnBladeT3Machete -->
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="UnlockedBy" value="craftingBlades"/><!-- meleeWpnBladeT3MacheteSchematic, -->
+	<property name="ShowQuality" value="true"/>
+	<property name="SoundUnholster" value="weapon_unholster"/>
+	<property name="SoundHolster" value="weapon_holster"/>
+	<property name="SoundPickup" value="machete_grab"/>
+	<property name="SoundPlace" value="machete_place"/>
+	
+	<property class="Action0">
+		<requirement name="NotHasBuff" buff="IZYBuff2Handsblocking" />
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sound_start" value="machete_swinglight"/>
+		<property name="Sphere" value=".1"/>
+		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+		<property name="UseGrazingHits" value="true"/>
+		<property name="GrazeStart" value=".25"/>
+		<property name="GrazeEnd" value=".32"/>
+		<property name="SwingDegrees" value="65"/>
+		<property name="SwingAngle" value="180"/>
+		<property class="HitSounds">
+			<property name="Override0" value="organic" param1="metalslashorganic"/>
+		</property>
+		<property class="GrazeSounds">
+			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+		</property>
+		<property name="HarvestLength" value="1.15"/>
+	</property>
+
+	<property class="Action1">
+		<requirement name="NotHasBuff" buff="IZYBuffhitting01" />
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="88"/>
+		<property name="Zoom_max_in" value="88"/>
+		<property name="SightsCameraOffset" value="-.00218,-.0082,.012"/>
+		<property name="zoomTriggerEffectPullDualsense" value="PistolZoom"/>
+		<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+	</property>
+	
+	<effect_group name="meleeWpnBladeT3Machete">
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="105"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="15" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="1200,2200" tier="1,6" tags="perkDeepCuts"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.5" tags="perkDeepCuts"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkDeepCuts"/>
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="350" tags="EconomicValue"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="75" tags="perkDeepCuts"/> <!-- meleeWpnBladeT3Machete -->
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.04,.04" tags="perkDeepCuts"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeepCuts"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="base_set" value="21" tags="perkDeepCuts"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.04,.04" tags="perkDeepCuts"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeepCuts"/> <!-- tier bonus -->
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
+		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
+		<!--<passive_effect name="BlockDamage" operation="perc_add" value="1.5" tags="blockButcher"/>-->
+		<passive_effect name="DismemberChance" operation="base_add" value="1"/>
+		
+		<triggered_effect trigger="onSelfPrimaryActionStart" action="PlaySound" sound="player1powerattack">
+			<requirement name="IsFPV"/>
+			<requirement name="IsMale"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionStart" action="PlaySound" sound="player2powerattack">
+			<requirement name="IsFPV"/>
+			<requirement name="!IsMale"/>
+		</triggered_effect>
+		
+						<!--	Melee Bashing / KICK -->
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP_MELEE"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="RemoveBuff" buff="IZYRangeWPmeleeKick"/>
+		
+		<triggered_effect trigger="onSelfItemActivate" action="AddBuff" buff="IZYRangeWPmeleeKick">
+			<requirement name="!HasBuff" buff="IZYweaponHosting"/>
+			<requirement name="!HasBuff" buff="IZYBashingCooldown"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfItemDeactivate" action="AddBuff" buff="IZYRangeWPmeleeKick">
+			<requirement name="!HasBuff" buff="IZYweaponHosting"/>
+			<requirement name="!HasBuff" buff="IZYBashingCooldown"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="IZYRangeWPmeleeKick"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP_MELEE"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="AddBuff" buff="IZYweaponHosting">
+		</triggered_effect>
+		<triggered_effect trigger="onSelfKilledOther" action="RemoveBuff" buff="IZYBashingCooldown">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+		</triggered_effect>
+		<triggered_effect trigger="onOtherAttackedSelf" action="RemoveBuff" buff="IZYBashingCooldown">
+		</triggered_effect>
+		
+						<!--	Shield Bonus -->		
+		<triggered_effect trigger="onSelfAimingGunStart" action="AddBuff" buff="IZYBuff2Handsblocking">
+				<requirement name="!HasBuff" buff="IZYBuffhitting01"/>
+				<requirement name="!HasBuff" buff="IZYBuff2Handsblocking"/>
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfAimingGunStop" action="RemoveBuff" buff="IZYBuff2Handsblocking">
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="IZYBuff2Handsblocking">
+		</triggered_effect>
+		<!-- Attack recieve sound when blocking -->
+		<triggered_effect trigger="onOtherAttackedSelf" action="PlaySound" sound="organichitmetal">
+			<requirement name="IsFPV"/>
+			<requirement name="HasBuff" buff="IZYBuff2Handsblocking"/>
+		</triggered_effect>
+		
+			<!-- FANCY EFFECT _ REMOVE BELOW IF DO NOT WANT -->
+			<!-- FANCY EFFECT _ REMOVE BELOW IF DO NOT WANT -->
+			<!-- FANCY EFFECT _ REMOVE BELOW IF DO NOT WANT -->
+						<!--	boarder dark -->	
+		<triggered_effect trigger="onSelfAimingGunStart" action="ModifyScreenEffect" effect_name="Dark" intensity="1" fade=".3"/>
+		<triggered_effect trigger="onSelfAimingGunStop" action="ModifyScreenEffect" effect_name="Dark" intensity="0" fade=".3"/>
+		
+		<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="IZYBuffhitting01">
+		</triggered_effect>
+	</effect_group>
+	<effect_group name="HANDS">
+						<!--	Fancy effect like smoke barrel Eject -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Fancy_shits">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2"/>
+	
+						<!--	SHOW HIDE FPV TPV -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP"/>
+	</effect_group>
+						<!--	Hide Holdtype Hands -->	
+	<effect_group>
+		<requirement name="IsFPV"/>
+						<!--	Raw hands -->	
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="hands_A"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="hands"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="body"/>
+						<!--	Armor part -->
+	</effect_group>
+	
+	<effect_group>
+		<requirement name="IsMale"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands_A"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="body"/>
+	</effect_group>
+	<effect_group>
+		<requirement name="!IsMale"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands_A"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="body"/>
+	</effect_group>
+	
+						<!--	Refresh hands when no glove is on -->	
+	<effect_group>
+		<requirement name="ItemHasTags" tags="IZY"/>
+				<requirement name="!HasBuff" buff="WearingArmorBrownLeather"/>
+				<requirement name="!HasBuff" buff="WearingArmorBlackLeather"/>
+				<requirement name="!HasBuff" buff="WearingArmorDarkLeather"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="AddBuff" buff="RefreshHand"/>
+	</effect_group>
+</item>
+
+<item name="IZYMeleeT4DualKnivesKnife">
+	<property name="Tags" value="IZY,IZYMELEE,turretMelee,melee,weapon,blunt,longShaft,attIntellect,perkTurrets,canHaveCosmetic,roboticsSkill,meleeIntellect"/>
+	<property name="DisplayType" value="meleeTurret"/>
+	<property name="Group" value="Ammo/Weapons,Robotics"/>
+	<property name="HoldType" value="67"/>
+	<property name="Meshfile" value="#@modfolder:Resources/IZY_Melee_Throwning_Knifes.unity3d?IZY_Melee_Throwning_Knifes.Prefab"/>
+	<property name="Material" value="MJunkTurretParts"/>
+	<property name="Weight" value="1"/>
+	<property name="ScrapTimeOverride" value="10.0"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="EconomicValue" value="1000"/>
+	<property name="TraderStageTemplate" value="baseTier1"/><!-- gunBotT1JunkSledge -->
+	<property name="UnlockedBy" value="craftingRobotics"/><!-- perkTurrets,gunBotT1JunkSledgeSchematic, -->
+	<property name="ShowQuality" value="true"/>
+	<property name="SoundUnholster" value="weapon_unholster"/>
+	<property name="SoundHolster" value="weapon_holster"/>
+	<property name="SoundPickup" value="robotic_sledge_grab"/>
+	<property name="SoundPlace" value="robotic_sledge_place"/>
+	<property name="CustomIcon" value="Notready_ICON"/>
+
+	<property class="Action0">
+
+		<property name="Class" value="Ranged"/>
+		<property name="Hitmask_override" value="Melee"/>
+		<property name="UseMeleeCrosshair" value="true"/>
+		<property name="Delay" value=".8"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Sound_start" value="knife_metal_swinglight"/>
+		<property name="Sound_loop" value="knife_metal_swinglight"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Single_magazine_usage" value="true"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="dryfire"/>
+		<property name="Sphere" value=".1"/> <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="SwingDegrees" value="15"/>
+		<property name="SwingAngle" value="20"/>
+		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+		<property name="Bullet_material" value="stone"/>
+		<property name="ScopeOffset" value="0,0,0"/>
+		<property name="SideOffset" value="0,0,0"/>
+		<property name="BarrelOffset" value="0,0,0"/>
+		<property name="SupportHarvesting" value="true"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+		<property name="triggerEffectTriggerPullDualsense" value="PistolTrigger"/>
+		<property name="triggerEffectTriggerPullXbox" value="PistolTrigger"/>
+		<property name="triggerEffectTriggerShootDualsense" value="PistolShoot"/>
+		<property name="triggerEffectTriggerShootXbox" value="PistolShoot"/>
+	</property>
+	
+	<property class="Action1">
+		<requirement name="NotHasBuff" buff="IZYBuffhitting01" />
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="65"/>
+		<property name="Zoom_max_in" value="65"/>
+		<property name="SightsCameraOffset" value="-.00218,-.0082,.012"/>
+		<property name="zoomTriggerEffectPullDualsense" value="PistolZoom"/>
+		<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+	</property>
+	
+	<effect_group name="gunBotT1JunkSledge">
+		<passive_effect name="DamageFalloffRange" operation="perc_add" value="0,0" tier="1,6" tags="perkTurrets"/> <!-- random effective rng -->
+		<passive_effect name="MaxRange" operation="base_set" value="3.5" tags="perkTurrets"/>
+		<passive_effect name="BlockRange" operation="base_set" value="2.5" tags="perkTurrets"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="42" tags="perkTurrets"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="0,.1" tags="perkTurrets"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".15,.75" tier="2,6" tags="perkTurrets"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="base_set" value="17" tags="turretMelee"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.08,.08" tags="turretMelee"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".15,.75" tier="2,6" tags="turretMelee"/> <!-- tier bonus -->
+		<!-- <passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tier="1,6" tags="perkTurrets"/> --> <!-- random DegMax -->
+		<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkTurrets"/> <!-- random WeaponHandling -->
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="0" tags="perkTurrets"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0" tags="perkTurrets"/>
+
+		<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.1,.1" tags="turretMelee"/> --> <!-- random APM -->
+		<passive_effect name="MagazineSize" operation="base_set" value="-1" tags="turretMelee"/>
+		<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkTurrets"/> <!-- random WeaponHandling -->
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="220" tags="turretMelee"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="-1" tags="perkTurrets"/>
+
+		<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="0" tags="perkTurrets"/>
+		<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="0" tags="perkTurrets"/>
+		<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="0" tags="perkTurrets"/>
+		<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="0" tags="perkTurrets"/>
+
+		<passive_effect name="WeaponHandling" operation="base_set" value="1" tags="perkTurrets"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="1200,1600" tier="1,6" tags="perkTurrets"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkTurrets"/>
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="380" tags="EconomicValue"/>
+
+		<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allToolsHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_set" value="0" tags="oreWoodHarvest"/>
+		<passive_effect name="DismemberChance" operation="base_add" value=".5"/>
+		<passive_effect name="DamageModifier" operation="base_add" value="25" tags="head"/> <!-- Headshot bonus -->
+	
+		<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration=".1" force="50"> 
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+		</triggered_effect>
+	</effect_group>
+	
+	<effect_group tiered="false">
+						<!--	Thrown MODE -->		
+		<triggered_effect trigger="onSelfEquipStart" action="RemoveBuff" buff="IZY_Thrown_Mode"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="PlaySound" sound="metalstaborganic">
+			<requirement name="IsFPV"/>
+			<requirement name="!HasBuff" buff="IZY_Thrown_Mode"/>
+		</triggered_effect>
+	
+		<triggered_effect trigger="onSelfItemActivate" action="AddBuff" buff="IZY_Thrown_Mode"/>
+		<triggered_effect trigger="onSelfItemDeactivate" action="RemoveBuff" buff="IZY_Thrown_Mode"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="IZY_Thrown_Mode"/>
+		
+						<!--	Shield Bonus -->		
+		<triggered_effect trigger="onSelfAimingGunStart" action="AddBuff" buff="IZYBuff2Handsblocking">
+				<requirement name="!HasBuff" buff="IZYBuffhitting01"/>
+				<requirement name="!HasBuff" buff="IZYBuff2Handsblocking"/>
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfAimingGunStop" action="RemoveBuff" buff="IZYBuff2Handsblocking">
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="IZYBuff2Handsblocking">
+		</triggered_effect>
+		<!-- Attack recieve sound when blocking -->
+		<triggered_effect trigger="onOtherAttackedSelf" action="PlaySound" sound="organichitmetal">
+			<requirement name="IsFPV"/>
+			<requirement name="HasBuff" buff="IZYBuff2Handsblocking"/>
+		</triggered_effect>
+		
+						<!--	Melee Kick -->
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Weapon_Kick_FPV"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="RemoveBuff" buff="IZYRangeWPmeleeATK"/>
+		<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" buff="IZYRangeWPmeleeATK">
+			<requirement name="!HasBuff" buff="IZYweaponHosting"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="IZYRangeWPmeleeATK"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Weapon_Kick_FPV"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="AddBuff" buff="IZYweaponHosting">
+		</triggered_effect>
+	</effect_group>
+	
+	<effect_group name="HANDS">
+						<!--	Fancy effect like smoke barrel Eject -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Fancy_shits">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2"/>
+	
+						<!--	SHOW HIDE FPV TPV -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP"/>
+	</effect_group>
+						<!--	Hide Holdtype Hands -->	
+	<effect_group>
+		<requirement name="IsFPV"/>
+						<!--	Raw hands -->	
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="hands_A"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="hands"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="body"/>
+						<!--	Armor part -->
+	</effect_group>
+	
+	<effect_group>
+		<requirement name="IsMale"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands_A"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="body"/>
+	</effect_group>
+	<effect_group>
+		<requirement name="!IsMale"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands_A"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="body"/>
+	</effect_group>
+	
+						<!--	Refresh hands when no glove is on -->	
+	<effect_group>
+		<requirement name="ItemHasTags" tags="IZY"/>
+				<requirement name="!HasBuff" buff="WearingArmorBrownLeather"/>
+				<requirement name="!HasBuff" buff="WearingArmorBlackLeather"/>
+				<requirement name="!HasBuff" buff="WearingArmorDarkLeather"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="AddBuff" buff="RefreshHand"/>
+	</effect_group>
+</item>
+								
+<item name="IZYMeleeT4SpearPoleAxe"> <!--DO NOT ADJUST ATTACK SPEED IT SHOULD STAY AT 60 -->
+	<property name="Tags" value="IZY,IZYMELEE,melee,grunting,medium,weapon,meleeWeapon,longShaft,attPerception,perkJavelinMaster,canHaveCosmetic,spearSkill"/><!-- ,thrownWeapon -->
+	<property name="DisplayType" value="meleeSpear"/>
+	<property name="HoldType" value="59"/>
+	<property name="Meshfile" value="#@modfolder:Resources/IZY_MeleeResources.unity3d?IZY_Melee_Spear4.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_MeleeResources.unity3d?DROP_MELEE_T4SPEAR.Prefab"/>
+	<property name="Material" value="MmeleeWpnSpearParts"/>
+	<property name="Weight" value="10"/>
+	<!-- <property name="StickyMaterial" value="@:Other/Items/Weapons/Melee/Spear/Materials/spear_sticky.mat"/> -->
+	<property name="ScrapTimeOverride" value="10.0"/>
+	<property name="RepairTools" value="IZYadvancegunrepairkit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="EconomicValue" value="10000"/>
+	<property name="TraderStageTemplate" value="baseTier3"/><!-- meleeWpnSpearT0StoneSpear -->
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="ShowQuality" value="true"/>
+	<property name="Group" value="Ammo/Weapons,Basics,Melee Weapons,Ranged Weapons"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+	<!-- <property name="NavObject" value="spear"/> -->
+	<property name="SoundUnholster" value="weapon_unholster"/>
+	<property name="SoundHolster" value="weapon_holster"/>
+	<property name="SoundPickup" value="spear_wood_grab"/>
+	<property name="SoundPlace" value="spear_wood_place"/>
+	<property name="DescriptionKey" value="IZYMeleeT4SpearPoleAxeDesc"/>
+	
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Range" value="4"/>
+		<property name="Hitmask_override" value="Melee"/>
+		<property name="Sphere" value=".15"/> <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="spear_fire"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="UseGrazingHits" value="true"/>
+		<property name="IsHorizontalSwing" value="true"/>
+		<property name="GrazeStart" value=".15"/>
+		<property name="GrazeEnd" value=".3"/>
+		<property name="SwingDegrees" value="120"/>
+		<property name="SwingAngle" value="100"/>
+		<property class="HitSounds">
+			<property name="Override0" value="organic" param1="metalstaborganic"/>
+		</property>
+		<property class="GrazeSounds">
+			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+		</property>
+	</property>
+	
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Range" value="4.2"/>
+		<property name="Sphere" value=".15"/> <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="spear_fire"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+	</property>
+
+				<!--DO NOT ADJUST ATTACK SPEED IT SHOULD STAY AT 60 -->
+				<!--DO NOT ADJUST ATTACK SPEED IT SHOULD STAY AT 60 -->
+				<!--DO NOT ADJUST ATTACK SPEED IT SHOULD STAY AT 60 -->
+				
+	<effect_group name="meleeWpnSpearT3SteelSpear">
+		<triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyScreenEffect" effect_name="Dark" intensity=".5" fade=".2"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyScreenEffect" effect_name="Dark" intensity="0" fade=".2"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5" tags="perkJavelinMaster"/>
+		<display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="60"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="16" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="600,1000" tier="1,6" tags="perkJavelinMaster"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkJavelinMaster"/>
+		<passive_effect name="BlockRange" operation="base_set" value="4" tags="perkJavelinMaster"/>
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="350" tags="EconomicValue"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="40" tags="perkJavelinMaster"/> <!-- meleeWpnSpearT3SteelSpear -->
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.04,.04" tags="perkJavelinMaster"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkJavelinMaster"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="base_set" value="15" tags="perkJavelinMaster"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.04,.04" tags="perkJavelinMaster"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkJavelinMaster"/> <!-- tier bonus -->
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allToolsHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
+		<passive_effect name="RunSpeed" operation="perc_add" value=".1"/>
+		<passive_effect name="WalkSpeed" operation="perc_add" value=".15"/>
+		<passive_effect name="DismemberChance" operation="base_set" value="1"/>
+		
+		<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration=".1" force="100"> 
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="8"/>
+		</triggered_effect>
+		
+						<!--	Melee Bashing / KICK -->
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP_MELEE"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="RemoveBuff" buff="IZYRangeWPmeleeKick"/>
+		
+		<triggered_effect trigger="onSelfItemActivate" action="AddBuff" buff="IZYRangeWPmeleeKick">
+			<requirement name="!HasBuff" buff="IZYweaponHosting"/>
+			<requirement name="!HasBuff" buff="IZYBashingCooldown"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfItemDeactivate" action="AddBuff" buff="IZYRangeWPmeleeKick">
+			<requirement name="!HasBuff" buff="IZYweaponHosting"/>
+			<requirement name="!HasBuff" buff="IZYBashingCooldown"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="IZYRangeWPmeleeKick"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP_MELEE"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="AddBuff" buff="IZYweaponHosting">
+		</triggered_effect>
+		<triggered_effect trigger="onSelfKilledOther" action="RemoveBuff" buff="IZYBashingCooldown">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+		</triggered_effect>
+		<triggered_effect trigger="onOtherAttackedSelf" action="RemoveBuff" buff="IZYBashingCooldown">
+		</triggered_effect>
+		
+	</effect_group>
+	
+	<effect_group name="Power Attack">
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="ModifyScreenEffect" effect_name="Dark" intensity=".8" fade=".3"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyScreenEffect" effect_name="Dark" intensity="0" fade=".3"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="2.2" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1.2" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="28" tags="secondary"/>
+
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" tags="perkJavelinMaster">
+			<requirement name="ItemHasTags" tags="perkJavelinMaster"/>
+			<requirement name="IsSecondaryAttack"/>
+			<requirement name="ProgressionLevel" progression_name="perkSpearHunter6PenetratingShaft" operation="Equals" value="1"/>
+		</passive_effect>
+
+		<passive_effect name="BlockPenetrationFactor" operation="base_set" value="10000" tags="perkJavelinMaster"/>
+		
+		<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration=".2" force="100"> 
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+		</triggered_effect>
+	</effect_group>
+	
+	<effect_group name="HANDS">
+						<!--	Fancy effect like smoke barrel Eject -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Fancy_shits">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2"/>
+	
+						<!--	SHOW HIDE FPV TPV -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP"/>
+	</effect_group>
+						<!--	Hide Holdtype Hands -->	
+	<effect_group>
+		<requirement name="IsFPV"/>
+						<!--	Raw hands -->	
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="hands_A"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="hands"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="body"/>
+						<!--	Armor part -->
+	</effect_group>
+	
+	<effect_group>
+		<requirement name="IsMale"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands_A"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="body"/>
+	</effect_group>
+	<effect_group>
+		<requirement name="!IsMale"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands_A"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="body"/>
+	</effect_group>
+	
+						<!--	Refresh hands when no glove is on -->	
+	<effect_group>
+		<requirement name="ItemHasTags" tags="IZY"/>
+				<requirement name="!HasBuff" buff="WearingArmorBrownLeather"/>
+				<requirement name="!HasBuff" buff="WearingArmorBlackLeather"/>
+				<requirement name="!HasBuff" buff="WearingArmorDarkLeather"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="AddBuff" buff="RefreshHand"/>
+	</effect_group>
+</item>
+
+<item name="IZYMeleeT4SledghammerSpikeMace"> 				<!--DO NOT ADJUST ATTACK SPEED IT SHOULD STAY AT 52 -->
+	<property name="Tags" value="IZY,IZYMELEE,blunt,longShaft,melee,grunting,club,heavy,sledge,weapon,meleeWeapon,attStrength,perkSkullCrusher,canHaveCosmetic,sledgeSkill"/>
+	<property name="DisplayType" value="meleeHeavy"/>
+	<property name="HoldType" value="33"/>
+	<property name="Meshfile" value="#@modfolder:Resources/IZY_MeleeResources.unity3d?IZY_Melee_Mace4.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_MeleeResources.unity3d?IZY_DROP_MACE.Prefab"/>
+	<property name="Material" value="MmeleeWpnSledgeParts"/>
+	<property name="Weight" value="10"/>
+	<property name="ScrapTimeOverride" value="10.0"/>
+	<property name="RepairTools" value="IZYadvancegunrepairkit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="CustomIcon" value="IZYMeleeT4SledghammerSpikeMace"/>
+	<property name="SoundDestroy" value="metaldestroy1"/>
+	<property name="EconomicValue" value="10000"/>
+	<property name="TraderStageTemplate" value="baseTier3"/><!-- meleeWpnSledgeT3SteelSledgehammer -->
+	<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+	<property name="UnlockedBy" value="craftingSledgehammers"/><!-- meleeWpnSledgeT3SteelSledgehammerSchematic, -->
+	<property name="ShowQuality" value="true"/>
+	<property name="SoundUnholster" value="weapon_unholster"/>
+	<property name="SoundHolster" value="weapon_holster"/>
+	<property name="SoundPickup" value="sledgehammer_steel_grab"/>
+	<property name="SoundPlace" value="sledgehammer_steel_place"/>
+	<property name="DescriptionKey" value="IZYMeleeT4SledghammerSpikeMaceDesc"/>
+
+	<property class="Action0">
+		<requirement name="NotHasBuff" buff="IZYBuff2Handsblocking" />
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value=".15"/> <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="sledge_swinglight"/>
+		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+		<property name="GrazeStart" value=".25"/>
+		<property name="IsHorizontalSwing" value="true"/>
+		<property name="GrazeEnd" value=".32"/>
+		<property name="SwingDegrees" value="100"/>
+		<property name="SwingAngle" value="100"/>
+		<property class="HitSounds">
+			<property name="Override0" value="organic" param1="metalsolidhitorganic"/>
+		</property>
+		<property class="GrazeSounds">
+			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+		</property>
+	</property>
+	<property class="Action1">
+		<requirement name="NotHasBuff" buff="IZYBuffhitting01" />
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="88"/>
+		<property name="Zoom_max_in" value="88"/>
+		<property name="SightsCameraOffset" value="-.00218,-.0082,.012"/>
+		<property name="zoomTriggerEffectPullDualsense" value="PistolZoom"/>
+		<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+	</property>
+					<!--DO NOT ADJUST ATTACK SPEED IT SHOULD STAY AT 52 -->
+					<!--DO NOT ADJUST ATTACK SPEED IT SHOULD STAY AT 52 -->
+					<!--DO NOT ADJUST ATTACK SPEED IT SHOULD STAY AT 52 -->
+					
+	<effect_group name="meleeWpnSledgeT3SteelSledgehammer">
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="52"/> <!-- MUST STAY AT THIS value SPEED or the animation will NOT SYNC-->
+		<passive_effect name="StaminaLoss" operation="base_set" value="20" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="600,1000" tier="1,6" tags="perkSkullCrusher"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkSkullCrusher"/>
+		<passive_effect name="MaxRange" operation="base_set" value="3" tags="perkSkullCrusher"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkSkullCrusher"/>
+		<passive_effect name="DismemberChance" operation="base_add" value=".1" tags="perkSkullCrusher,primary"/>
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="350" tags="EconomicValue"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="160" tags="perkSkullCrusher"/> <!-- meleeWpnSledgeT3SteelSledgehammer -->
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.04,.04" tags="perkSkullCrusher"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkSkullCrusher"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="base_set" value="85" tags="perkSkullCrusher"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.04,.04" tags="perkSkullCrusher"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkSkullCrusher"/> <!-- tier bonus -->
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allToolsHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
+		
+		<passive_effect name="DamageModifier" operation="base_add" value="50" tags="head"/> <!-- Headshot bonus -->
+	
+		<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration=".1" force="500"> 
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="100"/>
+		</triggered_effect>
+	</effect_group>
+	
+	<effect_group name="Blocking">
+						<!--	Melee Bashing / KICK -->
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP_MELEE"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="RemoveBuff" buff="IZYRangeWPmeleeKick"/>
+		
+		<triggered_effect trigger="onSelfItemActivate" action="AddBuff" buff="IZYRangeWPmeleeKick">
+			<requirement name="!HasBuff" buff="IZYweaponHosting"/>
+			<requirement name="!HasBuff" buff="IZYBashingCooldown"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfItemDeactivate" action="AddBuff" buff="IZYRangeWPmeleeKick">
+			<requirement name="!HasBuff" buff="IZYweaponHosting"/>
+			<requirement name="!HasBuff" buff="IZYBashingCooldown"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="IZYRangeWPmeleeKick"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP_MELEE"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="AddBuff" buff="IZYweaponHosting">
+		</triggered_effect>
+		<triggered_effect trigger="onSelfKilledOther" action="RemoveBuff" buff="IZYBashingCooldown">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+		</triggered_effect>
+		<triggered_effect trigger="onOtherAttackedSelf" action="RemoveBuff" buff="IZYBashingCooldown">
+		</triggered_effect>
+	
+						<!--	Shield Bonus -->		
+		<triggered_effect trigger="onSelfAimingGunStart" action="AddBuff" buff="IZYBuff2Handsblocking">
+				<requirement name="!HasBuff" buff="IZYBuffhitting01"/>
+				<requirement name="!HasBuff" buff="IZYBuff2Handsblocking"/>
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfAimingGunStop" action="RemoveBuff" buff="IZYBuff2Handsblocking">
+				<requirement name="HoldingItemHasTags" tags="IZYMELEE"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="IZYBuff2Handsblocking">
+		</triggered_effect>
+		<!-- Attack recieve sound when blocking -->
+		<triggered_effect trigger="onOtherAttackedSelf" action="PlaySound" sound="organichitmetal">
+			<requirement name="IsFPV"/>
+			<requirement name="HasBuff" buff="IZYBuff2Handsblocking"/>
+		</triggered_effect>
+		
+			<!-- FANCY EFFECT _ REMOVE BELOW IF DO NOT WANT -->
+			<!-- FANCY EFFECT _ REMOVE BELOW IF DO NOT WANT -->
+			<!-- FANCY EFFECT _ REMOVE BELOW IF DO NOT WANT -->
+						<!--	boarder dark -->	
+		<triggered_effect trigger="onSelfAimingGunStart" action="ModifyScreenEffect" effect_name="Dark" intensity="1" fade=".3"/>
+		<triggered_effect trigger="onSelfAimingGunStop" action="ModifyScreenEffect" effect_name="Dark" intensity="0" fade=".3"/>
+		
+		<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="IZYBuffhitting01">
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="LeftKnuckles"/>
+						<!--	HITsound -->	
+		<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="MACE_HIT_group">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+						<!--	Killsound -->	
+		<triggered_effect trigger="onSelfKilledOther" action="PlaySound" sound="MACE_kill_group">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		
+						<!--	Fancy effect like smoke barrel Eject -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Fancy_shits">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2"/>
+					<!-- FANCY EFFECT _  -->
+					<!-- FANCY EFFECT _  -->
+					<!-- FANCY EFFECT _  -->
+	</effect_group>
+	
+	<effect_group name="HANDS">
+						<!--	SHOW HIDE FPV TPV -->		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="FPV_GROUP"/>
+		
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="3rdPV_GROUP"/>
+	</effect_group>
+						<!--	Hide Holdtype Hands -->	
+	<effect_group>
+		<requirement name="IsFPV"/>
+						<!--	Raw hands -->	
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="hands_A"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="hands"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" transform_path="body"/>
+						<!--	Armor part -->
+	</effect_group>
+	
+	<effect_group>
+		<requirement name="IsMale"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands_A"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="body"/>
+	</effect_group>
+	<effect_group>
+		<requirement name="!IsMale"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands_A"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="hands"/>
+		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="body"/>
+	</effect_group>
+	
+						<!--	Refresh hands when no glove is on -->	
+	<effect_group>
+		<requirement name="ItemHasTags" tags="IZY"/>
+				<requirement name="!HasBuff" buff="WearingArmorBrownLeather"/>
+				<requirement name="!HasBuff" buff="WearingArmorBlackLeather"/>
+				<requirement name="!HasBuff" buff="WearingArmorDarkLeather"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="AddBuff" buff="RefreshHand"/>
+	</effect_group>
+</item>
+
+</append>
+</configs>

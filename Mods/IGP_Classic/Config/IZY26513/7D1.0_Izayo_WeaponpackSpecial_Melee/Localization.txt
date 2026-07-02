@@ -1,0 +1,9 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+
+IZYMeleeT4BladeKatana,items,gun,,Katana (T4),Katana (T4),,,,,,,,,,,,,,
+IZYMeleeT4BladeKatanaDesc,items,gun,,,A 2 handed Swrord.\nMerge light and power attack in one .\nRight Click to block .\nRepair with a -Advanced Repair Kit.\nScrap to - Blade Parts.\n[ff8000]Attack Speed Must Stay at 105[-].,,,,,,,,,,,,,
+IZYMeleeT4SledghammerSpikeMace,items,gun,,Spike Mace(T4),Spike Mace(T4),,,,,,,,,,,,,,
+IZYMeleeT4SledghammerSpikeMaceDesc,items,gun,,,A 2 handed Spike Mace.\nMerge light and power attack in one .\nRight Click to block .\nRepair with a -Advanced Repair Kit.\nScrap to - Sledghammer Parts.\n[ff8000]Attack Speed Must Stay at 52[-].,,,,,,,,,,,,,,,
+IZYMeleeT4SpearPoleAxe,items,gun,,PoleAxe(T4),PoleAxe(T4),,,,,,,,,,,,,,
+IZYMeleeT4SpearPoleAxeDesc,items,gun,,,A 2 handed Multi purpose weapon.\nLeft-Click to horizontal sweep attack  .\nRight Click to Thrust like a normal Spear.\nRepair with a -Advanced Repair Kit.\nScrap to - Spear Parts.\n[ff8000]Attack Speed Must Stay at 60[-].,,,,,,,,,,,,,,,

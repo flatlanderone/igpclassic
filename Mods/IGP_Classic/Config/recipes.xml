@@ -1,0 +1,18 @@
+<IGPClassicFLTR>
+
+<include filename="IZY26513/7D1.0_Izayo_Visible_FPV_Gloves_mod/recipes.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_Visible_Mods_mod/recipes.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackMisc_pack/recipes.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_9mmVAL/recipes.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_44mag/recipes.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_45ACP/recipes.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_556pack/recipes.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_762pack/recipes.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_DemolitionPack/recipes.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_Heavy_WeaponPack/recipes.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_SHOTGUNpackVAL/recipes.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_Technicalpack/recipes.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackSpecial_Melee/recipes.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackVanillaReplacer/recipes.xml"/>
+
+</IGPClassicFLTR>

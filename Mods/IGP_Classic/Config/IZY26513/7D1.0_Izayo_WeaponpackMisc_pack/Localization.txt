@@ -1,0 +1,6 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+ammoCrossbowLightBoltStone,items,gun,,Stone Light Bolt.,Stone Light Bolt.,,,,,,,,,,,,,,
+ammoCrossbowLightBoltIron,items,gun,,Iron Light Bolt.,Iron Light Bolt.,,,,,,,,,,,,,,
+ammoCrossbowLightBoltSteelAP,items,gun,,Steel Light Bolt.,Steel Light Bolt.,,,,,,,,,,,,,,
+IZYgunT4BowVanhelsingAutomaticCrossbowVH,items,gun,,VH Automatic Crossbow (T4),VH Automatic Crossbow (T4),,,,,,,,,,,,,,

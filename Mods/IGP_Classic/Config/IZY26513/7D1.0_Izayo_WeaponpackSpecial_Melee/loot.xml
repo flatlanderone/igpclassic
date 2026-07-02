@@ -1,0 +1,33 @@
+<configs>
+		<!-- oooooooooooo  -->
+		<!-- CREATE GROUP  -->
+		<!-- oooooooooooo  -->
+
+
+
+	
+		<!-- oooooooooooo oooooooooooo oooooooooooo  -->
+		<!-- Adding new weapon groups to loot groups  -->
+		<!-- oooooooooooo oooooooooooo oooooooooooo -->
+	<append xpath="//lootgroup[@name='groupWeaponsT2_Melee']">	
+		<item name="IZYMeleeT4SledghammerSpikeMace"/>
+		<item name="IZYMeleeT4SpearPoleAxe"/>
+	</append>
+	
+	
+		<!-- oooooooooooo oooooooooooo oooooooooooo  -->
+				<!-- QUEST REWARD sg GUN  -->
+		<!-- oooooooooooo oooooooooooo oooooooooooo -->
+	
+	<append xpath="//lootgroup[@name='groupQuestWeaponsMeleeT2']">	
+		<item name="IZYMeleeT4SledghammerSpikeMace"/>
+		<item name="IZYMeleeT4SpearPoleAxe"/>
+	</append>
+
+	
+		<!-- oooooooooooo oooooooooooo oooooooooooo  -->
+					<!-- add new AMMO -->
+		<!-- oooooooooooo oooooooooooo oooooooooooo -->
+
+
+</configs>

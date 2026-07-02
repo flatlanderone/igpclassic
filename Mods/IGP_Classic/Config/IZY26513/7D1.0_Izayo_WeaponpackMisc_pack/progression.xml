@@ -1,0 +1,15 @@
+<configs>
+
+					<!-- Chonky's code-->
+					
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBows']/display_entry[@item='gunBowT3CompoundCrossbow']">
+	<unlock_entry item="IZYgunT4BowVanhelsingAutomaticCrossbowVH" unlock_tier="1" tags="IZYgunT4BowVanhelsingAutomaticCrossbowVH"/>
+</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBows']/effect_group">
+	<passive_effect name="RecipeTagUnlocked" operation="base_set" level="56,100" value="1" tags="IZYgunT4BowVanhelsingAutomaticCrossbowVH"/>
+	<passive_effect name="CraftingTier" operation="base_add" level="59,63,67,71,75" value="1,2,3,4,5" tags="IZYgunT4BowVanhelsingAutomaticCrossbowVH"/>
+</append>
+
+<!-- -->
+
+</configs>	

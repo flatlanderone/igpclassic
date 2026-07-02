@@ -1,0 +1,39 @@
+<configs>
+
+					<!--Chonky's Code -->
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/display_entry[@item='meleeWpnBladeT3Machete']">
+	<unlock_entry item="IZYMeleeT4BladeKatana" unlock_tier="1" tags="IZYMeleeT4BladeKatana"/>
+</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/effect_group">
+	<passive_effect name="RecipeTagUnlocked" operation="base_set" level="36,75" value="1" tags="IZYMeleeT4BladeKatana"/>
+	<passive_effect name="CraftingTier" operation="base_add" level="43,51,59,67,75" value="1,2,3,4,5" tags="IZYMeleeT4BladeKatana"/>
+</append>
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSledgehammers']/display_entry[@item='meleeWpnSledgeT3SteelSledgehammer']">
+	<unlock_entry item="IZYMeleeT4SledghammerSpikeMace" unlock_tier="1" tags="IZYMeleeT4SledghammerSpikeMace"/>
+</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSledgehammers']/effect_group">
+	<passive_effect name="RecipeTagUnlocked" operation="base_set" level="36,75" value="1" tags="IZYMeleeT4SledghammerSpikeMace"/>
+	<passive_effect name="CraftingTier" operation="base_add" level="43,51,59,67,75" value="1,2,3,4,5" tags="IZYMeleeT4SledghammerSpikeMace"/>
+</append>
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSpears']/display_entry[@item='meleeWpnSpearT3SteelSpear']">
+	<unlock_entry item="IZYMeleeT4SpearPoleAxe" unlock_tier="1" tags="IZYMeleeT4SpearPoleAxe"/>
+</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSpears']/effect_group">
+	<passive_effect name="RecipeTagUnlocked" operation="base_set" level="36,75" value="1" tags="IZYMeleeT4SpearPoleAxe"/>
+	<passive_effect name="CraftingTier" operation="base_add" level="43,51,59,67,75" value="1,2,3,4,5" tags="IZYMeleeT4SpearPoleAxe"/>
+</append>
+
+
+			<!-- Make IZY melee not recieving ATTACK Speed bonus -->
+			<!-- Make IZY melee not recieving ATTACK Speed bonus -->
+			<!-- Make IZY melee not recieving ATTACK Speed bonus -->
+
+
+
+
+<!-- -->
+
+</configs>	

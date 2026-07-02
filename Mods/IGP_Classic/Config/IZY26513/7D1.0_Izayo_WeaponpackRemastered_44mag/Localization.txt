@@ -1,0 +1,7 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+
+IZYgunT3PistolMagnumAutomag44,items,gun,,.44 AutoMag Heavy Pistol(T3),.44 AutoMag Heavy Pistol(T3),,,,,,,,,,,,,,
+IZYgunT3PistolMagnumAutomag44Desc,items,gun,,,[00FF00]Weapon Type[-] : Heavy Pistol. \n[00FF00]Attribute[-] : Agility./[00FF00]Perk[-] : Gunslinger.\n[00FF00]Ammo/Cartridge[-] : .44 Magnum.\n[00FF00]Repair tool[-] : Repair Kit.\n[00FF00]Material[-] : Pistol parts. \n[00FF00]Unique Ability[-] : [ff8000]None[-].,,,,,,,,,,,,,
+IZYgunT4DualMagnumDesertEagles,items,gun,,Dual - Desert Eagles (T4),Dual - Desert Eagles (T4),,,,,,,,,,,,,,
+IZYgunT4DualMagnumDesertEaglesDesc,items,gun,,,[00FF00]Weapon Type[-] : Dual - Heavy Pistol. \n[00FF00]Attribute[-] : Agility./[00FF00]Perk[-] : Gunslinger.\n[00FF00]Ammo/Cartridge[-] : .44 Magnum.\n[00FF00]Repair tool[-] : Advanced Repair Kit.\n[00FF00]Material[-] : Pistol parts. \n[00FF00]Unique Ability[-] : [ff8000]None[-].,,,,,,,,,,,,,

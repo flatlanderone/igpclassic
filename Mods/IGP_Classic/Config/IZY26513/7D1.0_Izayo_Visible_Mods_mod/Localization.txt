@@ -1,0 +1,6 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+IZYadvancegunrepairkit,items,gun,,Advanced Repair Kit,Advanced Repair Kit,,,,,,,,,,,,,,
+IZYadvancegunrepairkitDesc,items,gun,,,A repair kit used for repairs Tier 4 Weapons.,,,,,,,,,,,,,,,
+buffIZYNightHunterKitName,buffs,Buff,,Night Hunter,Night Hunter,,,,,,,,,,,,,,
+IZYNightHunterKitDesc,buffs,Buff,,,- Toggle-on Nightvision scope at Night time.\n- +50% Damage while aim down sight at Night time.,,,,,,,,,,,,,,,

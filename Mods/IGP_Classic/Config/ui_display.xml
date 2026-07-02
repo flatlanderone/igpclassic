@@ -1,0 +1,18 @@
+<IGPClassicFLTR>
+
+<include filename="IZY26513/7D1.0_Izayo_Visible_FPV_Gloves_mod/ui_display.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_Visible_Mods_mod/ui_display.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackMisc_pack/ui_display.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_9mmVAL/ui_display.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_44mag/ui_display.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_45ACP/ui_display.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_556pack/ui_display.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_762pack/ui_display.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_DemolitionPack/ui_display.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_Heavy_WeaponPack/ui_display.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_SHOTGUNpackVAL/ui_display.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackRemastered_Technicalpack/ui_display.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackSpecial_Melee/ui_display.xml"/>
+<include filename="IZY26513/7D1.0_Izayo_WeaponpackVanillaReplacer/ui_display.xml"/>
+
+</IGPClassicFLTR>

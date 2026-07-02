@@ -1,0 +1,12 @@
+<configs>
+		<!-- oooooooooooo  -->
+		<!-- CREATE GROUP  -->
+		<!-- oooooooooooo  -->
+
+	<insertAfter xpath="//lootgroup[@name='groupWeaponsT3_Machinegunner']">
+		<item name="IZYgunT5HeavyWeaponM134MinigunGatling" loot_prob_template="low"/>
+	</insertAfter>
+	<insertAfter xpath="//lootgroup[@name='groupWeaponsT3_Boomstick']">
+		<item name="IZYgunT5HeavyWeaponM2flameThrower" loot_prob_template="low"/>
+	</insertAfter>
+</configs>

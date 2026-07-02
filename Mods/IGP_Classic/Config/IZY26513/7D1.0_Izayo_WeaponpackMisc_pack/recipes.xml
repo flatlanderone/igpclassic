@@ -1,0 +1,93 @@
+<addnew>
+
+	<append xpath="/recipes">
+
+		<!--	***************************	-->
+			<!--	9mm T0 smg    -->
+		<!--	***************************	-->
+		<!--
+		<recipe name="ammoleadball" count="1" craft_area="campfire">
+			<ingredient name="resourceScrapLead" count="5"/>
+		</recipe>
+		
+		<recipe name="ammoMuzzleloadershot" count="1">
+			<ingredient name="ammoleadball" count="1"/>
+			<ingredient name="resourceGunPowder" count="2"/>
+			<ingredient name="resourcePaper" count="1"/>
+		</recipe>
+		
+		<recipe name="ammoMuzzleloaderscattershot" count="1">
+			<ingredient name="resourceRockSmall" count="2"/>
+			<ingredient name="resourceGunPowder" count="5"/>
+			<ingredient name="resourcePaper" count="1"/>
+		</recipe>
+	
+	
+		<recipe name="IZYgunTminus1MusketshotgunBlunderbuss" count="1">
+			<ingredient name="resourceMetalPipe" count="2"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<ingredient name="resourceWood" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceMetalPipe,resourceGlue,resourceWood"/>
+			</effect_group>
+		</recipe>
+		
+		<recipe name="IZYgunTminus1MusketFlintlockPistol" count="1">
+			<ingredient name="resourceMetalPipe" count="2"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<ingredient name="resourceWood" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceMetalPipe,resourceGlue,resourceWood"/>
+			</effect_group>
+		</recipe>
+		
+		<recipe name="IZYgunTminus1MusketM1777Rifle" count="1">
+			<ingredient name="resourceMetalPipe" count="3"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<ingredient name="resourceWood" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceMetalPipe,resourceGlue,resourceWood"/>
+			</effect_group>
+		</recipe>
+-->
+		<recipe name="ammoCrossbowLightBoltStone" count="1">
+			<ingredient name="ammoCrossbowBoltStone" count="1"/>
+		</recipe>
+		
+		<recipe name="ammoCrossbowLightBoltIron" count="1">
+			<ingredient name="ammoCrossbowBoltIron" count="1"/>
+		</recipe>
+		
+		<recipe name="ammoCrossbowLightBoltSteelAP" count="1">
+			<ingredient name="ammoCrossbowBoltSteelAP" count="1"/>
+		</recipe>
+		
+		<recipe name="ammoCrossbowLightBoltStone" count="1">
+			<ingredient name="ammoArrowStone" count="1"/>
+		</recipe>
+		
+		<recipe name="ammoCrossbowLightBoltIron" count="1">
+			<ingredient name="ammoArrowIron" count="1"/>
+		</recipe>
+		
+		<recipe name="ammoCrossbowLightBoltSteelAP" count="1">
+			<ingredient name="ammoArrowSteelAP" count="1"/>
+		</recipe>
+
+		<recipe name="IZYgunT4BowVanhelsingAutomaticCrossbowVH" count="1" craft_time="500" craft_area="workbench" tags="learnable,perkArchery,workbenchCrafting">
+			<ingredient name="gunBowT1WoodenBowParts" count="16"/>
+			<ingredient name="resourceForgedSteel" count="120"/>
+			<ingredient name="resourceDuctTape" count="15"/>
+			<ingredient name="resourceLegendaryParts" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="1,5" tags="gunBowT1WoodenBowParts,resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="2,10" tags="resourceLeather"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceForgedSteel"/>
+				<passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+
+	</append>
+
+
+</addnew>

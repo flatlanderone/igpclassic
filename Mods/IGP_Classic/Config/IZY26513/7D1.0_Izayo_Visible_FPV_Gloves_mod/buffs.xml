@@ -1,0 +1,1653 @@
+<configs>
+
+				<!--	BUFF THAT MAKE GLOVES VISIBLE	    -->
+
+
+
+	<append xpath="/buffs">
+
+
+				<!-- OOOOOOOOOOOOOO	 HAND REFRESH OOOOOOOOOOOOOOOO    -->
+				
+		<buff name="IZYGlovesEffect" hidden="true" icon="ui_game_symbol_lightbulb" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				<requirement name="IsFPV"/>
+				<requirement name="ItemHasTags" tags="IZY"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" transform_path="hands_A"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" transform_path="body"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="hands_A"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="body"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" transform_path="body"/>
+			</effect_group>
+		</buff>
+				<!-- OOOOOOOOOOOOOO	 HAND REFRESH OOOOOOOOOOOOOOOO    -->
+				
+		<buff name="RefreshHand" hidden="true" icon="ui_game_symbol_lightbulb" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="0.001"/>
+			<effect_group tiered="false">
+				<requirement name="ItemHasTags" tags="IZY"/>
+				<requirement name="IsFPV"/>
+				
+				<!--	Only Refresh when you don't have an armor buff	   -->
+				<requirement name="!HasBuff" buff="WearingArmorBrownLeather"/>
+				<requirement name="!HasBuff" buff="WearingArmorBlackLeather"/>
+				<requirement name="!HasBuff" buff="WearingArmorDarkLeather"/>
+				<!--	Only Refresh when you don't have an armor buff	   -->
+				
+				
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HandWarp_Right"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HandWarp_Left"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Armormod_Steelplat_Forarm001"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Armormod_Steelplat_Forarm002"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Pocket_modgroup_right"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Pocket_modgroup_left"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE_2"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE_2"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE_2"/> 
+				
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HandWarp_Right"/> 
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HandWarp_Left"/> 
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE"/> 
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE"/> 
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE"/> 
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Armormod_Steelplat_Forarm001"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Armormod_Steelplat_Forarm002"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Pocket_modgroup_left"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Pocket_modgroup_right"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE_2"/> 
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE_2"/> 
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE_2"/> 
+				
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT_2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT_2"/>
+			</effect_group>
+		</buff>
+		
+				<!-- OOOOOOOOOOOOOO	 VISIBLE LOWER WEARS	OOOOOOOOOOOOOOOO    -->
+				<!-- OOOOOOOOOOOOOO	 VISIBLE LOWER WEARS	OOOOOOOOOOOOOOOO    -->
+				<!-- OOOOOOOOOOOOOO	 VISIBLE LOWER WEARS	OOOOOOOOOOOOOOOO    -->
+		<buff name="WearingLower" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				<requirement name="ItemHasTags" tags="IZY"/>
+				<requirement name="IsFPV"/>
+				<!--	Show LOWER		    -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Armor_group_ON"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Armor_group_OFF"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Armor_group_ON_2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Armor_group_OFF_2"/>
+				<!--	REMOVE		    -->
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Armor_group_ON"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Armor_group_OFF"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Armor_group_ON_2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Armor_group_OFF_2"/>
+
+			</effect_group>
+		</buff>
+
+				<!-- OOOOOOOOOOOOOO	 VISIBLE GLOVES	OOOOOOOOOOOOOOOO    -->
+				<!-- OOOOOOOOOOOOOO	 VISIBLE GLOVES	OOOOOOOOOOOOOOOO    -->
+				<!-- OOOOOOOOOOOOOO	 VISIBLE GLOVES	OOOOOOOOOOOOOOOO    -->
+				
+		<buff name="WearingArmorBrownLeather" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				<requirement name="IsFPV"/>
+				<requirement name="ItemHasTags" tags="IZY"/>
+				<!--	Show GLOVES		    -->
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HandWarp_Right"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HandWarp_Left"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" transform_path="hands_A"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" transform_path="body"/>
+
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT_2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT_2"/>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE_2"/>
+				<!--	Hide Vanilla Hands FPV	 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="hands_A"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="body"/>
+				<!--	Hide Raw Hands		 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT_2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT_2"/>
+				<!--	REMOVE		    -->
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HandWarp_Right"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HandWarp_Left"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT_2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT_2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="hands_A"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="body"/>
+			</effect_group>
+			
+		</buff>
+		
+		<buff name="WearingArmorBlackLeather" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				<requirement name="IsFPV"/>
+				<requirement name="ItemHasTags" tags="IZY"/>
+				<!--	Show GLOVES		    -->
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HandWarp_Right"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HandWarp_Left"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" transform_path="hands_A"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" transform_path="body"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT_2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT_2"/>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE_2"/>
+				<!--	Hide Vanilla Hands FPV	 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="hands_A"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="body"/>
+				<!--	Hide Raw Hands		 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT_2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT_2"/>
+				<!--	REMOVE		    -->
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HandWarp_Right"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HandWarp_Left"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT_2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT_2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="hands_A"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="body"/>
+			</effect_group>
+			
+		</buff>
+		
+		<buff name="WearingArmorDarkLeather" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				<requirement name="IsFPV"/>
+				<requirement name="ItemHasTags" tags="IZY"/>
+				<!--	Show GLOVES		    -->
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" transform_path="hands_A"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" transform_path="body"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT_2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT_2"/>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBlack_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherBrown_Gloves_BASE_2"/>
+				<!--	Hide Vanilla Hands FPV	 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="hands_A"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="body"/>
+				<!--	Hide Raw Hands		 -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT_2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT_2"/>
+				<!--	REMOVE		    -->
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HandWarp_Right"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="HandWarp_Left"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="IZY_LeatherDark_Gloves_BASE_2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_LEFT_2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="HAND_RAW_RIGHT_2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="hands_A"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="hands"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="body"/>
+			</effect_group>
+			
+		</buff>
+	
+				<!-- OOOOOOOOOOOOOO	 VISIBLE AMMO IN BELT	OOOOOOOOOOOOOOOO    -->
+		
+		<buff name="IZYBeltAmmoCheck_01" hidden="true" icon="ui_game_symbol_lightbulb" remove_on_death="false"> <!--  FOR LMG    -->
+			<stack_type value="ignore"/>
+			<update_rate value="1"/>
+			<duration value="0"/>
+			<effect_group tiered="false">
+				<requirement name="ItemHasTags" tags="IZY,IZYLMG"/>
+				<requirement name="IsFPV"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_12">
+					<requirement name="RoundsInMagazine" operation="LT" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_11">
+					<requirement name="RoundsInMagazine" operation="LT" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_10">
+					<requirement name="RoundsInMagazine" operation="LT" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_09">
+					<requirement name="RoundsInMagazine" operation="LT" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_08">
+					<requirement name="RoundsInMagazine" operation="LT" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_07">
+					<requirement name="RoundsInMagazine" operation="LT" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_06">
+					<requirement name="RoundsInMagazine" operation="LT" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_05">
+					<requirement name="RoundsInMagazine" operation="LT" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_04">
+					<requirement name="RoundsInMagazine" operation="LT" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_03">
+					<requirement name="RoundsInMagazine" operation="LT" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_02">
+					<requirement name="RoundsInMagazine" operation="LT" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_01">
+					<requirement name="RoundsInMagazine" operation="LT" value="1"/>
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_12">
+					<requirement name="RoundsInMagazine" operation="LT" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_11">
+					<requirement name="RoundsInMagazine" operation="LT" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_10">
+					<requirement name="RoundsInMagazine" operation="LT" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_09">
+					<requirement name="RoundsInMagazine" operation="LT" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_08">
+					<requirement name="RoundsInMagazine" operation="LT" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_07">
+					<requirement name="RoundsInMagazine" operation="LT" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_06">
+					<requirement name="RoundsInMagazine" operation="LT" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_05">
+					<requirement name="RoundsInMagazine" operation="LT" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_04">
+					<requirement name="RoundsInMagazine" operation="LT" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_03">
+					<requirement name="RoundsInMagazine" operation="LT" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_02">
+					<requirement name="RoundsInMagazine" operation="LT" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_01">
+					<requirement name="RoundsInMagazine" operation="LT" value="1"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_12">
+					<requirement name="RoundsInMagazine" operation="LT" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_11">
+					<requirement name="RoundsInMagazine" operation="LT" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_10">
+					<requirement name="RoundsInMagazine" operation="LT" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_09">
+					<requirement name="RoundsInMagazine" operation="LT" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_08">
+					<requirement name="RoundsInMagazine" operation="LT" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_07">
+					<requirement name="RoundsInMagazine" operation="LT" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_06">
+					<requirement name="RoundsInMagazine" operation="LT" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_05">
+					<requirement name="RoundsInMagazine" operation="LT" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_04">
+					<requirement name="RoundsInMagazine" operation="LT" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_03">
+					<requirement name="RoundsInMagazine" operation="LT" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_02">
+					<requirement name="RoundsInMagazine" operation="LT" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_01">
+					<requirement name="RoundsInMagazine" operation="LT" value="1"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_12">
+					<requirement name="RoundsInMagazine" operation="GTE" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_11">
+					<requirement name="RoundsInMagazine" operation="GTE" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_10">
+					<requirement name="RoundsInMagazine" operation="GTE" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_09">
+					<requirement name="RoundsInMagazine" operation="GTE" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_08">
+					<requirement name="RoundsInMagazine" operation="GTE" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_07">
+					<requirement name="RoundsInMagazine" operation="GTE" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_06">
+					<requirement name="RoundsInMagazine" operation="GTE" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_05">
+					<requirement name="RoundsInMagazine" operation="GTE" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_04">
+					<requirement name="RoundsInMagazine" operation="GTE" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_03">
+					<requirement name="RoundsInMagazine" operation="GTE" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_02">
+					<requirement name="RoundsInMagazine" operation="GTE" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_01">
+					<requirement name="RoundsInMagazine" operation="GTE" value="1"/>
+				</triggered_effect>
+				
+					<!-- OOOOOOOOOOOOOO	 oooooooooooooooooooooooooooooooooooooooooooooooooooooo	OOOOOOOOOOOOOOOO    -->
+					
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_12_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_11_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_10_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_09_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_08_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_07_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_06_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_05_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_04_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_03_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_02_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_01_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="1"/>
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_12_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_11_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_10_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_09_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_08_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_07_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_06_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_05_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_04_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_03_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_02_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_01_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="1"/>
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_12_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_11_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_10_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_09_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_08_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_07_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_06_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_05_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_04_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_03_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_02_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_01_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="1"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_12_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_11_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_10_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_09_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_08_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_07_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_06_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_05_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_04_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_03_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_02_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_01_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="1"/>
+				</triggered_effect>
+		
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_12_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_11_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_10_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_09_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_08_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_07_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_06_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_05_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_04_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_03_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_02_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_01_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="1"/>
+				</triggered_effect>
+					<!-- OOOOOOOOOOOOOO	 oooooooooooooooooooooooooooooooooooooooooooooooooooooo	OOOOOOOOOOOOOOOO    -->
+			</effect_group>
+		</buff>
+					<!-- OOOOOOOOOOOOOO	 oooooooooooooooooooooooooooooooooooooooooooooooooooooo	OOOOOOOOOOOOOOOO    -->
+										<!-- OOOOOOOOOOOOOO	 oooooooooooooooooooooooooooooooooooooooooooooooooooooo	OOOOOOOOOOOOOOOO    -->
+															<!-- OOOOOOOOOOOOOO	 oooooooooooooooooooooooooooooooooooooooooooooooooooooo	OOOOOOOOOOOOOOOO    -->
+															
+		<buff name="IZYBeltAmmoCheck_02" hidden="false" icon="ui_game_symbol_lightbulb" remove_on_death="false"> <!--  FOR crossbow    -->
+			<stack_type value="ignore"/>
+			<update_rate value="1"/>
+			<duration value="0"/>
+			<effect_group tiered="false">
+				<requirement name="ItemHasTags" tags="IZY,IZYLMG"/>
+				<requirement name="IsFPV"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_morethan_40">
+					<requirement name="RoundsInMagazine" operation="LT" value="40"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_36">
+					<requirement name="RoundsInMagazine" operation="LT" value="36"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_35">
+					<requirement name="RoundsInMagazine" operation="LT" value="35"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_34">
+					<requirement name="RoundsInMagazine" operation="LT" value="34"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_33">
+					<requirement name="RoundsInMagazine" operation="LT" value="33"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_32">
+					<requirement name="RoundsInMagazine" operation="LT" value="32"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_31">
+					<requirement name="RoundsInMagazine" operation="LT" value="31"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_30">
+					<requirement name="RoundsInMagazine" operation="LT" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_29">
+					<requirement name="RoundsInMagazine" operation="LT" value="29"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_28">
+					<requirement name="RoundsInMagazine" operation="LT" value="28"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_27">
+					<requirement name="RoundsInMagazine" operation="LT" value="27"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_26">
+					<requirement name="RoundsInMagazine" operation="LT" value="26"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_25">
+					<requirement name="RoundsInMagazine" operation="LT" value="25"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_24">
+					<requirement name="RoundsInMagazine" operation="LT" value="24"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_23">
+					<requirement name="RoundsInMagazine" operation="LT" value="23"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_22">
+					<requirement name="RoundsInMagazine" operation="LT" value="22"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_21">
+					<requirement name="RoundsInMagazine" operation="LT" value="21"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_20">
+					<requirement name="RoundsInMagazine" operation="LT" value="20"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_19">
+					<requirement name="RoundsInMagazine" operation="LT" value="19"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_18">
+					<requirement name="RoundsInMagazine" operation="LT" value="18"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_17">
+					<requirement name="RoundsInMagazine" operation="LT" value="17"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_16">
+					<requirement name="RoundsInMagazine" operation="LT" value="16"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_15">
+					<requirement name="RoundsInMagazine" operation="LT" value="15"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_14">
+					<requirement name="RoundsInMagazine" operation="LT" value="14"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_13">
+					<requirement name="RoundsInMagazine" operation="LT" value="13"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_12">
+					<requirement name="RoundsInMagazine" operation="LT" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_11">
+					<requirement name="RoundsInMagazine" operation="LT" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_10">
+					<requirement name="RoundsInMagazine" operation="LT" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_09">
+					<requirement name="RoundsInMagazine" operation="LT" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_08">
+					<requirement name="RoundsInMagazine" operation="LT" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_07">
+					<requirement name="RoundsInMagazine" operation="LT" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_06">
+					<requirement name="RoundsInMagazine" operation="LT" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_05">
+					<requirement name="RoundsInMagazine" operation="LT" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_04">
+					<requirement name="RoundsInMagazine" operation="LT" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_03">
+					<requirement name="RoundsInMagazine" operation="LT" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_02">
+					<requirement name="RoundsInMagazine" operation="LT" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_01">
+					<requirement name="RoundsInMagazine" operation="LT" value="1"/>
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_morethan_40">
+					<requirement name="RoundsInMagazine" operation="LT" value="40"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_36">
+					<requirement name="RoundsInMagazine" operation="LT" value="36"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_35">
+					<requirement name="RoundsInMagazine" operation="LT" value="35"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_34">
+					<requirement name="RoundsInMagazine" operation="LT" value="34"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_33">
+					<requirement name="RoundsInMagazine" operation="LT" value="33"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_32">
+					<requirement name="RoundsInMagazine" operation="LT" value="32"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_31">
+					<requirement name="RoundsInMagazine" operation="LT" value="31"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_30">
+					<requirement name="RoundsInMagazine" operation="LT" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_29">
+					<requirement name="RoundsInMagazine" operation="LT" value="29"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_28">
+					<requirement name="RoundsInMagazine" operation="LT" value="28"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_27">
+					<requirement name="RoundsInMagazine" operation="LT" value="27"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_26">
+					<requirement name="RoundsInMagazine" operation="LT" value="26"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_25">
+					<requirement name="RoundsInMagazine" operation="LT" value="25"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_24">
+					<requirement name="RoundsInMagazine" operation="LT" value="24"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_23">
+					<requirement name="RoundsInMagazine" operation="LT" value="23"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_22">
+					<requirement name="RoundsInMagazine" operation="LT" value="22"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_21">
+					<requirement name="RoundsInMagazine" operation="LT" value="21"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_20">
+					<requirement name="RoundsInMagazine" operation="LT" value="20"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_19">
+					<requirement name="RoundsInMagazine" operation="LT" value="19"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_18">
+					<requirement name="RoundsInMagazine" operation="LT" value="18"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_17">
+					<requirement name="RoundsInMagazine" operation="LT" value="17"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_16">
+					<requirement name="RoundsInMagazine" operation="LT" value="16"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_15">
+					<requirement name="RoundsInMagazine" operation="LT" value="15"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_14">
+					<requirement name="RoundsInMagazine" operation="LT" value="14"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_13">
+					<requirement name="RoundsInMagazine" operation="LT" value="13"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_12">
+					<requirement name="RoundsInMagazine" operation="LT" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_11">
+					<requirement name="RoundsInMagazine" operation="LT" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_10">
+					<requirement name="RoundsInMagazine" operation="LT" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_09">
+					<requirement name="RoundsInMagazine" operation="LT" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_08">
+					<requirement name="RoundsInMagazine" operation="LT" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_07">
+					<requirement name="RoundsInMagazine" operation="LT" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_06">
+					<requirement name="RoundsInMagazine" operation="LT" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_05">
+					<requirement name="RoundsInMagazine" operation="LT" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_04">
+					<requirement name="RoundsInMagazine" operation="LT" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_03">
+					<requirement name="RoundsInMagazine" operation="LT" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_02">
+					<requirement name="RoundsInMagazine" operation="LT" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_01">
+					<requirement name="RoundsInMagazine" operation="LT" value="1"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_morethan_40">
+					<requirement name="RoundsInMagazine" operation="LT" value="40"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_36">
+					<requirement name="RoundsInMagazine" operation="LT" value="36"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_35">
+					<requirement name="RoundsInMagazine" operation="LT" value="35"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_34">
+					<requirement name="RoundsInMagazine" operation="LT" value="34"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_33">
+					<requirement name="RoundsInMagazine" operation="LT" value="33"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_32">
+					<requirement name="RoundsInMagazine" operation="LT" value="32"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_31">
+					<requirement name="RoundsInMagazine" operation="LT" value="31"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_30">
+					<requirement name="RoundsInMagazine" operation="LT" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_29">
+					<requirement name="RoundsInMagazine" operation="LT" value="29"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_28">
+					<requirement name="RoundsInMagazine" operation="LT" value="28"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_27">
+					<requirement name="RoundsInMagazine" operation="LT" value="27"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_26">
+					<requirement name="RoundsInMagazine" operation="LT" value="26"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_25">
+					<requirement name="RoundsInMagazine" operation="LT" value="25"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_24">
+					<requirement name="RoundsInMagazine" operation="LT" value="24"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_23">
+					<requirement name="RoundsInMagazine" operation="LT" value="23"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_22">
+					<requirement name="RoundsInMagazine" operation="LT" value="22"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_21">
+					<requirement name="RoundsInMagazine" operation="LT" value="21"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_20">
+					<requirement name="RoundsInMagazine" operation="LT" value="20"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_19">
+					<requirement name="RoundsInMagazine" operation="LT" value="19"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_18">
+					<requirement name="RoundsInMagazine" operation="LT" value="18"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_17">
+					<requirement name="RoundsInMagazine" operation="LT" value="17"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_16">
+					<requirement name="RoundsInMagazine" operation="LT" value="16"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_15">
+					<requirement name="RoundsInMagazine" operation="LT" value="15"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_14">
+					<requirement name="RoundsInMagazine" operation="LT" value="14"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_13">
+					<requirement name="RoundsInMagazine" operation="LT" value="13"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_12">
+					<requirement name="RoundsInMagazine" operation="LT" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_11">
+					<requirement name="RoundsInMagazine" operation="LT" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_10">
+					<requirement name="RoundsInMagazine" operation="LT" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_09">
+					<requirement name="RoundsInMagazine" operation="LT" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_08">
+					<requirement name="RoundsInMagazine" operation="LT" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_07">
+					<requirement name="RoundsInMagazine" operation="LT" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_06">
+					<requirement name="RoundsInMagazine" operation="LT" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_05">
+					<requirement name="RoundsInMagazine" operation="LT" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_04">
+					<requirement name="RoundsInMagazine" operation="LT" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_03">
+					<requirement name="RoundsInMagazine" operation="LT" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_02">
+					<requirement name="RoundsInMagazine" operation="LT" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_01">
+					<requirement name="RoundsInMagazine" operation="LT" value="1"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_morethan_40">
+					<requirement name="RoundsInMagazine" operation="GTE" value="40"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_36">
+					<requirement name="RoundsInMagazine" operation="GTE" value="36"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_35">
+					<requirement name="RoundsInMagazine" operation="GTE" value="35"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_34">
+					<requirement name="RoundsInMagazine" operation="GTE" value="34"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_33">
+					<requirement name="RoundsInMagazine" operation="GTE" value="33"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_32">
+					<requirement name="RoundsInMagazine" operation="GTE" value="32"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_31">
+					<requirement name="RoundsInMagazine" operation="GTE" value="31"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_30">
+					<requirement name="RoundsInMagazine" operation="GTE" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_29">
+					<requirement name="RoundsInMagazine" operation="GTE" value="29"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_28">
+					<requirement name="RoundsInMagazine" operation="GTE" value="28"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_27">
+					<requirement name="RoundsInMagazine" operation="GTE" value="27"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_26">
+					<requirement name="RoundsInMagazine" operation="GTE" value="26"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_25">
+					<requirement name="RoundsInMagazine" operation="GTE" value="25"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_24">
+					<requirement name="RoundsInMagazine" operation="GTE" value="24"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_23">
+					<requirement name="RoundsInMagazine" operation="GTE" value="23"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_22">
+					<requirement name="RoundsInMagazine" operation="GTE" value="22"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_21">
+					<requirement name="RoundsInMagazine" operation="GTE" value="21"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_20">
+					<requirement name="RoundsInMagazine" operation="GTE" value="20"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_19">
+					<requirement name="RoundsInMagazine" operation="GTE" value="19"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_18">
+					<requirement name="RoundsInMagazine" operation="GTE" value="18"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_17">
+					<requirement name="RoundsInMagazine" operation="GTE" value="17"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_16">
+					<requirement name="RoundsInMagazine" operation="GTE" value="16"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_15">
+					<requirement name="RoundsInMagazine" operation="GTE" value="15"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_14">
+					<requirement name="RoundsInMagazine" operation="GTE" value="14"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_13">
+					<requirement name="RoundsInMagazine" operation="GTE" value="13"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_12">
+					<requirement name="RoundsInMagazine" operation="GTE" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_11">
+					<requirement name="RoundsInMagazine" operation="GTE" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_10">
+					<requirement name="RoundsInMagazine" operation="GTE" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_09">
+					<requirement name="RoundsInMagazine" operation="GTE" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_08">
+					<requirement name="RoundsInMagazine" operation="GTE" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_07">
+					<requirement name="RoundsInMagazine" operation="GTE" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_06">
+					<requirement name="RoundsInMagazine" operation="GTE" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_05">
+					<requirement name="RoundsInMagazine" operation="GTE" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_04">
+					<requirement name="RoundsInMagazine" operation="GTE" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_03">
+					<requirement name="RoundsInMagazine" operation="GTE" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_02">
+					<requirement name="RoundsInMagazine" operation="GTE" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_01">
+					<requirement name="RoundsInMagazine" operation="GTE" value="1"/>
+				</triggered_effect>
+				
+					<!-- OOOOOOOOOOOOOO	 oooooooooooooooooooooooooooooooooooooooooooooooooooooo	OOOOOOOOOOOOOOOO    -->
+					<!-- OOOOOOOOOOOOOO	 oooooooooooooooooooooooooooooooooooooooooooooooooooooo	OOOOOOOOOOOOOOOO    -->
+				
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_morethan_40_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="40"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_36_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="36"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_35_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="35"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_34_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="34"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_33_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="33"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_32_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="32"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_31_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="31"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_30_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_29_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="29"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_28_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="28"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_27_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="27"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_26_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="26"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_25_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="25"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_24_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="24"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_23_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="23"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_22_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="22"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_21_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="21"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_20_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="20"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_19_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="19"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_18_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="18"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_17_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="17"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_16_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="16"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_15_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="15"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_14_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="14"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_13_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="13"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_12_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_11_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_10_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_09_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_08_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_07_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_06_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_05_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_04_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_03_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_02_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_01_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="1"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_morethan_40_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="40"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_36_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="36"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_35_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="35"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_34_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="34"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_33_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="33"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_32_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="32"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_31_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="31"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_30_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_29_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="29"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_28_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="28"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_27_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="27"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_26_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="26"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_25_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="25"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_24_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="24"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_23_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="23"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_22_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="22"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_21_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="21"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_20_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="20"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_19_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="19"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_18_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="18"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_17_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="17"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_16_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="16"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_15_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="15"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_14_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="14"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_13_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="13"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_12_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_11_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_10_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_09_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_08_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_07_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_06_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_05_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_04_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_03_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_02_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_01_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="1"/>
+				</triggered_effect>
+
+				
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_morethan_40_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="40"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_36_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="36"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_35_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="35"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_34_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="34"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_33_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="33"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_32_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="32"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_31_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="31"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_30_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_29_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="29"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_28_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="28"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_27_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="27"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_26_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="26"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_25_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="25"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_24_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="24"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_23_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="23"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_22_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="22"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_21_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="21"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_20_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="20"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_19_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="19"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_18_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="18"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_17_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="17"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_16_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="16"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_15_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="15"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_14_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="14"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_13_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="13"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_12_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_11_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_10_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_09_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_08_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_07_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_06_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_05_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_04_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_03_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_02_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_01_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="1"/>
+				</triggered_effect>
+				
+				
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_morethan_40_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="40"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_36_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="36"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_35_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="35"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_34_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="34"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_33_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="33"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_32_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="32"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_31_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="31"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_30_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_29_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="29"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_28_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="28"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_27_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="27"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_26_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="26"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_25_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="25"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_24_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="24"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_23_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="23"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_22_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="22"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_21_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="21"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_20_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="20"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_19_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="19"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_18_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="18"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_17_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="17"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_16_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="16"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_15_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="15"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_14_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="14"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_13_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="13"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_12_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_11_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_10_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_09_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_08_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_07_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_06_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_05_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_04_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_03_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_02_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="belt556_01_2">
+					<requirement name="RoundsInMagazine" operation="LT" value="1"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_morethan_40_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="40"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_36_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="36"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_35_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="35"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_34_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="34"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_33_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="33"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_32_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="32"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_31_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="31"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_30_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_29_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="29"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_28_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="28"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_27_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="27"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_26_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="26"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_25_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="25"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_24_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="24"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_23_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="23"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_22_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="22"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_21_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="21"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_20_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="20"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_19_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="19"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_18_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="18"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_17_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="17"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_16_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="16"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_15_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="15"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_14_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="14"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_13_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="13"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_12_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_11_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_10_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_09_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="9"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_08_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="8"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_07_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="7"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_06_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_05_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_04_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_03_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_02_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onReloadStop" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="belt556_01_2">
+					<requirement name="RoundsInMagazine" operation="GTE" value="1"/>
+				</triggered_effect>
+					<!-- OOOOOOOOOOOOOO	 oooooooooooooooooooooooooooooooooooooooooooooooooooooo	OOOOOOOOOOOOOOOO    -->
+			</effect_group>
+		</buff>
+	</append>
+	<append xpath="//buff[@name='buffStatusCheck01']">	
+		<effect_group>
+			<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" buff="IZYGlovesEffect"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" buff="RefreshHand"/>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfWalk" action="AddBuff" buff="IZYGlovesEffect"/>
+			<triggered_effect trigger="onSelfWalk" action="AddBuff" buff="RefreshHand"/>
+		</effect_group>
+	</append>
+
+</configs>
