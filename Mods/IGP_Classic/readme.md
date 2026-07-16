@@ -1,8 +1,10 @@
-# IZY Classic for 7 Days To Die 3.0.1 (version 3.0.6.0.1)
+# IZY Classic for 7 Days To Die 3.0.1 (version 3.0.6.x.x)
 
 ## Overview
 
-**IZY Classic** is the official updated version of the IZY-All in One Gun Pack v5.1.3 modpack. Easier to install, to update and to maintain, it brings the classic weapon line-up to 7 Days To Die v3.0.
+**IZY Classic** is the official update of the IZY-All in One Gun Pack v2.6.5.1.3 modpack to 7 Days To Die 3.0. Easier to install, to update and to maintain, it brings the classic weapon line-up to 7 Days To Die v3.0.
+
+**IZY Classic** does NOT add any new weapons. It only updates the mod pack to 7 Days To Die v3.0.
 
 ## What to install?
 
@@ -60,6 +62,7 @@ IZY Classic and the required mods are available on [Smörgåsbord](https://www.n
  - [FNS Make Quest Rewards Great Again](https://www.nexusmods.com/7daystodie/mods/6779).
  - [Stallionsdens Stack Size Increaser V3](https://www.nexusmods.com/7daystodie/mods/5976).
  - [LittleRedSonja Ammunition Recycling](https://www.nexusmods.com/7daystodie/mods/5501).
+ - [Immersive Weapon Names for IZY Classic](https://www.nexusmods.com/7daystodie/mods/11148).
 
 ## Maintenance Team 
 

@@ -4,7 +4,7 @@
     <DisplayName value="IZY Classic Core" />
     <Description value="[FFB400]IZY Classic[-] is the official  version of the IZY-All in One Gun Pack v5.1.3 modpack. Easier to install, to update and to maintain, it brings the classic weapon line-up to 7 Days To Die v3.0.&#13;&#10;&#13;&#10;IMPORTANT:&#13;&#10;IZY Classic requires 1. [FFB400]IZY Classic Core[-], 2. [FFB400]IZY Classic Resources[-] and 3. [FFB400]Flatlander's Combat Sandbox[-] to function.&#13;&#10;&#13;&#10;The IZY Classic project is maintained by Flat Lander and friends." />
     <Author value="Flatlander" />
-    <Version value="3.0.6.0.1" />
+    <Version value="3.0.6.x.x" />
 	<SkipWithAntiCheat value="true" />
 	<Website value="https://github.com/flatlanderone/igpclassic" />
 	<Icon value="Textures/IGP_ICON.png" />
