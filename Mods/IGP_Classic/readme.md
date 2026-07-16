@@ -1,4 +1,4 @@
-# IZY Classic for 7 Days To Die 3.0.1 (version 3.0.6.0.0)
+# IZY Classic for 7 Days To Die 3.0.1 (version 3.0.6.0.1)
 
 ## Overview
 
@@ -17,6 +17,10 @@ Before installing you need to download first the following files:
 **IZY Classic will not work without these required mods!**
 
 ## How to install IZY Classic manually?
+
+Follow the instructions below to install IZY Classic manually.
+
+**IMPORTANT: Do not add any of the files to Vortex, as it is not compatible with 7 Days To Die mods. We will not provide support or troubleshooting for Vortex installations.**
 
  1. Verify the integrity of 7 Days To Die game files. ([How to verify 7 Days To Die game files](https://www.nexusmods.com/7daystodie/articles/1623))
  2. Disable EAC ([How to disable EAC for 7 Days To Die](https://www.nexusmods.com/7daystodie/articles/1624))
@@ -38,7 +42,7 @@ zzzCombatSandboxFLTR
 
 ```
  
- **IMPORTANT: Start a NEW GAME. We do not recommend adding IZY Classic to an existing save or removing it from an existing save. If you go against our advice, at least make a backup of your game save.**
+**IMPORTANT: Start a NEW GAME. We do not recommend adding IZY Classic to an existing save or removing it from an existing save. If you go against our advice, at least make a backup of your game save.**
 
 ## How to install IZY Classic automatically using Smörgåsbord?
 
