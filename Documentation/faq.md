@@ -15,10 +15,12 @@
  5. How do I toggle the Helmet Light Mod when the Kick attack is enabled?
 
  6. How do I disable the Kick attack?
+
+ 7. How can I play only with the vanilla replacement guns and disable all the other weapons?  
  
 ## 1. How to disable crosshairs when aiming down the sights?
 
-![Crosshair Options](https://raw.githubusercontent.com/flatlanderone/igpclassic/ba2043f8c6a159c762fbc4a4f2da73b6bd45e018/Documentation/images/crosshair.jpg "Crosshair Options")
+![Crosshair Options](https://raw.githubusercontent.com/flatlanderone/igpclassic/refs/heads/main/Documentation/images/crosshair.jpg "Crosshair Options")
 
 ## 2. How to control the recoil of the M-134 Minigun?
 
@@ -46,14 +48,14 @@ Crouch and press the F key (Focus search). Sometimes, you may need to press and 
  5. Click Apply.
  6. Load your current game save. No need to start a new game.
 
-![Kick Attack Options](https://raw.githubusercontent.com/flatlanderone/igpclassic/ba2043f8c6a159c762fbc4a4f2da73b6bd45e018/Documentation/images/kick.jpg "Kick Attack Options")
+![Kick Attack Options](https://raw.githubusercontent.com/flatlanderone/igpclassic/refs/heads/main/Documentation/images/kick.jpg "Kick Attack Options")
 
 ## 7. How can I play only with the vanilla replacement guns and disable all the other weapons?
 
  1. In the Main Menu, click MODS.
  2. Click Flatlander's Combat Sandbox in the left-hand panel,
  3. Click the 1. Weapon Packs tab.
- 4. Click Kick Off for each group that you want to disable.
+ 4. Click Off for each group that you want to disable.
  5. Click Apply.
  6. Load your current game save. No need to start a new game.
 
