@@ -48,4 +48,17 @@ Crouch and press the F key (Focus search). Sometimes, you may need to press and 
 
 ![Kick Attack Options](https://raw.githubusercontent.com/flatlanderone/igpclassic/ba2043f8c6a159c762fbc4a4f2da73b6bd45e018/Documentation/images/kick.jpg "Kick Attack Options")
 
+## 7. How can I play only with the vanilla replacement guns and disable all the other weapons?
+
+ 1. In the Main Menu, click MODS.
+ 2. Click Flatlander's Combat Sandbox in the left-hand panel,
+ 3. Click the 1. Weapon Packs tab.
+ 4. Click Kick Off for each group that you want to disable.
+ 5. Click Apply.
+ 6. Load your current game save. No need to start a new game.
+
+![Weapon Pack Options - Play only with the vanilla replacement guns](https://raw.githubusercontent.com/flatlanderone/igpclassic/refs/heads/main/Documentation/images/VRP_only.jpg "Play only with the vanilla replacement guns")
+
+
+
 [Back to Documentation Home](./readme.md)
