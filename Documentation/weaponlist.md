@@ -92,3 +92,7 @@ M-134 Minigun (T5)
 M2 Flamethrower (T5)  
 
 [img]https://raw.githubusercontent.com/flatlanderone/igpclassic/refs/heads/main/Documentation/images/weapon_list_all.png[/img]
+
+
+[Back to Documentation Home](./readme.md)  
+[Back to the FAQ](./faq.md)  

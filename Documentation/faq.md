@@ -47,3 +47,5 @@ Crouch and press the F key (Focus search). Sometimes, you may need to press and 
  6. Load your current game save. No need to start a new game.
 
 ![Kick Attack Options](https://raw.githubusercontent.com/flatlanderone/igpclassic/ba2043f8c6a159c762fbc4a4f2da73b6bd45e018/Documentation/images/kick.jpg "Kick Attack Options")
+
+[Back to Documentation Home](./readme.md)
