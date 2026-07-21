@@ -4,12 +4,15 @@
 					<!--	REMOVE VISIBLE HARD WARP FPV -->
 
 	<append xpath="//item[@name='armorPrimitiveGloves']">	
-		
-		<property class="SDCS">
+
+<!-- Removed 2026-07-20		 -->
+<!-- 		<property class="SDCS">
 				<property name="Prefab" value="Entities/Player/*/Gear/Prefabs/gear*FiberPrefab"/>
-				<property name="TransformName" value=""/>  <!--	hands -->
+				<property name="TransformName" value=""/> 
 				<property name="Excludes" value=""/>
-		</property>
+		</property> -->
+
+
 		
 		<effect_group tiered="false">
 				<triggered_effect trigger="onSelfEquipStart" action="RemoveBuff" buff="RefreshHand"/>

@@ -58,6 +58,7 @@ IZY Classic and the required mods are available on [Smörgåsbord](https://www.n
 
 ## Recommended Additional Mods 
 
+ - NEW: [LOTF's Better Bullet Range 3.1](https://www.nexusmods.com/7daystodie/mods/7416).
  - [Oakraven Ammo Press V3](https://www.nexusmods.com/7daystodie/mods/5105).
  - [FNS Make Quest Rewards Great Again](https://www.nexusmods.com/7daystodie/mods/6779).
  - [Stallionsdens Stack Size Increaser V3](https://www.nexusmods.com/7daystodie/mods/5976).
