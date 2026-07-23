@@ -8,6 +8,6 @@
 5. Switch to the Explorer window and find the latest output_log_client or player.log file.
 6. Open it and copy its contents (Ctrl + A, then Ctrl + C).
 7. Go to https://pastebin.com.
-8. Paste the log in the New Paste field.
-9. Click Create New Paste.
+8. Paste the log in the **New Paste** field.
+9. Click **Create New Paste**.
 10. Copy and share the link of your paste. 
