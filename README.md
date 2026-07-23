@@ -3,7 +3,7 @@
 
 ## Table of Contents
 
- 1. [Frequently Asked Questions](./Documentation/faq.md)
+ 1. [Frequently Asked Questions](/Documentation/faq.md)
 
  2. [Full List of Ranged and Melee Weapons Available in IZY Classic](./Documentation/weaponlist.md)
 
