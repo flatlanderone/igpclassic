@@ -1,0 +1,8 @@
+
+## How to disable EAC for 7 Days To Die
+
+
+1. Open Steam.
+2. Find 7 Days To Die in the game list.
+3. Right-click 7 Days To Die and select **Properties**.
+4. Select **General** and under **Launch Options**, select **Launch game without EAC**.
