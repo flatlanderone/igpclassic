@@ -1,4 +1,2 @@
-# igpclassic
-igpclassic
 
-[Documentation](./Documentation) 
+[Documentation](./Documentation/readme.md) 
