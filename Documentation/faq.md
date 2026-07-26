@@ -23,6 +23,8 @@
  9. Will you help me if I refuse to provide the log file?
  
  10. How to find the log file and share it via pastebin.com
+ 
+ 11. How to share a screenshot via pasteboard.co
 ***
 ***
 
