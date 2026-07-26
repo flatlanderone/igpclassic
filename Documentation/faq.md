@@ -21,7 +21,8 @@
  8. Is the mod compatible with the current **experimental** version of 7 Days To Die?
  
  9. Will you help me if I refuse to provide the log file?
-
+ 
+ 10. How to find the log file and share it via pastebin.com
 ***
 ***
 
@@ -79,4 +80,28 @@ No. If you don't provide us with the information requested, we will assume that 
 more interested in wasting our time
 than in solving issues you encountered when running out mods.
 ***
+## 10. How to find the log file and share it via pastebin.com
+
+ 1. Start the game.
+ 2. Recreate the issue.
+ 3. Press F1.
+ 4. In the top right corner, click **Open logs folder**.
+ 5. Switch to the Explorer window and find the latest output_log_client or player.log file.
+ 6. Open it and copy its contents (Ctrl + A, then Ctrl + C).
+ 7. Go to https://pastebin.com.
+ 8. Paste the log in the **New Paste** field.
+ 9. Click **Create New Paste**.
+ 10. Copy and share the link of your paste in a post. 
+***
+## 11. How to share a screenshot via pasteboard.co
+
+ 1. Take a screenshot in-game using either 
+ F9 or any other method.
+ 2. Go to https://www.pasteboard.co/.
+ 3. Upload the screenshot.
+ 4. Copy and share the link of the image in a post. 
+
+***
+***
+
 [Back to Documentation Home](./readme.md)
