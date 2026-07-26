@@ -108,6 +108,10 @@ Custom Avatars (VRoid)
 LittleRedSonja & Mumphy armor mods.
 ```	
 
+## Frequently Asked Questions
+
+See https://github.com/flatlanderone/igpclassic/blob/main/Documentation/faq.md
+
 ## Credits
 
 IZY Classic is based on the work of Izayo with contributions from his friends listed below. 
