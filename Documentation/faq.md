@@ -18,27 +18,34 @@
 
  7. How can I play only with the vanilla replacement guns and disable all the other weapons?  
  
+ 8. Is the mod compatible with the current **experimental** version of 7 Days To Die?
+ 
+ 9. Will you help me if I refuse to provide the log file?
+
+***
+***
+
 ## 1. How to disable crosshairs when aiming down the sights?
 
 ![Crosshair Options](https://raw.githubusercontent.com/flatlanderone/igpclassic/refs/heads/main/Documentation/images/crosshair.jpg "Crosshair Options")
-
+***
 ## 2. How to control the recoil of the M-134 Minigun?
 
  1. Use steroids.
  2. Install weapon mods that reduce recoil and improve weapon handling.
-
+***
 ## 3. What weapons are added to the game by IZY Classic?
 
 See [Full List of Ranged and Melee Weapons Available in IZY Classic](./weaponlist.md).
-
+***
 ## 4. How do I toggle the Weapon Flashlight Mod when the Kick attack is enabled?
 
 Crouch and press the F key (Focus search). Sometimes, you may need to press and hold the F key and then select the Weapon Flashlight Mod in the radial menu.
-
+***
 ## 5. How do I toggle the Helmet Light Mod when the Kick attack is enabled?
 
 Crouch and press the F key (Focus search). Sometimes, you may need to press and hold the F key and then select the Weapon Flashlight Mod in the radial menu.
-
+***
 ## 6. How do I disable the Kick attack?
 
  1. In the Main Menu, click MODS.
@@ -49,7 +56,7 @@ Crouch and press the F key (Focus search). Sometimes, you may need to press and 
  6. Load your current game save. No need to start a new game.
 
 ![Kick Attack Options](https://raw.githubusercontent.com/flatlanderone/igpclassic/refs/heads/main/Documentation/images/kick.jpg "Kick Attack Options")
-
+***
 ## 7. How can I play only with the vanilla replacement guns and disable all the other weapons?
 
  1. In the Main Menu, click MODS.
@@ -61,6 +68,15 @@ Crouch and press the F key (Focus search). Sometimes, you may need to press and 
 
 ![Weapon Pack Options - Play only with the vanilla replacement guns](https://raw.githubusercontent.com/flatlanderone/igpclassic/refs/heads/main/Documentation/images/VRP_only.jpg "Play only with the vanilla replacement guns")
 
+***
+## 8. Is the mod compatible with the current **experimental** version of 7 Days To Die?
 
+Give it a try and let us now. We do not test or update the mod against experimental builds.
+***
+## 9. Will you help me if I refuse to provide the log file?
 
+No. If you don't provide us with the information requested, we will assume that you are
+more interested in wasting our time
+than in solving issues you encountered when running out mods.
+***
 [Back to Documentation Home](./readme.md)
