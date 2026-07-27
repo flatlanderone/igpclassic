@@ -1,0 +1,24 @@
+## Permanently disabled
+
+ammoShotgunShellDragoBreath
+ammoShotgunShellDragoBreathBundle
+IZYgunT1ARCabineMASFARifle
+IZYgunT1LRLongRifleM16a1
+IZYgunT2ClassicSMGMP34
+IZYgunT3AREUCabineSG552
+IZYgunT3DualPistols45USP45
+IZYgunT3RifleMagnumLeveractionCarbine44
+IZYgunT3SMGMP5Ksubmachinegun
+IZYgunT4DualPistolC96M
+IZYgunT4MarksManRifle556SSMAR15
+IZYgunT4SMGColt9mmsubmachinegun
+IZYgunT4TACshotgunM1014
+IZYgunT5DualSMGsSuperVectors
+IZYgunT5HeavyWeaponAA12AutoShotgun
+IZYgunT5HeavyWeaponSuperEagle44SMG
+IZYgunTminus1MusketshotgunBlunderbuss
+IZYMeleeT4BatonPunisher9000
+IZYMeleeT4DualKnivesKnife
+
+## Temporarily disabled (waiting for dependencies)
+IZYgunT5HeavyWeaponM2flameThrower
