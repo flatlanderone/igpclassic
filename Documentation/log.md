@@ -11,3 +11,13 @@
 8. Paste the log in the **New Paste** field.
 9. Click **Create New Paste**.
 10. Copy and share the link of your paste. 
+
+
+# Alternative upload methods
+
+You can share the log file using these alternative methods: 
+ - Google Drive, 
+ - Dropbox, 
+ - OneDrive. 
+
+You can also upload it to my Discord channel at the address specified in my Nexus profile. 
