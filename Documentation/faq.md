@@ -110,7 +110,7 @@ than in solving issues you encountered when running out mods.
 ##  12. How to set up Gears mod setings on a dedicated server
 
  1. Select the desired settings on a local install.
- 2. Go to the **Roaming\7DaysToDie\Gears\** folder (NOT Roaming\7DaysToDie\Mods\00000-Gears\!!! ) and find the **ModSettings.xml** file.
+ 2. Go to the **Roaming\7DaysToDie\Gears\ ** folder (NOT Roaming\7DaysToDie\Mods\00000-Gears\!!! ) and find the **ModSettings.xml** file.
  3. The ModSettings.xml contains the settings for all mods that use Gears.
  4. Go to the dedicated server. 
  5. Create the **Gears** folder at the same level as the **Mods* folder. 
