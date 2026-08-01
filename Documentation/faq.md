@@ -25,6 +25,8 @@
  10. How to find the log file and share it via pastebin.com
  
  11. How to share a screenshot via pasteboard.co
+
+ 12. How to set up mod setings on a dedicated server
 ***
 ***
 
@@ -102,6 +104,12 @@ than in solving issues you encountered when running out mods.
  2. Go to https://www.pasteboard.co/.
  3. Upload the screenshot.
  4. Copy and share the link of the image in a post. 
+
+***
+
+##  12. How to set up mod setings on a dedicated server
+
+WIP
 
 ***
 ***
