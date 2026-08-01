@@ -114,7 +114,7 @@ than in solving issues you encountered when running out mods.
  3. On your local computer, go to the **\7DaysToDie\Gears** folder (NOT \7DaysToDie\Mods\00000-Gears\!!! ) and find the **ModSettings.xml** file.
  4. The ModSettings.xml contains the settings for all mods that use Gears.
  5. Go to the dedicated server. 
- 6. On the dedicated server, create the **Gears** folder at the same level as the **Mods* folder. 
+ 6. On the dedicated server, create the **Gears** folder at the same level as the **Mods** folder. 
  7. Upload **ModSettings.xml** to the **Gears** folder. 
 
 ***
