@@ -34,7 +34,6 @@
  
  15. Why you shouldn't use Vortex to install and manage 7 Days To Die mods
  
- 
 ***
 ***
 
@@ -140,7 +139,7 @@ You can share the log file using these alternative methods:
  3. Right-click 7 Days To Die and select **Properties**.
  4. Select **General** and under **Launch Options**, select **Launch game without EAC**.
 
-![Weapon Pack Options - Play only with the vanilla replacement guns](https://raw.githubusercontent.com/flatlanderone/igpclassic/refs/heads/main/Documentation/images/VRP_only.jpg "Play only with the vanilla replacement guns")
+![Disable EAC](https://raw.githubusercontent.com/flatlanderone/igpclassic/refs/heads/main/Documentation/images/eac_2.png "Disable EAC")
 
 ***
 ## 14. How to verify 7 Days To Die game files
@@ -150,6 +149,7 @@ You can share the log file using these alternative methods:
  3. Right-click 7 Days To Die and select **Properties**.
  4. Select Installed Files and click **Verify integrity of game files**.
 
+![verify 7 Days To Die game files](https://raw.githubusercontent.com/flatlanderone/igpclassic/refs/heads/main/Documentation/images/verify2.png "verify 7 Days To Die game files")
 
 ***
 
