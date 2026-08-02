@@ -4,6 +4,23 @@
 
 ## Table of Contents
 
+- [1. How to disable crosshairs when aiming down the sights?](#1-how-to-disable-crosshairs-when-aiming-down-the-sights)
+- [2. How to control the recoil of the M-134 Minigun?](#2-how-to-control-the-recoil-of-the-m-134-minigun)
+- [3. What weapons are added to the game by IZY Classic?](#3-what-weapons-are-added-to-the-game-by-izy-classic)
+- [4. How do I toggle the Weapon Flashlight Mod when the Kick attack is enabled?](#4-how-do-i-toggle-the-weapon-flashlight-mod-when-the-kick-attack-is-enabled)
+- [5. How do I toggle the Helmet Light Mod when the Kick attack is enabled?](#5-how-do-i-toggle-the-helmet-light-mod-when-the-kick-attack-is-enabled)
+- [6. How do I disable the Kick attack?](#6-how-do-i-disable-the-kick-attack)
+- [7. How can I play only with the vanilla replacement guns and disable all the other weapons?](#7-how-can-i-play-only-with-the-vanilla-replacement-guns-and-disable-all-the-other-weapons)
+- [8. Is the mod compatible with the current **experimental** version of 7 Days To Die?](#8-is-the-mod-compatible-with-the-current-experimental-version-of-7-days-to-die)
+- [9. Will you help me if I refuse to provide the log file?](#9-will-you-help-me-if-i-refuse-to-provide-the-log-file)
+- [10. How to find the log file and share it via pastebin.com](#10-how-to-find-the-log-file-and-share-it-via-pastebincom)
+  - [Alternative sharing methods](#alternative-sharing-methods)
+- [11. How to share a screenshot via pasteboard.co](#11-how-to-share-a-screenshot-via-pasteboardco)
+- [12. How to set up Gears mod setings on a dedicated server](#12-how-to-set-up-gears-mod-setings-on-a-dedicated-server)
+- [13. How to disable EAC for 7 Days To Die](#13-how-to-disable-eac-for-7-days-to-die)
+- [14. How to verify 7 Days To Die game files](#14-how-to-verify-7-days-to-die-game-files)
+- [15. Why you shouldn't use Vortex to install and manage 7 Days To Die mods](#15-why-you-shouldnt-use-vortex-to-install-and-manage-7-days-to-die-mods)
+
  1. How to disable crosshairs when aiming down the sights?
 
  2. How to control the recoil of the M-134 Minigun?
