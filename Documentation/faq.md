@@ -124,10 +124,13 @@ You can share the log file using these alternative methods:
 ***
 ##  12. How to set up Gears mod setings on a dedicated server
 
- 1. Select the desired settings on a local install.
- 2. Go to Roaming\7DaysToDie\Gears\ (not Roaming\7DaysToDie\Mods\00000-Gears\ ) and find the ModSettings.xml file.
- 3. The ModSettings.xml contains the settings for all mods that use Gears.
- 4. Upload ModSettings.xml to the corresponding folder on the dedicated server.
+ 1. Install Gears, Quartz and all the other mods on your local computer and on the dedicated server. 
+ 2. On your local computer, start the game and select the desired settings in the Gears Mod Options. Test them thoroughly in a new world. Exit the game. 
+ 3. On your local computer, go to the **\7DaysToDie\Gears** folder (NOT \7DaysToDie\Mods\00000-Gears\!!! ) and find the **ModSettings.xml** file.
+ 4. The ModSettings.xml contains the settings for all mods that use Gears.
+ 5. Go to the dedicated server. 
+ 6. On the dedicated server, create the **Gears** folder at the same level as the **Mods** folder. 
+ 7. Upload **ModSettings.xml** to the **Gears** folder. 
 
 ***
 ## 13. How to disable EAC for 7 Days To Die
