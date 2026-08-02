@@ -1,6 +1,6 @@
 [Back to Documentation Home](./readme.md)
 
-# FAQ for IZY Classic 3.0.1 (2026-07-26)
+# FAQ for IZY Classic 3.0.1 (2026-08-02)
 
 ## Table of Contents
 
@@ -27,6 +27,14 @@
  11. How to share a screenshot via pasteboard.co
 
  12. How to set up mod setings on a dedicated server
+ 
+ 13. How to disable EAC for 7 Days To Die
+ 
+ 14. How to verify 7 Days To Die game files
+ 
+ 15. Why you shouldn't use Vortex to install and manage 7 Days To Die mods
+ 
+ 
 ***
 ***
 
@@ -95,7 +103,15 @@ than in solving issues you encountered when running out mods.
  7. Go to https://pastebin.com.
  8. Paste the log in the **New Paste** field.
  9. Click **Create New Paste**.
- 10. Copy and share the link of your paste in a post. 
+ 10. Copy and share the link of your paste in a post or a comment. 
+
+### Alternative sharing methods
+You can share the log file using these alternative methods: 
+ - [pastes.io](https://pastes.io/)
+ - Google Drive, 
+ - Dropbox, 
+ - OneDrive. 
+ 
 ***
 ## 11. How to share a screenshot via pasteboard.co
 
@@ -106,7 +122,6 @@ than in solving issues you encountered when running out mods.
  4. Copy and share the link of the image in a post. 
 
 ***
-
 ##  12. How to set up Gears mod setings on a dedicated server
 
  1. Select the desired settings on a local install.
@@ -115,6 +130,31 @@ than in solving issues you encountered when running out mods.
  4. Upload ModSettings.xml to the corresponding folder on the dedicated server.
 
 ***
+## 13. How to disable EAC for 7 Days To Die
+
+ 1. Open Steam.
+ 2. Find 7 Days To Die in the game list.
+ 3. Right-click 7 Days To Die and select **Properties**.
+ 4. Select **General** and under **Launch Options**, select **Launch game without EAC**.
+
+***
+## 14. How to verify 7 Days To Die game files
+
+ 1. Open Steam.
+ 2. Find 7 Days To Die in the game list.
+ 3. Right-click 7 Days To Die and select **Properties**.
+ 4. Select Installed Files and click **Verify integrity of game files**.
+
+***
+
+## 15. Why you shouldn't use Vortex to install and manage 7 Days To Die mods
+
+Vortex modifies the load order of mods. The order in which mods load is essential for the correct running of the game and its mods.. 
+
+If you use Vortex to install IZY Classsic and the required mods, YOU WILL BREAK THE MODS.
+
+
+
 ***
 
 [Back to Documentation Home](./readme.md)
