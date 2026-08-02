@@ -20,37 +20,7 @@
 - [13. How to disable EAC for 7 Days To Die](#13-how-to-disable-eac-for-7-days-to-die)
 - [14. How to verify 7 Days To Die game files](#14-how-to-verify-7-days-to-die-game-files)
 - [15. Why you shouldn't use Vortex to install and manage 7 Days To Die mods](#15-why-you-shouldnt-use-vortex-to-install-and-manage-7-days-to-die-mods)
-
- 1. How to disable crosshairs when aiming down the sights?
-
- 2. How to control the recoil of the M-134 Minigun?
-
- 3. What weapons are added to the game by IZY Classic?
-
- 4. How do I toggle the Weapon Flashlight Mod when the Kick attack is enabled?
-
- 5. How do I toggle the Helmet Light Mod when the Kick attack is enabled?
-
- 6. How do I disable the Kick attack?
-
- 7. How can I play only with the vanilla replacement guns and disable all the other weapons?  
- 
- 8. Is the mod compatible with the current **experimental** version of 7 Days To Die?
- 
- 9. Will you help me if I refuse to provide the log file?
- 
- 10. How to find the log file and share it via pastebin.com
- 
- 11. How to share a screenshot via pasteboard.co
-
- 12. How to set up mod setings on a dedicated server
- 
- 13. How to disable EAC for 7 Days To Die
- 
- 14. How to verify 7 Days To Die game files
- 
- 15. Why you shouldn't use Vortex to install and manage 7 Days To Die mods
- 
+  
 ***
 ***
 
@@ -175,8 +145,6 @@ You can share the log file using these alternative methods:
 Vortex modifies the load order of mods. The order in which mods load is essential for the correct running of the game and its mods.. 
 
 If you use Vortex to install IZY Classsic and the required mods, YOU WILL BREAK THE MODS.
-
-
 
 ***
 
