@@ -93,7 +93,6 @@ than in solving issues you encountered when running out mods.
 
 ### Alternative sharing methods
 You can share the log file using these alternative methods: 
- - [pastes.io](https://pastes.io/)
  - Google Drive, 
  - Dropbox, 
  - OneDrive. 
