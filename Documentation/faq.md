@@ -1,6 +1,6 @@
 [Back to Documentation Home](./readme.md)
 
-# FAQ for IZY Classic 3.0.1 (2026-08-02)
+# FAQ for IZY Classic 3.2 (2026-09-20)
 
 ## Table of Contents
 
