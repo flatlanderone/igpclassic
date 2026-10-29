@@ -1,4 +1,4 @@
-# IZY Classic for 7 Days To Die 3.0.1 (version 3.0.6.x.x)
+# IZY Classic for 7 Days To Die 3.3.0 - v3.3.0.6.0.0 - 3.3.0.600
 
 ## Overview
 
