@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
 	<Name value="Izayo_WeaponFixes" />
-	<DisplayName value="Izayo_WeaponFixes" />
-	<Description value="Izayo_WeaponFixes" />
+	<DisplayName value="Izayo Weapon Fixes for IZY Classic" />
+	<Description value="Izayo Weapon Fixes for IZY Classic." />
 	<Author value="FuriousRamsay" />
-	<Version value="1.0" />
-	<Website value="" />
+	<Version value="3.4.0.110" />
+	<InternalVersion value="3.4.0.1.1.0" />
+	<Website value="https://github.com/flatlanderone/gunpack" />
 	<SkipWithAntiCheat value="true" />
 </xml>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\7D3.0_Izayo_WeaponFixes\\IzayoUtils.csproj": {}
+    "D:\\_7 Days To Die\\Mods\\0-7D3.0_Izayo_WeaponFixes\\IzayoUtils.csproj": {}
   },
   "projects": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\7D3.0_Izayo_WeaponFixes\\IzayoUtils.csproj": {
+    "D:\\_7 Days To Die\\Mods\\0-7D3.0_Izayo_WeaponFixes\\IzayoUtils.csproj": {
       "version": "1.7.0",
       "restore": {
-        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\7D3.0_Izayo_WeaponFixes\\IzayoUtils.csproj",
+        "projectUniqueName": "D:\\_7 Days To Die\\Mods\\0-7D3.0_Izayo_WeaponFixes\\IzayoUtils.csproj",
         "projectName": "IzayoUtils",
-        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\7D3.0_Izayo_WeaponFixes\\IzayoUtils.csproj",
+        "projectPath": "D:\\_7 Days To Die\\Mods\\0-7D3.0_Izayo_WeaponFixes\\IzayoUtils.csproj",
         "packagesPath": "C:\\Users\\Etienne\\.nuget\\packages\\",
-        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\7 Days To Die\\Mods\\7D3.0_Izayo_WeaponFixes\\obj\\",
+        "outputPath": "D:\\_7 Days To Die\\Mods\\0-7D3.0_Izayo_WeaponFixes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Etienne\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "net481": {
+            "framework": "net481",
             "targetAlias": "net481",
             "projectReferences": {}
           }
@@ -34,10 +35,17 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
       },
       "frameworks": {
         "net481": {
+          "framework": "net481",
           "targetAlias": "net481",
           "dependencies": {
             "Microsoft.NETFramework.ReferenceAssemblies": {
@@ -47,7 +55,7 @@
               "autoReferenced": true
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

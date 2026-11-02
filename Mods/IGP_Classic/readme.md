@@ -1,10 +1,10 @@
-# IZY Classic for 7 Days To Die 3.3.0 - v3.3.0.6.0.0 - 3.3.0.600
+# IZY Classic for 7 Days To Die 3.4.0 - v3.4.0.6.0.1 - 3.4.0.601
 
 ## Overview
 
-**IZY Classic** is the official update of the IZY-All in One Gun Pack v2.6.5.1.3 modpack to 7 Days To Die 3.0. Easier to install, to update and to maintain, it brings the classic weapon line-up to 7 Days To Die v3.0.
+**IZY Classic** is the official update of the IZY-All in One Gun Pack v2.6.5.1.3 modpack to 7 Days To Die v3. Easier to install, to update and to maintain, it brings the classic weapon line-up to 7 Days To Die v3.0.
 
-**IZY Classic** does NOT add any new weapons. It only updates the mod pack to 7 Days To Die v3.0.
+**IZY Classic** does NOT add any new weapons. It only updates the mod pack to 7 Days To Die v3.
 
 ## What to install?
 
@@ -52,7 +52,7 @@ IZY Classic and the required mods are available on [Smörgåsbord](https://www.n
 
 ## Requirements
 
- - 7 Days to Die v3.0 and later. The mod is not compatible with 7 Days to Die v2.6.
+ - 7 Days to Die v3.4. The mod is not compatible with 7 Days to Die v2.6. Not tested with 7 Days to Die v3.3.
  - EAC must be disabled.
  - All the required mods must be installed on the client and on the server.
 

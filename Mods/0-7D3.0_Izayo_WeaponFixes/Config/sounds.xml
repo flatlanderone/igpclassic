@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+
+	<!-- 3.4 ships its own "ui_denied" sound, and 0-7D3.0_Izayo_Visible_Mods_V2_mod appends a second one with the
+	     same name. The game refuses duplicate sound names and stops parsing sounds.xml. This mod loads after the
+	     V2 mod, so remove only the vanilla node (the one using the UI audio source) and keep the V2 silent one. -->
+	<remove xpath="/Sounds/SoundDataNode[@name='ui_denied'][AudioSource[@name='@:Sounds/Prefabs/AudioSource_UI.prefab']]"/>
+
+</configs>

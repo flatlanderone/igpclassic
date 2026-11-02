@@ -1,0 +1,7 @@
+D:\_7 Days To Die\Mods\0-7D3.0_Izayo_WeaponFixes\obj\Release\net481\IzayoUtils.csproj.AssemblyReference.cache
+D:\_7 Days To Die\Mods\0-7D3.0_Izayo_WeaponFixes\obj\Release\net481\IzayoUtils.GeneratedMSBuildEditorConfig.editorconfig
+D:\_7 Days To Die\Mods\0-7D3.0_Izayo_WeaponFixes\obj\Release\net481\IzayoUtils.csproj.CoreCompileInputs.cache
+D:\_7 Days To Die\Mods\0-7D3.0_Izayo_WeaponFixes\obj\Release\net481\IzayoUtils.dll
+D:\_7 Days To Die\Mods\0-7D3.0_Izayo_WeaponFixes\obj\Release\net481\IzayoUtils.pdb
+D:\_7 Days To Die\Mods\0-7D3.0_Izayo_WeaponFixes\IzayoUtils.dll
+D:\_7 Days To Die\Mods\0-7D3.0_Izayo_WeaponFixes\IzayoUtils.pdb

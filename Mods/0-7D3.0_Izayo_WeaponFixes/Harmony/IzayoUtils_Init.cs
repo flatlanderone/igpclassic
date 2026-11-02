@@ -1,10 +1,6 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Xml.Linq;
-using UnityEngine;
-using HLib = HarmonyLib;
+using HLib = HarmonyLib;          // avoid clash with namespace Harmony
 
 namespace Harmony
 {
@@ -16,7 +12,15 @@ namespace Harmony
             var asm = Assembly.GetExecutingAssembly();
             var harmonyId = GetType().FullName;
             var harmony = new HLib.Harmony(harmonyId);
-            harmony.PatchAll(asm);
+
+            try
+            {
+                harmony.PatchAll(asm);
+            }
+            catch (Exception ex)
+            {
+                Log.Error($"[IzayoUtils] PatchAll failed: {ex}");
+            }
         }
     }
 }
